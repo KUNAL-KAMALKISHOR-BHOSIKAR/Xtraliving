@@ -1,0 +1,27 @@
+.programs{
+    text-align: start;
+    margin-top: 2rem;
+}
+.program-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.program-detail{
+  
+    width: 500px;
+    line-height: 1.1;
+    margin-left: 8rem;
+}
+.program-text{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   font-size: 0.8rem;
+   margin: 0 0.8rem;
+    
+}
+.program-text span{
+    display: flex;
+}

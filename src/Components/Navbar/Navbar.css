@@ -1,0 +1,11 @@
+.Navbar{
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+.Navbar svg{
+    font-size: 1.6rem;
+}

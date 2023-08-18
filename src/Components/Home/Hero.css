@@ -1,0 +1,163 @@
+.hero{
+    
+    height: 100vh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+    gap: 2rem;
+    
+}
+
+.banner .text-area{
+ 
+  line-height: 1.1 ;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  
+}
+
+.banner .text-area h2{
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 1px;
+   
+}
+.banner .text-area p{
+    font-weight: 700;
+    color: #4D4D4D;
+}
+.banner .text-area .fun{
+    font-weight: 900;
+    color: #ED5009;
+}
+.banner .text-area .c{
+    color: #ED5009;
+}
+.banner .img-area{
+    display: flex;
+    align-items: center;
+}
+.banner .img-area svg{
+    margin-top: 200px;
+}
+.banner .img-area img{
+    height: 300px ;
+}
+/* tag-line area >>>>> */
+
+.hero .tag-line{
+    background-color: white;
+    height: 180px;
+    width: 70%;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ED5009;
+    border-right: 2px solid #ED5009;
+    position: relative;
+}
+.hero .tag-line h3{
+  
+    width: 60%;
+}
+.hero .tag-line .blue{
+    color: #1877F2 ;
+}
+.yellow-arrow{
+     position: absolute;
+     left: 20px;
+     bottom: 120px;
+}
+.blue-box{
+    position: absolute;
+    left: 15%;
+    bottom: 110px;
+}
+.peach-box{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+.yellow-circle{
+    position: absolute;
+   right: 35%;
+   top: 110px;
+
+}
+@media (max-width:1000px) {
+    .blue-box{
+     
+        left: 15%;
+        bottom: 150px;
+    }
+ 
+    .yellow-circle{
+       
+       right: 5%;
+       top: 110px;
+    
+    }
+    svg{
+       height: 70px;
+    }
+}
+@media (max-width:800px) {
+
+    .banner {
+       flex-direction: column-reverse;
+       height: 70%;
+       
+    }
+    .banner .text-area{
+        text-align: center;
+        line-height: 1 ;
+        gap: 0.5rem;
+    }
+    .banner .img-area img{
+        height: 280px ;
+    }
+    .hero .tag-line{     
+        height: 30%;
+        margin-top: 3rem;
+    }
+  
+    .hero .tag-line h3{
+      
+        font-size: 1rem;
+    }
+    .blue-box{
+     
+       
+        bottom: 100px;
+    }
+ 
+    .yellow-circle{
+       
+      
+       top: 70px;
+    
+    }
+    svg{
+        height: 40px;
+     }
+
+}
+
+
+@media (max-width:500px) {
+ 
+    .hero .tag-line h3{
+      
+        font-size: 0.9rem;
+    }
+}
