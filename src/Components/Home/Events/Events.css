@@ -1,9 +1,34 @@
+
+.Events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Events button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+    margin-left: 10rem;
+}
+
 @media (max-width:800px) {
 
     .Events img{
         height: 400px;
     }
 }
+
 @media (max-width:500px) {
  
     .Events img{

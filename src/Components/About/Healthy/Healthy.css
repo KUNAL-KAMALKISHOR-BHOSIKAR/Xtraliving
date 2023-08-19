@@ -1,0 +1,27 @@
+.Healthy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.Healthy h1{
+    font-size: 3.5rem;
+}
+.Healthy p{
+    
+    width: 650px;
+}
+.second-div{
+    
+    width: 100%;
+    height: 500px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+   padding-bottom: 8rem;
+}
+.second-div h1{
+    color: #ED5009 ;
+}

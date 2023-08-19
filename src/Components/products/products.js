@@ -10,7 +10,7 @@ const Products=()=>{
     <div className="product"
     style={{backgroundImage: `url(${line})`,
     backgroundRepeat: 'no-repeat',
-  
+        
     }}>
         
 <div className="products">
@@ -32,7 +32,7 @@ const Products=()=>{
     <button>Know More <BsArrowRight/></button>
 </div>
         <div className="pro-img">
-        <img src={productf} height={200} alt="" />
+        <img className="female" src={productf} height={200} alt="" />
         </div>
             </div>
         </div>

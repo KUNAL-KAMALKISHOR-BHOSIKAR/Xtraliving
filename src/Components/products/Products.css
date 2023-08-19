@@ -22,6 +22,9 @@
     flex-direction: column;
     justify-content: center;
 }
+.pro-text{
+    margin-left: 2rem;
+}
 .pro-text2{
     text-align: end;
     align-items: flex-end;
@@ -81,10 +84,7 @@
   top: 172px;
   z-index: 1;
 }
-.pro-text1{
-    margin-left: 0rem;
-   
-}
+
 
 @media (max-width:1325px) {
  
@@ -157,18 +157,26 @@
     }
     .pro-text2 h2{
         font-size: 3rem;
+        margin-right: 2rem;
      }
      .pro-text2 p{
          font-size: 1rem;
+         margin-right: 2rem;
      }
+     .pro-text2 span{
+      
+        margin-right: 2rem;
+    }
      .pro-text2 button{
          height: 45px;
          width: 180px;
+         margin-right: 2rem;
      }
   
      .products2{
        
         margin-right: 0.5rem;
     }
+  
    
 }
