@@ -1,9 +1,14 @@
 import "./Hero.css"
-import hero from "../Img/hero.png"
+import hero from "../../Img/hero.png"
+import line from "./line.png"
 
 const Hero=()=>{
     return(
-    <div className="hero">
+    <div className="hero" 
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    }}>
         <div className="banner">
         <div className="text-area">
     <h2>Elevate Human <br/> Performance</h2>

@@ -1,15 +1,20 @@
 import "./Products.css"
-import products from "../Img/products.png"
-import Our from "../Img/Our.png"
+import products from "./product.png"
 import productf from "../Img/productf.png"
 import productm from "../Img/productm.png"
 import { BsArrowRight } from 'react-icons/bs';
+import line from "./line.png"
 
 const Products=()=>{
     return(
-        <div className="product">
+    <div className="product"
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+  
+    }}>
+        
 <div className="products">
-    <img className="pro-product" src={products} height={450} alt=""/>
+    <img className="pro-product" src={products}  alt=""/>
     <div className="pro-area">
 <div className="pro-text pro-text1 ">
     <h2>FUNc</h2>
@@ -32,7 +37,7 @@ const Products=()=>{
             </div>
         </div>
         <div className="products products2">
-    <img className="our"  src={Our} height={200} alt=""/>
+  
     <div className="pro-img">
         <img src={productm}  alt="" />
         </div>
@@ -50,11 +55,11 @@ cutting-edge platform co-created by tech and medical
           educational journey, priming them to become the
            next generation of healthcare visionaries.</span> <br/>
     <button>Know More <BsArrowRight/></button>
-</div>
-        
+</div>     
             </div>
         </div>
         </div>
     );
+   
 }
 export default Products;

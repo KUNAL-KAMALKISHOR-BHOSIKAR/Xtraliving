@@ -6,18 +6,17 @@
     justify-content: center;
     gap: 3rem;
     margin-left: 1rem;
+    position: relative;
+    height: auto;
 }
 .products .pro-area{
     display: flex;
     align-items: center;
-    justify-content: end;
-   
-   
+    justify-content: end;  
 }
 .pro-text{
     text-align: start;
-
-    width: 40%;
+    width: 400px;
     line-height: 1;
     display: flex;
     flex-direction: column;
@@ -26,9 +25,8 @@
 .pro-text2{
     text-align: end;
     align-items: flex-end;
-    width: 60%;
-    margin-right: 5rem;
-  
+    width: 50%;
+    margin-right: 5rem;  
 }
 .pro-text h2{
     font-size:80px ;
@@ -74,19 +72,103 @@
 .pro-img img{
     height: 450px;
 }
- .our{
-    position: absolute;
-    left: 10px;
-    top: 105px;
-}
-.products{
-    position: relative;
-}
+
+
 .pro-product{
-    position: absolute;
-    left: 10px;
-    top: 120px;
+  height: 600px;
+  position: absolute;
+  left: 10px;
+  top: 172px;
+  z-index: 1;
 }
 .pro-text1{
-    margin-left: 7rem;
+    margin-left: 0rem;
+   
+}
+
+@media (max-width:1325px) {
+ 
+    .pro-product{
+        display: none;
+    }
+}
+@media (max-width:980px) {
+    /* *{
+        background-color: #4E62D6;
+    } */
+    .pro-area{
+      
+        flex-direction: column; 
+        
+    }
+    .pro-text{
+        
+       
+        align-self: self-start;
+    }
+    .pro-text1{
+        margin-left: 0rem;
+       
+    }
+    .pro-img img{
+        height: 400px;
+        margin-right: 1rem;
+    }
+    .pro-text2{
+        display: flex;
+       flex-direction: column;
+
+        width: 100%;
+        margin-right: 0rem;  
+      
+    }
+    .pro-text2 p{
+        
+        width: 60%;
+    }
+    .pro-text2 span{
+        width: 60%;
+    }
+    .products2{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem; 
+        gap: 0rem;
+        margin-right: 5rem;
+    }
+}
+@media (max-width:630px) {
+ 
+ 
+    .pro-text h2{
+       font-size: 3rem;
+    }
+    .pro-text p{
+        font-size: 1rem;
+    }
+    .pro-text button{
+        height: 45px;
+        width: 180px;
+        margin-right: 0.5rem;
+    }
+    .pro-img img{
+        height: 320px;
+        align-self: flex-end;
+    }
+    .pro-text2 h2{
+        font-size: 3rem;
+     }
+     .pro-text2 p{
+         font-size: 1rem;
+     }
+     .pro-text2 button{
+         height: 45px;
+         width: 180px;
+     }
+  
+     .products2{
+       
+        margin-right: 0.5rem;
+    }
+   
 }

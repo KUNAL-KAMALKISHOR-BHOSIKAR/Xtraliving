@@ -126,6 +126,9 @@
     .banner .img-area img{
         height: 280px ;
     }
+    .banner .img-area{
+        flex-direction: row-reverse;
+    }
     .hero .tag-line{     
         height: 30%;
         margin-top: 3rem;

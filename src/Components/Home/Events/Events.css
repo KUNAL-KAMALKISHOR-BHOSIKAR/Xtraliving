@@ -1,0 +1,12 @@
+@media (max-width:800px) {
+
+    .Events img{
+        height: 400px;
+    }
+}
+@media (max-width:500px) {
+ 
+    .Events img{
+        height: 300px;
+    }
+}
