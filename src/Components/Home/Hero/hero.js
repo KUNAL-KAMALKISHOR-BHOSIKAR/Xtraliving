@@ -9,6 +9,9 @@ const Hero=()=>{
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     }}>
+        <div className="space"></div>
+        <div className="banner-area">
+       
         <div className="banner">
         <div className="text-area">
     <h2>Elevate Human <br/> Performance</h2>
@@ -46,6 +49,8 @@ const Hero=()=>{
         we're shaping a future where every
         family thrives in <span className="blue">holistic health</span> and <span className="blue">peak performance</span>.</h3>
 </div>
+</div>
+<div className="space"></div>
 </div>
     )
 }

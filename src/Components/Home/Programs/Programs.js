@@ -16,6 +16,9 @@ style={{backgroundImage: `url(${line})`,
 backgroundRepeat: 'no-repeat',
 backgroundPosition: 'center',
 }}>
+    <div className="space"></div>
+    <div className="two-programs">
+   
     <div className='program'> 
     
 <div className='program-detail'>
@@ -90,6 +93,8 @@ backgroundPosition: 'center',
 </div>
 </div>
 </div>
+</div>
+<div className="space"></div>
 </div>
 
     )
