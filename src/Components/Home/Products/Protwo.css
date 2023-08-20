@@ -72,6 +72,7 @@
     }
     .second-text  h1,.second-text  h3,.second-text  p, .second-text button{
    margin-right: 1rem;
+   margin-left: 1.5rem;
     }
     
 }

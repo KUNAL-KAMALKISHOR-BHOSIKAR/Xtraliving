@@ -102,8 +102,13 @@
     }
 }
 @media (max-width:450px) {
-    .program-detail{
-      margin-right: 2rem;
-     
+    .program-detail h1{
+      margin-right: 6rem;
+
     }
+    .program-detail p{
+       
+        width: 65%;
+      
+      }
 }

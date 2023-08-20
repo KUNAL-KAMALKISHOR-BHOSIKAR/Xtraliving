@@ -43,11 +43,11 @@
 @media (max-width:450px) {
 
     .Associations .ass1,  .Associations .ass2 {
-        height: 60px;
+        height: 55px;
     }
     .Associations .ass3{
     
-        gap: 0.8rem;
+        gap: 0.4rem;
     }
     .ass3 .ass31{
         height: 45px;
