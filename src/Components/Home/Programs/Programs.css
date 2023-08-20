@@ -78,7 +78,7 @@
     .program-detail{
         align-items: center;
         justify-content: center;
-       
+       background-color: aqua;
     }
     .program-detail p{
       
@@ -100,5 +100,11 @@
        
         text-align: center;
         width: 100%;
+    }
+}
+@media (max-width:450px) {
+    .program-detail{
+      margin-right: 2rem;
+     
     }
 }
