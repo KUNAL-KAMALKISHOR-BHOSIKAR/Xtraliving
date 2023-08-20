@@ -25,3 +25,34 @@
 .second-div h1{
     color: #ED5009 ;
 }
+@media (max-width:800px) {
+ 
+    .Healthy h1{
+        font-size: 3rem;
+    }
+  .second-div img{
+   height: 250px;
+  }
+  .Healthy p{
+    
+    width: 450px;
+}
+}
+@media (max-width:700px) {
+    .second-div img{
+        height: 200px;
+       }
+}
+@media (max-width:500px) {
+   
+    .second-div img{
+        height: 150px;
+       }
+       .second-div{
+
+       padding-bottom: 1rem;
+    }
+    .Healthy h1{
+        font-size: 2.5rem;
+    }
+}

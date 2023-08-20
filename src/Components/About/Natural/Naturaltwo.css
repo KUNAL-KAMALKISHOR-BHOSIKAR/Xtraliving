@@ -1,0 +1,80 @@
+.Naturaltwo{
+    display: flex;
+}
+.Naturaltwo .second-img{
+    flex: 1 1 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Naturaltwo .second-img img{
+    height: 500px;
+}
+.Naturaltwo .second-nature-text{
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   gap: 2rem;;
+}
+.Naturaltwo .second-nature-text p{
+    width: 500px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
+    font-family: 'Urbanist', sans-serif;
+}
+.Naturaltwo .second-nature-text h1{
+    font-weight: 900;
+    font-size: 3rem;
+    width: 500px;
+}
+@media (max-width:930px) {
+   
+    .Naturaltwo .second-img img{
+        height: 400px;
+    }
+    .Naturaltwo .second-nature-text p{
+        width: 400px;
+       
+    }
+    .Naturaltwo .second-nature-text h1{
+        width: 400px;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:750px) {
+  
+    .Naturaltwo .second-img img{
+        height: 300px;
+    }
+    .Naturaltwo .second-nature-text p{
+        width: 400px;
+       text-align: start;
+    }
+    .Naturaltwo .second-nature-text h1{
+        text-align: start;
+        width: 400px;
+    }
+ 
+}
+@media (max-width:620px) {
+    .Naturaltwo{
+  
+        flex-direction: column;
+       
+    }
+    .Naturaltwo .second-nature-text{
+        width: 100%;
+    }
+    .Naturaltwo .second-nature-text h1{
+        text-align: center;
+        width: 400px;
+    }
+    .Naturaltwo .second-nature-text p{
+
+   width: 300px;
+    }
+}

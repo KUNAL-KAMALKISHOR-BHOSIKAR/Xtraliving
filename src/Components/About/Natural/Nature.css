@@ -1,0 +1,80 @@
+.Nature{
+    display: flex;
+   flex-direction: column;
+}
+.natural-wrapper{
+    display: flex;
+    width: 100%;
+}
+.Nature .natural-text{
+    flex: 2 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.Nature .natural-text h1{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.Nature .natural-text p{
+    width: 500px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: 'Lora', serif;
+font-family: 'Urbanist', sans-serif;
+}
+.Nature .natural-img{
+    flex: 1 1 0;
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+.Nature .natural-img img{
+    height: 500px;
+}
+@media (max-width:930px) {
+    .Nature .natural-img img{
+        height: 400px;
+    }
+    .Nature .natural-text p{
+        width: 400px;
+       
+    }
+    .Nature .natural-text h1{
+    
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:750px) {
+  
+    .Nature .natural-img img{
+        height: 300px;
+    }
+    .Nature .natural-text p{
+        width: 400px;
+       text-align: start;
+    }
+    .Nature .natural-text h1{
+        text-align: start;
+        width: 400px;
+    }
+ 
+}
+@media (max-width:620px) {
+    .natural-wrapper{
+  
+        flex-direction: column;
+       
+    }
+    .Nature .natural-text h1{
+        text-align: center;
+        width: 400px;
+    }
+    .Nature .natural-text p{
+       width: 80%;
+      
+    }
+}

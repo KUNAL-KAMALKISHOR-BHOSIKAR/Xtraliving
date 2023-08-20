@@ -1,7 +1,7 @@
 import "./Healthy.css"
-import healthy from "./healthy.png"
-import background from "./Background.png"
-import young from "./yound.png"
+import healthy from "./img/healthy.png"
+import background from "./img/Background.png"
+import young from "./img/yound.png"
 const Healthy=()=>{
 return(
     <div className="Healthy" >
