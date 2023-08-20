@@ -15,16 +15,16 @@ return(
     backgroundRepeat: 'no-repeat',
    
     }}>
-    <img src={ass1}  alt="" height={70} />
-    <img src={ass2}  alt="" height={70} />
+    <img className="ass1" src={ass1}  alt="" height={90} />
+    <img src={ass2} className="ass2" alt="" height={90} />
 
     <div className="ass3">
 
-    <img src={ass31} height={50}  alt="" />
-    <img src={ass32} height={20}  alt="" />
-    <img src={ass33} height={50}  alt="" />
-    <img src={ass34} height={30}  alt="" />
-    <img src={ass35} height={60}  alt="" />
+    <img src={ass31}  className="ass31" height={70}  alt="" />
+    <img src={ass32}  className="ass32" height={30}  alt="" />
+    <img src={ass33}  className="ass33" height={70}  alt="" />
+    <img src={ass34}  className="ass34" height={40}  alt="" />
+    <img src={ass35}  className="ass35" height={80}  alt="" />
     </div>
    
 

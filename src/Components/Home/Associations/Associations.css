@@ -15,3 +15,53 @@
 /* .Associations .ass3 img{
     height: 50px;
 } */
+@media (max-width:800px) {
+
+    .Associations .ass1,  .Associations .ass2 {
+        height: 70px;
+    }
+    .Associations .ass3{
+    
+        gap: 1rem;
+    }
+    .ass3 .ass31{
+        height: 50px;
+    }
+    .ass3 .ass32{
+        height: 20px;
+    }
+    .ass3 .ass33{
+        height: 50px;
+    }
+    .ass3 .ass34{
+        height: 40px;
+    }
+    .ass3 .ass35{
+        height: 60px;
+    }
+}
+@media (max-width:450px) {
+
+    .Associations .ass1,  .Associations .ass2 {
+        height: 60px;
+    }
+    .Associations .ass3{
+    
+        gap: 0.8rem;
+    }
+    .ass3 .ass31{
+        height: 45px;
+    }
+    .ass3 .ass32{
+        height: 20px;
+    }
+    .ass3 .ass33{
+        height: 45px;
+    }
+    .ass3 .ass34{
+        height: 35px;
+    }
+    .ass3 .ass35{
+        height: 55px;
+    }
+}

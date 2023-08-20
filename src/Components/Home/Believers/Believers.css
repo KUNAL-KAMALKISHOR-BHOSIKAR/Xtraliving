@@ -3,19 +3,30 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 .Believers h2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
+}
+.Believers .images{
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  width: 720px;
+  overflow-x: hidden;
 }
 @media (max-width:800px) {
 
-.Believers img{
-  height: 170px;
+.Believers .images{
+  width: 485px;
 }
 }
-@media (max-width:700px) {
-  .Believers img{
-    height: 130px;
+@media (max-width:530px) {
+  .Believers .images{
+    width: 230px;
   }
+ 
 }

@@ -1,7 +1,22 @@
 import "./Believers.css"
-import pics from "./pics.png"
+import pics1 from "./img/pic1.png"
+import pics2 from "./img/pic2.png"
+import pics3 from "./img/pic3.png"
+import pics4 from "./img/pic4.png"
 import line from "./line.png"
+import left from "../News/left.png"
+import right from "../News/right.png"
 const Believers =()=>{
+    let box = document.querySelector('.images')
+
+    const Left=()=>{
+        let width = box.clientWidth;
+        box.scrollLeft = box.scrollLeft - width
+    }
+    const Right=()=>{
+        let width = box.clientWidth;
+        box.scrollLeft = box.scrollLeft + width
+    }
     return(
         <div className="Believers"
         style={{backgroundImage: `url(${line})`,
@@ -10,7 +25,14 @@ const Believers =()=>{
         }}>
         <h2>Early believers</h2>
         <div className="images">
-        <img src={pics} alt="" height={200} />
+        <img src={pics1} alt="" height={200} />
+        <img src={pics2} alt="" height={200} />
+        <img src={pics3} alt="" height={200} />
+        <img src={pics4} alt="" height={200} />
+        </div>
+        <div className="arrows">
+        <img onClick={Left} src={left} alt="" height={40} />
+        <img onClick={Right} src={right} alt="" height={40} />
         </div>
         </div>
     )

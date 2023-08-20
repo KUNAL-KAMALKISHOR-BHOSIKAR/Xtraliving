@@ -6,9 +6,10 @@ import News from "./News/News";
 import Products from "./Products/Products";
 import Programs from "./Programs/Programs";
 import Reviews from "./Reviews/Reviews";
+import "./Home.css"
 const Home =()=>{
     return(
-        <div>
+        <div className="Home">
     <Hero/> 
     <Products/>
     <Programs/>

@@ -1,24 +1,31 @@
 .News{
-    margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    
 }
 .News h2{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
 }
 .News .news-list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
-    padding: 0 2rem;
+
+    max-width: 1000px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 .News .news-item{
     display: flex;
     flex-direction: column;
     align-items: center;
    
-    width: 30%;  
+    width: 300px;  
 }
 
 .arrows{
@@ -31,4 +38,22 @@
 }
 .arrows img{
     cursor: pointer;
+}
+@media (max-width:1050px) {
+ 
+    .News .news-list{
+       
+        max-width: 650px;
+     ;
+    
+    }
+}
+@media (max-width:700px) {
+   
+    .News .news-list{
+       
+        max-width: 330px;
+     ;
+    
+    }
 }
