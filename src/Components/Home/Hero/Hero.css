@@ -128,8 +128,9 @@
     }
     .banner-area{
     
-        height: 70vh;
+        height: 90vh;
         gap: 0rem;
+        background-color: #1877F2;
     }
     .banner .text-area{
         text-align: center;

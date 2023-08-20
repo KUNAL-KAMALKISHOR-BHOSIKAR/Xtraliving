@@ -1,0 +1,77 @@
+.Protwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.second-img img{
+    height: 400px;
+}
+
+.second-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    margin-right: 1rem;
+    gap: 0.2rem;
+}
+
+.second-text h1{
+
+    font-size:80px ;
+    color: #B20149;
+}
+.second-text h3{
+    font-weight: 600;
+    color: #121942;
+    font-size: 20px;
+}
+.second-text p{
+    color: #525252;
+    font-size: 15px;
+}
+.second-text .medx{
+    color: #B20149;
+}
+.second-text  button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.second-text  h1,.second-text  h3,.second-text  p{
+    max-width: 400px;
+}
+@media (max-width:1200px) {
+    .second-img img{
+        height: 300px;
+    }
+}
+@media (max-width:800px){
+    .Protwo{
+
+        flex-direction: column-reverse;
+        align-items: flex-start;
+       
+    }
+  
+    .second-text{
+       
+        width: 100%;
+
+    }
+    .second-text  h1,.second-text  h3,.second-text  p, .second-text button{
+   margin-right: 1rem;
+    }
+    
+}
