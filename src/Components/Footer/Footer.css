@@ -88,3 +88,16 @@
 
 }
     }
+    @media (max-width:450px) {
+
+  
+        .part-1 img{
+         height: 17px;
+        }
+        .Footer .list{
+     
+         gap: 1.5rem;
+     
+     
+     }
+         }

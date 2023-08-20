@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Pro.css"
 import pro from "./pro.png"
+
 function Pro() {
   return (
     <div className='pro'>
