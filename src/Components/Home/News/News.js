@@ -1,23 +1,24 @@
 import "./News.css"
+import React, { useRef } from "react";
 import left from "./left.png"
 import right from "./right.png"
 import { Data } from "./Data"
 import NewsItem from "./NewsItem"
 const News=()=>{
-    let box = document.querySelector(".news-list");
+    let box =  useRef(null)
     const Left=()=>{
 
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft - width
+        let width = box.current.clientWidth;
+        box.current.scrollLeft -= width
     }
     const Right=()=>{
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft + width
+        let width = box.current.clientWidth;
+        box.current.scrollLeft += width
     }
     return(
         <div className="News">
         <h2>We are on news</h2>
-       <div className="news-list">
+       <div className="news-list" ref={box}>
        {
         Data.map((data=>(
             <NewsItem img={data.img} text={data.text}/>
