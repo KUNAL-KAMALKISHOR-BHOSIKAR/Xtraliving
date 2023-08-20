@@ -19,7 +19,8 @@
     align-items: center;
 
     height: 50%;   
-    gap: 20rem; 
+    gap: 18rem; 
+    padding: 0 1rem ;
 }
 
 .banner .text-area{
@@ -130,7 +131,7 @@
     
         height: 90vh;
         gap: 0rem;
-        background-color: #1877F2;
+      
     }
     .banner .text-area{
         text-align: center;

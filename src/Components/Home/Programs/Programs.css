@@ -75,10 +75,16 @@
        display: none;
 
     }
+    .program-detail{
+        align-items: center;
+        justify-content: center;
+       
+    }
     .program-detail p{
       
         padding: 1rem 2rem;
         width: 85%;
+        
     }
     .program-detail2{     
         align-items: center;

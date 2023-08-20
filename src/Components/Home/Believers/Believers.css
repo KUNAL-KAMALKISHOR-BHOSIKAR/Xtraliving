@@ -28,5 +28,8 @@
   .Believers .images{
     width: 230px;
   }
- 
+  .Believers h2{
+    font-size: 2rem;
+  
+}
 }
