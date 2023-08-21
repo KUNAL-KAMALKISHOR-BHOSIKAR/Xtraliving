@@ -24,8 +24,8 @@ backgroundPosition: 'center',
 <div className='program-detail'>
     <h1>Performance Programs</h1>
     <p>A 12-month journey fine-tuning physical 
-    vigour and mental fortitude for
-    -athletes, it's the edge: peak physique and mental 
+    vigour and mental fortitude for</p>
+   <p> -athletes, it's the edge: peak physique and mental 
     tenacity.</p>
     <p>-senior leaders it's the catalyst:
      boosting stamina, sharpening focus, and 

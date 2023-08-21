@@ -1,10 +1,11 @@
 .Home{
     display: flex;
     flex-direction: column;
-  
+  gap: 3rem;
 }
 .our-program{
     display: grid;
+
     grid-template-columns: 10fr 1fr;
 }
 .img-item{
