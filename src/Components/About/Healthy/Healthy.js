@@ -2,9 +2,14 @@ import "./Healthy.css"
 import healthy from "./img/healthy.png"
 import background from "./img/Background.png"
 import young from "./img/yound.png"
+import line from "./img/line.png"
 const Healthy=()=>{
 return(
-    <div className="Healthy" >
+    <div className="Healthy"
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+   
+    }} >
     <h1>About us</h1>
     <p>Our team comprises experts from diverse 
     backgrounds, including technology, medicine,

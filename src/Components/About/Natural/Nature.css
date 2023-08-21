@@ -16,15 +16,14 @@
 
 }
 .Nature .natural-text h1{
-    font-weight: 900;
-    font-size: 3rem;
+  
+    font-size: 2rem;
 }
 .Nature .natural-text p{
     width: 500px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    font-family: 'Lora', serif;
-font-family: 'Urbanist', sans-serif;
+  
 }
 .Nature .natural-img{
     flex: 1 1 0;
@@ -43,10 +42,7 @@ font-family: 'Urbanist', sans-serif;
         width: 400px;
        
     }
-    .Nature .natural-text h1{
-    
-        font-size: 2.5rem;
-    }
+   
 }
 @media (max-width:750px) {
   

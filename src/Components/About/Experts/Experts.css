@@ -1,0 +1,24 @@
+.our-Experts{
+    display: flex;
+    flex-direction: column;
+}
+.our-Experts h1{
+    margin: 3rem 0;
+}
+.our-Experts .inv{
+    margin-top: 5rem;
+}
+.experts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.experts img{
+    height: 190px;
+}
+.exp p{
+    width: 300px ;
+    margin-top: 0.5rem;
+}

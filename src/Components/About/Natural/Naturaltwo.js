@@ -1,9 +1,14 @@
 import React from 'react'
 import "./Naturaltwo.css"
 import naturaltwo from "./img/naturaltwo.png"
+import line2 from "./img/line2.png"
 function Naturaltwo() {
   return (
-    <div className='Naturaltwo'>
+    <div className='Naturaltwo'
+    style={{backgroundImage: `url(${line2})`,
+    backgroundRepeat: 'no-repeat',
+   backgroundPosition:'center center'
+    }}>
       <div className="second-img">
 <img src={naturaltwo} alt="" />
       </div>

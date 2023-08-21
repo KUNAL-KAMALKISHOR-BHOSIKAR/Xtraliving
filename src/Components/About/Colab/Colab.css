@@ -1,0 +1,36 @@
+.Colab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Colab h1 {
+    width: 800px;
+
+    font-size: 2rem;
+}
+.Colab img{
+    height: 450px;
+}
+@media (max-width:800px) {
+
+.Colab h1 {
+    width: 500px;
+
+}
+.Colab img{
+    height: 300px;
+}
+}
+@media (max-width:500px) {
+    .Colab h1 {
+        width: 380px;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .Colab img{
+        height: 200px;
+    }   
+}

@@ -3,7 +3,14 @@
   background-color: #FBF8F0;
   font-family: 'League Spartan', sans-serif;
 }
-
+p{
+  font-family: 'Lora', serif;
+  font-family: 'Urbanist', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
 body,
 div,
 h1,

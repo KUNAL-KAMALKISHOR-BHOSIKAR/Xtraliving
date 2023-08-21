@@ -1,6 +1,10 @@
 import React from 'react'
 import "./Responsive.css"
-function Responsive() {
+import { Link } from 'react-router-dom'
+function Responsive({close}) {
+  const Close=()=>{
+    close()
+  }
   return (
     <div className='responsive'>
       <ul>
@@ -8,7 +12,7 @@ function Responsive() {
         <li>Login</li>
         <li>Our products</li>
         <li>Contact us</li>
-        <li>About</li>  
+        <li onClick={Close}><Link to="/about">About</Link></li> 
       </ul>
     </div>
   )

@@ -12,7 +12,7 @@ const Navbar=()=>{
         <BiMenuAltRight onClick={openNav} />
     {
     open&&(
-        <Responsive/>
+        <Responsive close={openNav} />
     )
     }
         </div>

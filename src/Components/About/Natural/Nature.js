@@ -1,9 +1,15 @@
 import React from 'react'
 import "./Nature.css"
+import line from "./img/line.png"
+
 import natural from "./img/nature.png"
 function Nature() {
   return (
-    <div className='Nature'>
+    <div className='Nature'
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+   backgroundPosition:'bottom bottom'
+    }}>
         <div className="natural-wrapper">
       <div className="natural-text">
     <h1>Inspired by nature</h1>
