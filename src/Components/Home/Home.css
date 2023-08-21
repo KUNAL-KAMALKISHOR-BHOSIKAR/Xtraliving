@@ -5,16 +5,29 @@
 }
 .our-program{
     display: grid;
-
+ 
     grid-template-columns: 10fr 1fr;
 }
-.img-item{
-   
-}
+
 .our-products{
     display: grid;
     grid-template-columns:1fr 10fr ;
+ 
 }
-.prosheader{
-  
+
+@media (max-width:900px) {
+    .img-item{
+   display: none;
+    }
+    .our-program{    
+        grid-template-columns: 1fr;
+    }
+    .prosheader{
+        display: none;
+    }
+    .our-products{
+        display: grid;
+        grid-template-columns:1fr ;
+     
+    }
 }
