@@ -10,12 +10,12 @@
 }
 .Healthy p{
     
-    width: 650px;
+    width: 850px;
+
 }
-.second-div{
-    
-    width: 100%;
-    height: 500px;
+.second-div{   
+   width: 100%;
+   height: 500px;
    display: flex;
    flex-direction: column;
    align-items: center;

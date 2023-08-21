@@ -1,0 +1,58 @@
+.ourtwo{
+ margin-top: 0rem;
+display: grid;
+grid-template-columns: 1fr 1fr;   
+}
+.ourtwo .our{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+ 
+}
+
+.ourtwo .second-img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+   
+}
+.ourtwo .second-text  {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+text-align: end;
+margin-right: 2rem;
+}
+.ourtwo .second-text h1{
+    font-size:80px ;
+    color: #B20149;
+}
+.ourtwo .second-text .medex{
+    color: #B20149;
+}
+.ourtwo .second-text h3{
+    font-weight: 600;
+    color: #121942;
+    font-size: 20px;
+}
+.ourtwo .second-text p{
+    color: #525252;
+    font-size: 15px;
+}
+.ourtwo .second-text button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}

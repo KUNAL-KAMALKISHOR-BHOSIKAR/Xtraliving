@@ -15,9 +15,10 @@
   align-items: flex-start;
   gap: 1rem;
   scroll-behavior: smooth;
-  width: 720px;
+  width: 920px;
   overflow-x: hidden;
 }
+
 @media (max-width:800px) {
 
 .Believers .images{
@@ -32,4 +33,5 @@
     font-size: 2rem;
   
 }
+
 }

@@ -1,7 +1,7 @@
 import "./Healthy.css"
 import healthy from "./img/healthy.png"
 import background from "./img/Background.png"
-import young from "./img/yound.png"
+import young from "./img/young.png"
 import line from "./img/line.png"
 const Healthy=()=>{
 return(

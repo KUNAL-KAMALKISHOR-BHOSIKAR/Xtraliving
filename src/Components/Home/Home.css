@@ -1,5 +1,19 @@
 .Home{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+  
+}
+.our-program{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+.img-item{
+   
+}
+.our-products{
+    display: grid;
+    grid-template-columns:1fr 10fr ;
+}
+.prosheader{
+  
 }

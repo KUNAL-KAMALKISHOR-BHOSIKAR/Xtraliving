@@ -7,12 +7,12 @@ function Responsive({close}) {
   }
   return (
     <div className='responsive'>
-      <ul>
-        <li>Home</li>
-        <li>Login</li>
-        <li>Our products</li>
-        <li>Contact us</li>
-        <li onClick={Close}><Link to="/about">About</Link></li> 
+      <ul onClick={Close}>
+        <li ><Link to="/">Home</Link></li>
+        <li >Login</li>
+        <li >Our products</li>
+        <li >Contact us</li>
+        <li ><Link to="/about">About</Link></li> 
       </ul>
     </div>
   )

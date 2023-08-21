@@ -23,17 +23,18 @@ backgroundPosition: 'center',
     
 <div className='program-detail'>
     <h1>Performance Programs</h1>
-<p>A 12-month journey fine-tuning physical 
-    vigour and mental fortitude for -athletes, 
-    <br/> it's the edge: peak physique and mental 
-    tenacity. -senior leaders it's the catalyst:
-        boosting stamina, sharpening focus, and 
-        elevating decision-making.</p>
+    <p>A 12-month journey fine-tuning physical 
+    vigour and mental fortitude for
+    -athletes, it's the edge: peak physique and mental 
+    tenacity.</p>
+    <p>-senior leaders it's the catalyst:
+     boosting stamina, sharpening focus, and 
+     elevating decision-making.</p>
 </div>
 
 <div className='program-list'>
    
-    <div className='program-item'>
+<div className='program-item'>
 <img src={athletes} height={250} alt=""/>
 <div className='program-text'>
     <p>ATHLETES</p>

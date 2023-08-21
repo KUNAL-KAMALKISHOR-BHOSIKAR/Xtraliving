@@ -1,0 +1,52 @@
+.our{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.our-pro-img{
+ 
+}
+.our-text{
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+}
+.our-text h1 {
+    font-size:80px ;
+    color: #B20149;
+}
+.our-text .func{
+    color: #B20149;
+}
+.our-text h3{
+    font-weight: 600;
+    color: #121942;
+    font-size: 20px;
+}
+.our-text p{
+    color: #525252;
+    font-size: 15px;
+
+}
+.our-text button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+.our-img{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+}
