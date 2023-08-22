@@ -6,15 +6,15 @@ function Responsive({close}) {
     close()
   }
   return (
-    <div className='responsive'>
-      <ul onClick={Close}>
-        <li ><Link to="/">Home</Link></li>
-        <li >Login</li>
-        <li >Our products</li>
-        <li >Contact us</li>
-        <li ><Link to="/about">About</Link></li> 
-      </ul>
-    </div>
+  <div className='responsive'>
+    <ul onClick={Close}>
+    <li onClick={Close}><Link to="/">Home</Link></li>
+    <li onClick={Close} ><Link to="/about">About</Link></li> 
+    <li onClick={Close}><Link to="/performance">Performance</Link></li>
+    <li >Login</li>
+    <li >Our products</li> 
+    </ul>
+  </div>
   )
 }
 

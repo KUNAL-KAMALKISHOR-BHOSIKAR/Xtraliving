@@ -1,0 +1,19 @@
+.bg-media{
+    background-color: #FBF8F0;
+}
+  
+.border-left{
+    border-left: 8px solid #ED5009;
+    height: 70px;
+}
+
+
+.collapse-content {
+    grid-row-start: 2;
+    overflow: hidden;
+    max-height: 0px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: unset;
+    transition: padding 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
