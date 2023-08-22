@@ -44,14 +44,14 @@ backgroundPosition: 'center',
 <div className='program-item'>
 <img src={Adults} height={250} alt=""/>
 <div className='program-text'>
-    <p>ATHLETES</p>
+    <p>COXs</p>
     <span>Know more <IoIosArrowForward/></span>
 </div>
 </div>
 <div className='program-item'>
 <img src={customer} height={250} alt=""/>
 <div className='program-text'>
-    <p>ATHLETES</p>
+    <p>CUSTOM</p>
     <span>Know more <IoIosArrowForward/></span>
 </div>
 </div>
@@ -74,21 +74,22 @@ backgroundPosition: 'center',
     <div className='program-item'>
 <img src={parents} height={250} alt=""/>
 <div className='program-text'>
-    <p>ATHLETES</p>
+
+    <p>PARENTS</p>
     <span>Know more <IoIosArrowForward/></span>
 </div>
 </div>
 <div className='program-item'>
 <img src={corpo} height={250} alt=""/>
 <div className='program-text'>
-    <p>ATHLETES</p>
+   <p>CORPORATES</p>
     <span>Know more <IoIosArrowForward/></span>
 </div>
 </div>
 <div className='program-item'>
 <img src={custom} height={250} alt=""/>
 <div className='program-text'>
-    <p>ATHLETES</p>
+<p>CUSTOM</p>   
     <span>Know more <IoIosArrowForward/></span>
 </div>
 </div>
