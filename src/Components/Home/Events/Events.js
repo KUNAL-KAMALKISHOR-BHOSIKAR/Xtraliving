@@ -9,7 +9,7 @@ const Events =()=>{
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     }}>
-            <img src={offers} alt="" height={600} />
+            <img src={offers} alt="" height={550} />
             <button>Know More <BsArrowRight/></button>
         </div>
     )

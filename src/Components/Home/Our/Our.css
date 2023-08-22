@@ -1,4 +1,5 @@
 .our{
+    margin-top: 2rem;
   display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -29,6 +30,7 @@
 .our-text p{
     color: #525252;
     font-size: 15px;
+    text-align: justify;
 
 }
 .our-text button{
@@ -83,9 +85,9 @@
      
        align-items: flex-end;
     }
-    .our-text{
+    .our-text h1{
   
-        
+       font-size: 40px; 
     }
     .our-text h3 {
 width: 350px; 

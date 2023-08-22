@@ -11,7 +11,7 @@ function Experts() {
   return (
     <div className='our-Experts'>
      
-        <h1>Our Experts</h1>
+        {/* <h1>Our Experts</h1>
         <div className="experts">
         <div className="exp">
             <img src={pc1} alt="" />
@@ -25,7 +25,7 @@ function Experts() {
             <img src={pc3} alt="" />
             <h3>Dr Ravi Teja Rudraraju</h3>
         </div>
-      </div>
+      </div> */}
       <h1 className='inv'>Advisor/Investor</h1>
       <div className="experts">
         <div className="exp">

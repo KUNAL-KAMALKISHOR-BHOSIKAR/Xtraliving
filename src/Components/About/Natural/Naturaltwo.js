@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Naturaltwo.css"
 import naturaltwo from "./img/naturaltwo.png"
+import twosmall from "./img/twosmall.png"
 import line2 from "./img/line2.png"
 function Naturaltwo() {
   return (
@@ -10,7 +11,8 @@ function Naturaltwo() {
    backgroundPosition:'center center'
     }}>
       <div className="second-img">
-<img src={naturaltwo} alt="" />
+<img src={naturaltwo} alt="" className="natural-big-img"/>
+<img src={twosmall} alt="" className="natural-small-img"  />
       </div>
       <div className="second-nature-text">
 <h1>Projects to make an impact at scale.</h1>

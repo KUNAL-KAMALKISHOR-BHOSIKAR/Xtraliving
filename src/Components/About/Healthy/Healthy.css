@@ -4,32 +4,76 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+
 }
 .Healthy h1{
     font-size: 2rem;
 }
 .Healthy p{
-    
+text-align: justify;
     width: 850px;
-
+color: #525252;
+font-size: 15px;
+text-align: justify;
 }
 .second-div{   
    width: 100%;
-   height: 500px;
+   height: auto;
    display: flex;
    flex-direction: column;
    align-items: center;
    gap: 1rem;
-   padding-bottom: 8rem;
+
 }
 .second-div h1{
     color: #ED5009 ;
 }
-@media (max-width:800px) {
- 
-    .Healthy h1{
-        font-size: 3rem;
+.know{
+
+width: 60%;
+position: relative;
+}
+.know .txt{
+    position: absolute;
+    top: 180px;
+    left: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    gap: 0.5rem;
+    color: white;
+}
+.know .txt p{
+    width: 100%;
+    color: white;
+
+}
+
+.know h1{
+   font-size: 2rem; 
+  
+}
+.know span{
+    font-size: 15px;
+   
+}
+.know .forsmall{
+    display: none;
+}
+@media (max-width:900px) {
+    .know{
+display: flex;
+align-items: center;
+justify-content: center;
+        }
+    .know .forsmall{
+        display: flex;
     }
+ .know img, .know .txt{
+    display: none;
+ }
+   
   .second-div img{
    height: 250px;
   }
@@ -44,12 +88,13 @@
        }
 }
 @media (max-width:500px) {
-   
+    .know .forsmall{
+        height: 250px;
+    }
     .second-div img{
         height: 150px;
        }
        .second-div{
-
        padding-bottom: 1rem;
     }
  

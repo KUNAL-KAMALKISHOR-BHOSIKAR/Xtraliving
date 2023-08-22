@@ -63,8 +63,7 @@ backgroundPosition: 'center',
 
 <div className='program-detail2'>
     <h1>Our Workshop</h1>
-    <span>90-minute workshops to</span>
-<p>-Equip parents with essential knowledge on movement and
+    <p>90-minute workshops to-Equip parents with essential knowledge on movement and
      nutrition, laying the foundation for their
       children's optimal health.
     <br/> -Empower your employees with the proper knowledge

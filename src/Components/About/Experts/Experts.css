@@ -13,12 +13,14 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+
 }
 .experts img{
     height: 190px;
+
 }
 .exp p{
     width: 300px ;
     margin-top: 0.5rem;
+    padding: 0 0.3rem ;
 }

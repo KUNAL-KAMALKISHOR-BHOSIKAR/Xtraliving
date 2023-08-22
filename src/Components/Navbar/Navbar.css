@@ -6,6 +6,7 @@
     justify-content: flex-end;
     padding-right: 3rem;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 .Navbar svg{
     font-size: 1.6rem;

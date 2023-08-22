@@ -3,6 +3,7 @@ import "./Nature.css"
 import line from "./img/line.png"
 
 import natural from "./img/nature.png"
+import firstsmall from "./img/firstsmall.png"
 function Nature() {
   return (
     <div className='Nature'
@@ -29,7 +30,8 @@ function Nature() {
         result from poor habits while growing up</p>
       </div>
       <div className="natural-img">
-<img src={natural} alt="" />
+<img src={natural} alt=""  className="natural-big-img" />
+<img src={firstsmall} alt="" className="natural-small-img"  />
       </div>
       </div>
       

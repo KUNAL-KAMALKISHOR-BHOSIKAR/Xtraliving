@@ -6,63 +6,25 @@
     justify-content: center;
     gap: 1rem;
     height: auto;
+    margin-bottom: 2rem;
 }
-.Associations .ass3{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-   
+.Associations h1{
+    font-size: 2.5rem;
 }
-/* .Associations .ass3 img{
-    height: 50px;
-} */
 @media (max-width:800px) {
 
-    .Associations .ass1,  .Associations .ass2 {
-        height: 70px;
+    .Associations .ass1,  .Associations .ass2,  .Associations .ass3 {
+        height: 90px;
     }
-    .Associations .ass3{
-    
-        gap: 1rem;
-    }
-    .ass3 .ass31{
-        height: 50px;
-    }
-    .ass3 .ass32{
-        height: 20px;
-    }
-    .ass3 .ass33{
-        height: 50px;
-    }
-    .ass3 .ass34{
-        height: 40px;
-    }
-    .ass3 .ass35{
-        height: 60px;
-    }
+   
+ 
 }
-@media (max-width:450px) {
+@media (max-width:550px) {
 
-    .Associations .ass1,  .Associations .ass2 {
+    .Associations .ass1,  .Associations .ass2,  .Associations .ass3 {
         height: 55px;
     }
-    .Associations .ass3{
-    
-        gap: 0.4rem;
-    }
-    .ass3 .ass31{
-        height: 45px;
-    }
-    .ass3 .ass32{
-        height: 20px;
-    }
-    .ass3 .ass33{
-        height: 45px;
-    }
-    .ass3 .ass34{
-        height: 35px;
-    }
-    .ass3 .ass35{
-        height: 55px;
-    }
+ 
+
+
 }

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    position: relative;
 }
 
 .Colab h1 {
@@ -12,10 +13,35 @@
     font-size: 2rem;
 }
 .Colab img{
-    height: 450px;
+    height: 300px;
+ 
 }
-@media (max-width:800px) {
+.Colab .forsmall{
+    display: none;
+}
+.Colab .txt-1{
+    position: absolute;
+    top: 150px;
+    left: 330px;
+    text-align: start;
+}
+.Colab .txt-2{
+    position: absolute;
+    bottom: 85px;
+    right: 290px;
+    text-align: start;
+    font-size: 14px;
+}
 
+
+
+@media (max-width:900px) {
+    .Colab .forsmall{
+        display:flex;
+    }
+.large{
+    display: none;
+}
 .Colab h1 {
     width: 500px;
 
@@ -23,13 +49,15 @@
 .Colab img{
     height: 300px;
 }
+
 }
 @media (max-width:500px) {
-    .Colab h1 {
+
+    /* .Colab h1 {
         width: 380px;
         font-weight: 400;
         font-size: 2rem;
-    }
+    } */
     .Colab img{
         height: 200px;
     }   

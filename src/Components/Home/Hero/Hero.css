@@ -5,23 +5,27 @@
 }
 .space {
 
-    width: 15%;
+    width:15%;
+
 }
 .banner-area{
     
     height: 80vh;
+
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 6rem;
+
+
 }
 .banner{
     display: flex;
     align-items: center;
 
     height: 50%;   
-    gap: 18rem; 
+    gap: 5rem; 
     padding: 0 1rem ;
 }
 
@@ -36,14 +40,16 @@
 
 .banner .text-area h2{
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 1px;
-   
+    width: 650px;
+  
 }
 .banner .text-area p{
     font-weight: 700;
     font-size: 1.5rem;
     color: #4D4D4D;
+    text-align: justify;
 }
 .banner .text-area .fun{
     font-weight: 900;
@@ -61,13 +67,14 @@
 }
 .banner .img-area img{
     height: 300px ;
+
 }
 /* tag-line area >>>>> */
 
 .hero .tag-line{
     background-color: white;
     height: 180px;
-    width: 70%;
+    width:65%;
     border-radius: 25px;
     text-align: center;
     display: flex;
@@ -76,7 +83,6 @@
     border-bottom: 2px solid #ED5009;
     border-right: 2px solid #ED5009;
     position: relative;
-  
     margin-top: 1rem;
 }
 .hero .tag-line h3{
@@ -94,7 +100,7 @@
 .blue-box{
     position: absolute;
     left: 15%;
-    bottom: 110px;
+    bottom: 80px;
 }
 .peach-box{
     position: absolute;
@@ -104,10 +110,32 @@
 .yellow-circle{
     position: absolute;
    right: 35%;
-   top: 110px;
-
+   top: 90px;
 }
 @media (max-width:1000px) {
+    .banner .img-area img{
+        height: 300px ;
+    
+    
+    }
+    .banner .text-area h2{
+          width: 350px;   
+    }
+    .banner .text-area p{
+        align-self: center;
+    }
+    .banner{
+        display: flex;
+        align-items: center;  
+        height: 50%;   
+        gap: 8rem; 
+       
+    }
+    .hero .tag-line{
+
+        width: 60%;
+   
+    }
     .blue-box{
      
         left: 15%;
@@ -129,7 +157,8 @@
     .banner {
        flex-direction: column-reverse;
     gap: 4rem;
-    height: 90%; 
+    height: 80%; 
+
     }
     .banner-area{
     
