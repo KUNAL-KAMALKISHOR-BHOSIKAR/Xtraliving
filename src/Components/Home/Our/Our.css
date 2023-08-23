@@ -2,6 +2,7 @@
     margin-top: 2rem;
   display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 .our-pro-img{
  
@@ -71,6 +72,9 @@
     }
 }
 @media (max-width:500px){
+    .our{
+        gap: 2rem;
+    }
     .our-img img{
         height: 250px;
        

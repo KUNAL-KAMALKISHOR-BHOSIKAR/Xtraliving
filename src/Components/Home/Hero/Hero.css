@@ -1,32 +1,31 @@
 .hero{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 80fr 1fr;
 
   
 }
 .space {
 
-    width:15%;
-
 }
 .banner-area{
     
-    height: 80vh;
+    height: 100vh;
 
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6rem;
+    gap: 8rem;
 
 
 }
 .banner{
     display: flex;
     align-items: center;
-
     height: 50%;   
-    gap: 5rem; 
+    gap: 0rem; 
     padding: 0 1rem ;
+    width: 80%;
 }
 
 .banner .text-area{
@@ -66,7 +65,7 @@
     margin-top: 200px;
 }
 .banner .img-area img{
-    height: 300px ;
+    height: 340px ;
 
 }
 /* tag-line area >>>>> */
@@ -110,7 +109,7 @@
 .yellow-circle{
     position: absolute;
    right: 35%;
-   top: 90px;
+   top: 100px;
 }
 @media (max-width:1000px) {
     .banner .img-area img{
@@ -202,13 +201,17 @@
 
 
 @media (max-width:500px) {
- 
+    .blue-box{
+  
+        bottom: 150px;
+    }
     .hero .tag-line h3{
       
         font-size: 0.9rem;
     }
    
     .yellow-circle{
-        left: 220px;
+        left: 200px;
+        top: 100px;
      }
 }
