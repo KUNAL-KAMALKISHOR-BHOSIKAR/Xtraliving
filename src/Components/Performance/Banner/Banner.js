@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 function Banner() {
   return (
     <div className='banner'>
-     <div className="space"></div> 
+  
      <div className="hero">
        <div className="hero-text">
 <h1>Unlock Elite Performance</h1>
@@ -16,7 +16,7 @@ function Banner() {
     <img src={banner} alt="" />
        </div>
      </div>
-     <div className="space"></div> 
+    
     </div>
   )
 }

@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   background-color: #FBF8F0;
@@ -9,9 +11,32 @@ p{
   font-family: 'Lora', serif;
   font-family: 'Urbanist', sans-serif;
 }
+button{
+  height: 50px;
+  width: 200px;
+  border: 1px solid #ED5009;
+  background-color: #4E62D6;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+ margin-top: 5rem;
+ margin-left: 10rem;
+}
+button svg{
+  color: #ED5009;
+  font-size: 1.2rem;
+}
 a{
   text-decoration: none;
   color: inherit;
+}
+h2{
+  font-size: 2rem;
 }
 body,
 div,

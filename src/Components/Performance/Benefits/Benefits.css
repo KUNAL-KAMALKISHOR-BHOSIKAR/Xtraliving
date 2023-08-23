@@ -1,0 +1,49 @@
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+.executives{
+    height: 200px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.executives span{
+    font-size: 1.5rem;
+}
+.empowering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.empowering .emp-list{
+    background-color: #FBF8F0;
+    height: 160px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); 
+}
+.empowering .emp-list .emp-img{
+background-color:#C7CDEF ;
+width: 70px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+}
