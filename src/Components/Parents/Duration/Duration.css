@@ -1,0 +1,53 @@
+.Duration{
+    display: flex;
+    flex-direction: column;
+}
+.Duration h2{
+    margin-bottom: 2rem;
+    
+}
+.Duration .price-duration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.Duration .price-area{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 2rem;
+   text-align: start;
+   width: 600px;
+
+}
+.Duration .price-area h3{
+    color: #4E62D6;
+    font-size: 1.5rem;
+}
+.Duration .price-area span{
+    font-size: 1.1rem;
+}
+@media (max-width:1000px) {
+    .Duration .price-duration{
+        flex-direction: column-reverse;
+    
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .price-img{
+
+        width: 100%;
+    }
+    .price-img img{
+        height: 300px;
+        padding-left: 45%;
+    }
+    .Duration .price-area{
+       margin-left: 5%;
+       gap: 1rem;
+       width: 350px;
+    
+    }
+}

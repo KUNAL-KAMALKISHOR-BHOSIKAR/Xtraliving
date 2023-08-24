@@ -1,0 +1,100 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.faq-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.faq-tamp{
+    display: grid;
+    grid-template-columns:  10fr 1fr;
+
+    align-items: center;
+    border-bottom: 2px solid black;
+    width: 800px;
+}
+.faq-tamp span{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+}
+.faq-tamp span strong{
+    color:#4E62D6 ;
+}
+.faq-tamp .svg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.faq-tamp .svg svg{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.faq-tamp .answer{
+    text-align: justify;
+    border-style: dashed;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width:1000px) {
+    .faq{
+    
+        gap: 1.5rem;
+    }
+    .faq-area{
+     
+        gap: 1.5rem;
+    }
+    
+    .faq-tamp{
+
+        width: 600px;
+    }
+    .faq-tamp span{
+        font-size: 1.1rem;
+
+    }
+
+    .faq-tamp .svg svg{
+        font-size: 1.2rem;
+    
+    }
+}
+@media (max-width:600px) {
+
+    .faq-area{
+     
+        gap: 1rem;
+    }
+    
+    .faq-tamp{
+
+        width: 450px;
+    }
+    .faq-tamp span{
+        font-size: 0.9rem;
+
+    }
+
+}
+@media (max-width:400px) {
+ 
+    .faq-tamp{
+
+        width: 350px;
+    }
+    .faq-tamp span{
+        font-size: 0.7rem;
+
+    }
+
+}

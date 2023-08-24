@@ -7,6 +7,8 @@ import About from './Components/About/About';
 import Media from './Components/Media/Media/Media';
 import Performance from './Components/Performance/Performance';
 import Products from './Components/Product/Products';
+import Parents from './Components/Parents/Parents';
+import Athletes from './Components/Athletes/Athletes';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -17,6 +19,9 @@ function App() {
     <Route path='/performance' element={<Performance/>}/>
     <Route path='/media' element={<Media/>} /> 
     <Route path='/products' element={<Products/> } />
+    <Route path='/parents' element={<Parents/>} />
+    <Route path='/athletes' element={<Athletes/>}/>
+ 
   </Routes>
   <Footer/>
 </div>

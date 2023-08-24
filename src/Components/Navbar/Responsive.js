@@ -11,8 +11,9 @@ function Responsive({close}) {
     <li onClick={Close}><Link to="/">Home</Link></li>
     <li onClick={Close} ><Link to="/about">About</Link></li> 
     <li onClick={Close}><Link to="/performance">Performance</Link></li>
-    <li >Login</li>
-    <li >Our products</li> 
+    <li onClick={Close}><Link to="/parents">Parents</Link></li>
+    <li onClick={Close}><Link to="/athletes">Athletes</Link></li>
+  
     </ul>
   </div>
   )
