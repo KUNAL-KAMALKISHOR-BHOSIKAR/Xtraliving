@@ -44,3 +44,13 @@
         width: 23rem;
     }
 }
+@media (max-width:450px) {
+    .Info .info-text{
+ 
+        width: 25rem;
+
+    }
+    .Info .info-text h3{
+        width: 20rem;
+    }
+}
