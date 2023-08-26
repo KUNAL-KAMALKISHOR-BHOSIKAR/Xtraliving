@@ -1,22 +1,19 @@
 .hero{
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 80fr 1fr;
 
   
 }
 
 .banner-area{
     
-  
+    height: 100vh;
 
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
-  width: 70%;
-  background-color: #1877F2;
+    gap: 8rem;
 
 
 }
@@ -26,7 +23,7 @@
     height: 50%;   
     gap: 0rem; 
     padding: 0 1rem ;
-    width: 80%;
+
 }
 
 .banner .text-area{

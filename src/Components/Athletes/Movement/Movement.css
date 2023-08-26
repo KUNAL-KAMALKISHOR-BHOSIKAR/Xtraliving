@@ -1,0 +1,38 @@
+.Movement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Movement .m-text{
+
+    width: 50%;
+    text-align: justify;
+}
+.Movement .m-text p{
+    width: 80%;
+}
+@media (max-width:1000px) {
+    .Movement{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .Movement img{
+      height: 250px;  
+      padding-left: 50%;
+    }
+    .Movement .m-text{
+        margin-left: 1rem;
+        width: 60%;
+        text-align: start;
+    }
+    .Movement .m-text p{
+        width: 100%;
+    }
+}
+@media (max-width:550px) {
+    .Movement img{
+        height: 200px;  
+ 
+      }
+}

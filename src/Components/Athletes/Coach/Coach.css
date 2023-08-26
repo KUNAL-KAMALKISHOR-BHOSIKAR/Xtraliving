@@ -1,0 +1,53 @@
+.Register{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Register  .reg-area{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reg-area .reg-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 50%;
+    text-align: justify;
+}
+.reg-area .reg-text p{
+   width: 80%;
+}
+@media (max-width:1000px) {
+    .Register .reg-img img{
+        height: 300px;
+    }
+    .Register{
+    gap: 1rem ;
+   }
+    .Register .reg-area{
+
+      flex-direction: column;
+        align-items: flex-start;
+        justify-content:center;
+        gap: 1rem ;
+        margin-right: 1rem;
+    }
+     .reg-area .reg-text{
+    width: 100%;
+    padding-left: 45%;
+
+     }
+}
+@media (max-width:550px) {
+    .Register .reg-img img{
+        height: 250px;
+    }
+    .Register .reg-area h2{
+
+        text-align: start;
+      }
+}

@@ -1,0 +1,44 @@
+.Introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Introduction .img-text-area{
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    position: relative;
+}
+.Introduction .img-text-area img{
+    margin-right: 7rem;
+}
+.Introduction .img-text-area span{
+    position: absolute;
+    right: 7rem;
+    bottom: 4rem;
+   text-align: justify;
+    width: 40%;
+}
+@media (max-width:1000px) {
+    .Introduction .img-text-area span{
+        position: absolute;
+        right: 4rem;
+        bottom: 3rem;
+       text-align: justify;
+        width: 40%;
+    }
+}
+@media (max-width:550px) {
+    .Introduction .img-text-area img{
+   
+        height: 250px;
+    }
+    .Introduction .img-text-area span{
+        position: absolute;
+        right: 4rem;
+        bottom: 0.5rem;
+       text-align: justify;
+        width: 40%;
+        font-size: 0.9rem;
+    }
+}

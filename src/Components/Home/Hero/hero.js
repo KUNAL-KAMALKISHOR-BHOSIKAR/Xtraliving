@@ -9,7 +9,7 @@ const Hero=()=>{
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     }}>
-        <div className="space"></div>
+      
         <div className="banner-area">
        
         <div className="banner">
@@ -50,7 +50,6 @@ const Hero=()=>{
         family thrives in <span className="blue">holistic health</span> and <span className="blue">peak performance</span>.</h3>
 </div>
 </div>
-<div className="space"></div>
 </div>
     )
 }

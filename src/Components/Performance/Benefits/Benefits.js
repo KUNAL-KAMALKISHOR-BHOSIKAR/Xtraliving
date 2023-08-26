@@ -27,16 +27,16 @@ function Benefits() {
             <span>Enhanced Cognitive Abilities</span>
         </div>
         <div className="emp-list">
-            <div className="emp-img">
+            <div className="emp-img" style={{backgroundColor:"#EAC7B7"}}>
                 <img src={emp2}  height={50} alt="" />
             </div>
-            <span>Enhanced Cognitive Abilities</span>
+            <span>Physical Vitality Boost</span>
         </div>
         <div className="emp-list">
-            <div className="emp-img">
+            <div className="emp-img" style={{backgroundColor:"#FFEFC3"}}>
                 <img src={emp3}  height={50} alt="" />
             </div>
-            <span>Enhanced Cognitive Abilities</span>
+            <span>Stress Reduction</span>
         </div>
       </div>
     </div>

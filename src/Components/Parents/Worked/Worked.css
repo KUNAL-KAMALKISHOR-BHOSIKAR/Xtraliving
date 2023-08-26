@@ -1,0 +1,24 @@
+.Worked{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.Worked h2{
+    margin-bottom: 1rem;
+}
+.Worked img{
+    height: 100px;
+}
+@media (max-width:1000px) {
+    .Worked img{
+        height: 60px;
+    }
+}
+@media (max-width:550px) {
+    .Worked img{
+        height: 40px;
+    }
+}
