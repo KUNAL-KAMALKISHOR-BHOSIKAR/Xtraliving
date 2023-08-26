@@ -4,7 +4,7 @@ import "./Introduction.css"
 function Introduction() {
 return (
 <div className='Introduction'>
-    <h2>Program Introduction</h2>
+    <h2>Program <span style={{color:"#4E62D6"}}>Introduction</span></h2>
     <div className="img-text-area">
     <img src={intro} height={350} alt="" />
     <span>Whether you're an aspiring Olympian

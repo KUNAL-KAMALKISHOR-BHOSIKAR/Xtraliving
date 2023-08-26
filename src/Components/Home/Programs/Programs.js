@@ -7,7 +7,7 @@ import parents from "./Img/parents.png"
 import corpo from "./Img/corpo.png"
 import custom from "./Img/custom.png"
 import line from "./line.png"
-
+import { Link } from 'react-router-dom';
 
 const Programs=()=>{
 return(
@@ -38,21 +38,21 @@ backgroundPosition: 'center',
 <img src={athletes} height={250} alt=""/>
 <div className='program-text'>
     <p>ATHLETES</p>
-    <span>Know more <IoIosArrowForward/></span>
-</div>
+ <Link to="/athletes" ><span>Know more <IoIosArrowForward/></span></Link>
+</div> 
 </div>
 <div className='program-item'>
 <img src={Adults} height={250} alt=""/>
 <div className='program-text'>
     <p>COXs</p>
-    <span>Know more <IoIosArrowForward/></span>
+  <Link to="/performance"><span>Know more <IoIosArrowForward/></span></Link> 
 </div>
 </div>
 <div className='program-item'>
 <img src={customer} height={250} alt=""/>
 <div className='program-text'>
     <p>CUSTOM</p>
-    <span>Know more <IoIosArrowForward/></span>
+   <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> <span>  Know more <IoIosArrowForward/></span></a>
 </div>
 </div>
 
@@ -76,21 +76,21 @@ backgroundPosition: 'center',
 <div className='program-text'>
 
     <p>PARENTS</p>
-    <span>Know more <IoIosArrowForward/></span>
+   <Link to="/parents" ><span>Know more <IoIosArrowForward/></span></Link>
 </div>
 </div>
 <div className='program-item'>
 <img src={corpo} height={250} alt=""/>
 <div className='program-text'>
-   <p>CORPORATES</p>
-    <span>Know more <IoIosArrowForward/></span>
+  <p>CORPORATES</p>
+ <Link to="/workshop" >   <span>Know more <IoIosArrowForward/></span></Link>
 </div>
 </div>
 <div className='program-item'>
 <img src={custom} height={250} alt=""/>
 <div className='program-text'>
 <p>CUSTOM</p>   
-    <span>Know more <IoIosArrowForward/></span>
+<a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> <span>Know more <IoIosArrowForward/></span></a>
 </div>
 </div>
 </div>

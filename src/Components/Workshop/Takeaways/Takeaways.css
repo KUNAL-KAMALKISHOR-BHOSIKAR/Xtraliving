@@ -1,0 +1,64 @@
+.takeaways{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.way-points{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 60%;  
+}
+.point{
+    position: relative;
+}
+.point .way-img-text{
+position: absolute;
+text-align: start;
+top: 1.5rem;
+left: 6rem;
+display: flex;
+flex-direction: column;
+gap: 4rem;
+}
+.point .way-img-text p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+@media (max-width:1200px) {
+    .takeaways img{
+        height: 300px;
+    }
+    .point .way-img-text{
+        top: 1rem;
+        left: 4.5rem;
+        gap: 3.1rem;
+        }
+        .point .way-img-text p{
+            font-size: 0.7rem;
+         
+        }
+}
+@media (max-width:800px) {
+    .way-points{
+      
+        flex-direction: column;
+        justify-content:center;
+        gap: 2rem;
+        width: 80%;  
+    }
+    .way-points img{
+        height: 250px;
+    }
+    .point .way-img-text{
+        top: 1rem;
+        left:3.7rem;
+        gap: 2.5rem;
+        }
+        .point .way-img-text p{
+            font-size: 0.6rem;
+         
+        }
+}

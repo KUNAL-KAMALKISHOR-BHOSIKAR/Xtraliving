@@ -9,6 +9,8 @@ import Performance from './Components/Performance/Performance';
 import Products from './Components/Product/Products';
 import Parents from './Components/Parents/Parents';
 import Athletes from './Components/Athletes/Athletes';
+import Workshop from './Components/Workshop/Workshop';
+import Func from './Components/Product/Func/Func';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -21,7 +23,8 @@ function App() {
     <Route path='/products' element={<Products/> } />
     <Route path='/parents' element={<Parents/>} />
     <Route path='/athletes' element={<Athletes/>}/>
- 
+    <Route path='/workshop' element={<Workshop/>} />
+    <Route path='/func' element={<Func/>} />
   </Routes>
   <Footer/>
 </div>

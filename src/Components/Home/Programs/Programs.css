@@ -42,9 +42,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 
-    width: 50%;
+}
+.program-text span:hover{
+    color: #ED5009;
 }
 .program-detail h1, .program-detail2 h1{
     margin-bottom: 1rem;

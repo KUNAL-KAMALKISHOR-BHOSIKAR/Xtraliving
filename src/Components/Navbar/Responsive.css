@@ -10,6 +10,7 @@
     border-right: 2px solid #ED5009; 
     border-bottom-right-radius: 2rem;
     border-top-left-radius: 2rem;
+    z-index: 2;
 }
 .responsive ul{
     display: flex;

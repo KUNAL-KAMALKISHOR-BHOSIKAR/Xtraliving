@@ -10,4 +10,5 @@
 }
 .Navbar svg{
     font-size: 1.6rem;
+    z-index: 2;
 }

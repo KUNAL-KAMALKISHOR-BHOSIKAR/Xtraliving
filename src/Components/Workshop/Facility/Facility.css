@@ -1,0 +1,32 @@
+.Facility{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.Facility .into-fac{
+    font-size: 1.5rem;
+
+    width: 50%;
+}
+.three-guys{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fac-guy img{
+    height: 200px;
+}
+
+.fac-guy p{
+
+    width: 300px;
+}
+@media (max-width:600px) {
+    .Facility .into-fac{
+           width: 70%;
+    }
+}
