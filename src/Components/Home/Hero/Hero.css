@@ -1,21 +1,22 @@
 .hero{
-    display: grid;
-    grid-template-columns: 1fr 80fr 1fr;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
 
   
 }
-.space {
 
-}
 .banner-area{
     
-    height: 100vh;
+  
 
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8rem;
+  width: 70%;
+  background-color: #1877F2;
 
 
 }
@@ -41,7 +42,7 @@
     font-weight: 800;
     font-size: 3rem;
     letter-spacing: 1px;
-    width: 650px;
+
   
 }
 .banner .text-area p{
@@ -64,10 +65,7 @@
 .banner .img-area svg{
     margin-top: 200px;
 }
-.banner .img-area img{
-    height: 340px ;
 
-}
 /* tag-line area >>>>> */
 
 .hero .tag-line{

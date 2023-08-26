@@ -10,15 +10,22 @@ import Our from "./Our/Our";
 import Ourtwo from "./Our/Ourtwo";
 import program from "./img/program.png"
 import products from "./img/products.png"
+import Banner from "./Banner/Banner";
+import line from "./img/line.png"
 const Home =()=>{
     return(
         <div className="Home">
-    <Hero/> 
+   
+    <Banner/>
     <div className="our-products"> 
     <div className="prosheader">
        <img src={products} alt="" height={800} />
     </div>
-    <div className="pros">
+    <div className="pros" 
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    }}>
     <Our/>
     <Ourtwo/>
     </div>

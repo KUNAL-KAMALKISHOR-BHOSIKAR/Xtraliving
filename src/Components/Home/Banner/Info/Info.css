@@ -1,0 +1,46 @@
+.Info{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.Info .info-text{
+    background-color: white;
+    width: 50rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-bottom: 2px solid #ED5009;
+    border-right: 2px solid #ED5009;
+}
+.Info .info-text h3{
+    width: 40rem;
+}
+.Info .info-text .blue{
+    color: #1877F2 ;
+}
+@media (max-width:1000px) {
+    .Info .info-text{
+ 
+        width: 35rem;
+
+    }
+    .Info .info-text h3{
+        width: 30rem;
+    }
+}
+@media (max-width:600px) {
+    .Info .info-text{
+ 
+        width: 30rem;
+
+    }
+    .Info .info-text h3{
+        width: 25rem;
+    }
+}

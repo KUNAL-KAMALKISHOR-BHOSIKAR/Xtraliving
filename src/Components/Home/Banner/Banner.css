@@ -1,0 +1,54 @@
+
+.Banner-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    gap: 3rem;
+}
+
+.hero-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    text-align: start;
+}
+
+.hero-sec .hero-text-sec h1{
+    font-weight: 900;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+.hero-sec .hero-text-sec p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero-sec .hero-text-sec span{
+   color: #ED5009;
+}
+
+@media (max-width:1000px) {
+    .hero-sec{
+     
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+      gap: 2rem;
+      width: 80%;
+
+    }
+}
+@media (max-width:500px){
+    .hero-sec .hero-text-sec h1{     
+        font-size: 2rem;    
+    }
+    .hero-sec .hero-text-sec p{
+        font-size: 1.2rem;     
+    }
+    .hero-sec .hero-img img{
+        height: 300px;
+    }
+}
