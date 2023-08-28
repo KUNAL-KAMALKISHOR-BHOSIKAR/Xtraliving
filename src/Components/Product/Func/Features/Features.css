@@ -1,0 +1,28 @@
+.Features{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    gap: 2rem;
+}
+.fe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.fe-item img{
+    height: 40px;
+    background-color: #ED50091F;
+    padding: 1rem;
+    border-radius: 50%;
+}

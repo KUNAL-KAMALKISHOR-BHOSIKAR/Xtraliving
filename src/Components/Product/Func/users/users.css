@@ -1,0 +1,50 @@
+.users{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.users img{
+    height: 24rem;
+
+}
+.txt-for-2nd{
+ 
+    width: 280px;
+    text-align: start;
+    position: absolute;
+    top: 5.5rem;
+    right: 20.5rem;
+}
+.txt-for-2nd span {
+    margin-left: 12rem;
+}
+.txt-for-1st{
+    position: absolute;
+    width: 240px;
+    text-align: start;
+    bottom: 3rem;
+    left: 20.5rem;
+}
+.txt-for-1st span{
+    margin-left: 10rem;
+}
+.for-small{
+    display: none;
+}
+@media (max-width:1000px) {
+    .user-img{
+        display: none;
+    }
+    .for-small{
+        display: flex;
+    }
+ 
+}
+@media (max-width:500px) {
+    .for-small{
+     height: 250px;
+
+    }
+}

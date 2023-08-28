@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Our.css"
 import pro from "./pro.png"
+import { Link } from 'react-router-dom'
 function Our() {
   return (
     <div className='our'>
@@ -12,7 +13,7 @@ function Our() {
         </h3>
         <p>Boost mobility, strength, and endurance with our solution. Weight loss? Just a bonus. Our compact kit pairs with a quick daily 5-15 min routine and nutritional advice, designed for home or office. Commit and stave off joint pain, obesity, and lifestyle ailments.</p>
 
-        <button>Know more</button>
+       <Link to="/func"><button>Know more</button></Link>
       </div>
       <div className="our-img">
         <img src={pro} alt="" height={400}/>

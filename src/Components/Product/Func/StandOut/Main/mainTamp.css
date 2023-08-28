@@ -1,0 +1,23 @@
+.mainTamp{
+    background-color: #ED5009;
+  width: 260px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  border-radius: 20px;
+}
+.mainTamp p{
+    color: white;
+    margin: 0 1rem ;
+}
+.mainTamp img{
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.523);
+    padding: 0.7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
