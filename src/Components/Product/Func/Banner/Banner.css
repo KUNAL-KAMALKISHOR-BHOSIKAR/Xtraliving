@@ -22,3 +22,75 @@
     height: 40rem;
   
 }
+.func-banner-text{
+    text-align: start;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.func-banner-text h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-left: 5rem;
+}
+.func-banner-text p{
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+.func-banner-text button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+   margin-top: 5rem;
+   margin-left: 10rem;
+}
+@media (max-width:1000px) {
+    .func-banner-img img{
+        height: 35rem;
+      
+    }
+}
+@media (max-width:770px){
+    .func-banner-img img{
+        height: 30rem;
+      
+    }
+}
+@media (max-width:550px){
+    .func-banner-img img{
+        height: 25rem;
+      
+    }
+    .func-banner-text h1{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 2rem;
+    }
+    .func-banner-text p{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    .func-banner-text button{
+        height: 50px;
+        width: 200px;
+       margin-top: 0rem;
+       margin-left: 2rem;
+    }
+    .func-banner-text{
+       gap: 0.5rem;
+       position: absolute;
+       top: 4rem;
+    
+    }
+}

@@ -8,8 +8,8 @@ function Banner() {
   
      <div className="hero">
        <div className="hero-text">
-<h1>Unlock Elite Performance</h1>
-<p>Tailored Excellence for CXOs<br/> and senior leaders.</p>
+<h1>Health Mastery for the Busy Professional</h1>
+<p>Unlock Vitality & Wellness Amidst the Hustle</p>
 <button>Enroll today <BsArrowRight/></button>
        </div>
        <div className="hero-img">
