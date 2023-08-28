@@ -5,7 +5,7 @@ function Limited() {
     <div className='Limited'>
         <div className="lin-area">
       <h2><span className='lim'>Limited</span> Offer</h2>  
-      <span>Order Now and Unlock</span>
+      <span className='orange'>Order Now and Unlock</span>
     <p>A complimentary 30-day premium
          access to our top-rated
          online training modules

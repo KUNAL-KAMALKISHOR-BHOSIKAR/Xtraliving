@@ -22,3 +22,10 @@
 .Limited h2{
     color:#4E62D6 ;
 }
+.Limited .orange{
+    color:#ED5009 ;
+    font-weight: 500;
+}
+.Limited p{
+    padding: 0 1rem ;
+}
