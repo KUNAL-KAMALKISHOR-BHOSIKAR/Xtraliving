@@ -13,6 +13,7 @@
 .mainTamp p{
     color: white;
     margin: 0 1rem ;
+    text-align: center;
 }
 .mainTamp img{
     height: 60px;

@@ -1,6 +1,8 @@
 .Register{
     display: flex;
     flex-direction: column;
+
+  
 }
 .Register .heading-btn{
     display: flex;
@@ -10,40 +12,81 @@
     color:#ED5009 ;
     gap: 0.5rem;
 }
+.Register .heading-btn button{
+  height: 50px;
+  width: 200px;
+  border: 1px solid #ED5009;
+  background-color: #4E62D6;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+
+}
+.Register .heading-btn button svg{
+  color: #ED5009;
+}
+.Register .heading-btn .mins{
+  font-weight: 500;
+}
 
 .Register  .reg-area{
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+.Register  .reg-area .reg-img img{
+  height: 24rem;
 }
 .reg-area .reg-text{
     margin-right: 1rem;
-    width: 50%;
+    height: 360px;
+    width: 550px;
+  
 }
 .reg-area .reg-text h3{
     text-align: justify;
-    font-size: 1rem;
     font-weight: 600;
+    margin-right: 7rem;
 }
 @media (max-width:1000px) {
-    .Register .reg-img img{
-        height: 300px;
+  .reg-area .reg-text h3{
+ 
+    margin-right: 0rem;
+}
+    .reg-area .reg-text h3{
+      font-size: 0.9rem;
     }
     .Register{
     gap: 1rem ;
+    align-items: center;
    }
     .Register .reg-area{
 
       flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content:center;
         gap: 1rem ;
         margin-right: 1rem;
+        width: 90%;
+        text-align: justify;
+        height: auto;
     }
      .reg-area .reg-text{
-    width: 100%;
-    padding-left: 45%;
 
+      height: 180px;
+    margin-top: 0%;
      }
+    
+     .Register  .reg-area .reg-img img{
+
+        height: 18rem;
+      }
 }

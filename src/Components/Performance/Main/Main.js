@@ -2,9 +2,14 @@ import React from 'react'
 import "./Main.css"
 import{ Data} from "./Data"
 import MainTamp from './mainTamp'
+import line from "./img/line.png"
 function Main() {
   return (
-    <div className='Main'>
+    <div className='Main'
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    }}>
       <h2>Main <span style={{color:"#4E62D6"}}>Components</span></h2>
       <div className="temp-area">
       {

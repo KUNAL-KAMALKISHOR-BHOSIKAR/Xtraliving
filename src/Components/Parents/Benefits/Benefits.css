@@ -1,11 +1,12 @@
 .benefits{
     display: flex;
-    flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     background-color: white;
-
+    padding: 3rem;
 }
+
 .executives{
     height: 200px;
     width: 70%;
@@ -15,8 +16,38 @@
     justify-content: center;
     gap: 1rem;
 }
-.executives span{
+.executives p{
+    text-align: center;
+    width: 70%;
     font-size: 1.3rem;
+    font-weight: 600;
+    z-index: 2;
+}
+.yellow-arrow{
+    position: absolute;
+    height: 60px;
+    top: 0;
+    left: 20%;
+}
+.peach{
+    position: absolute;
+    height: 80px;
+    left: 30%;
+    top: 60%;
+   
+}
+.yellow{
+    position: absolute;
+    height: 80px;
+    top: 60%;
+    right: 30%;
+}
+
+.orange-arrow{
+    position: absolute;
+    height: 60px;
+    top: 25%;
+    right: 20%;
 }
 .empowering {
     display: flex;
@@ -46,4 +77,45 @@ display: flex;
 align-items: center;
 justify-content: center;
 border-radius: 20px;
+}
+@media (max-width:1500px) {
+    .executives p{
+  
+        width: 90%;
+        font-size: 1.2rem;
+   
+    }
+}
+
+@media (max-width:500px) {
+    .executives p{
+  
+        width: 100%;
+        font-size: 1.2rem;
+   
+    }
+    .benefits{
+  
+        padding: 0rem;
+        padding-bottom: 1rem;
+    }
+    .yellow-arrow{
+        position: absolute;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+    .peach{
+        position: absolute;
+        height: 50px;
+        left: 0;
+        top: 60%;
+       
+    }
+    .yellow{
+        position: absolute;
+        height: 50px;
+        top: 60%;
+        right: 0;
+    }
 }

@@ -2,8 +2,8 @@ import "./Reviews.css"
 import customer from "./customer.png"
 import React, { useRef } from "react";
 import line from "./line.png"
-import left from "../../Home/News/left.png"
-import right from "../../Home/News/right.png"
+import left from "./left.png"
+import right from "./right.png"
 const Reviews=()=>{
     let box = useRef(null);
 
@@ -26,9 +26,9 @@ const Reviews=()=>{
     backgroundRepeat: 'no-repeat',
     }}>
      
-        <h1>Testimonials</h1> 
+        <h2>Testimonials</h2> 
         <div className="customer-video" ref={box}>
-        <img src={customer} height={450} alt="" /> 
+        <img src={customer} alt="" /> 
         </div> 
         <div className="review-arrows">
         <img onClick={Left} src={left} alt="" height={40} />

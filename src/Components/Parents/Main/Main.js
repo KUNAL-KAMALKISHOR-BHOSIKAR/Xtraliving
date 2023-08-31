@@ -5,7 +5,7 @@ import MainTamp from './mainTamp'
 function Main() {
   return (
     <div className='Main'>
-      <h2>Main <span style={{color:"#4E62D6"}}>Components</span></h2>
+      <h2>Main <span style={{color:"#4E62D6"}}>Features</span></h2>
       <div className="temp-area">
       {
         Data.map((data=>(

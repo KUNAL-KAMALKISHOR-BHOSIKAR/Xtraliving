@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Duration.css"
+
 import price from "./img/price.png"
 function Duration() {
   return (

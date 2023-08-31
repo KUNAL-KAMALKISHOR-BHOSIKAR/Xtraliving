@@ -2,45 +2,58 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
+  padding: 2rem 0;
     background-color: white;
-    padding: 1rem 0;
+    position: relative;
+}
+.Introduction h2{
+    font-size: 2rem;
+    font-weight: bold;
+    
 }
 .Introduction .img-text-area{
     display: flex;
-    align-items: first baseline;
+    align-items: baseline;
     justify-content: center;
     position: relative;
 }
 .Introduction .img-text-area img{
     margin-right: 7rem;
+    height: 24rem;
 }
 .Introduction .img-text-area span{
     position: absolute;
-    right: 7rem;
-    bottom: 4rem;
+    left: 23rem;
+    bottom: 2rem;
    text-align: justify;
-    width: 40%;
+    width: 70%;
+    font-size: 1.2rem;
 }
 @media (max-width:1000px) {
+    .Introduction .img-text-area img{
+        margin-right: 7rem;
+        height: 18rem;
+    }
     .Introduction .img-text-area span{
-        position: absolute;
-        right: 4rem;
-        bottom: 3rem;
-       text-align: justify;
-        width: 40%;
+     font-size: 0.9rem;
+     left: 15rem;
+     bottom: 2rem;
+      
     }
 }
 @media (max-width:550px) {
-    .Introduction .img-text-area img{
-   
-        height: 250px;
+    .Introduction .for-work img{
+   margin-left: 25%;
+        height: 14rem;
     }
+
     .Introduction .img-text-area span{
         position: absolute;
-        right: 4rem;
-        bottom: 0.5rem;
+        left: 14rem;
+        bottom: 0rem;
        text-align: justify;
         width: 40%;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 }

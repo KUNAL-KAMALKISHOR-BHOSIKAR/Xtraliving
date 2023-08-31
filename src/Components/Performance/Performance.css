@@ -1,5 +1,6 @@
 .Performance{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+
+    background-color: #FBF8F0;
 }

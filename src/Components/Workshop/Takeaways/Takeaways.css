@@ -23,9 +23,17 @@ display: flex;
 flex-direction: column;
 gap: 4rem;
 }
+
 .point .way-img-text p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
+}
+@media (max-width:1600px) {
+    .point .way-img-text{
+        top: 2.2rem;
+        left: 7.5rem;
+        gap: 5rem;
+        }
 }
 @media (max-width:1200px) {
     .takeaways img{
@@ -55,10 +63,13 @@ gap: 4rem;
     .point .way-img-text{
         top: 1rem;
         left:3.7rem;
-        gap: 2.5rem;
+        gap: 2.2rem;
         }
         .point .way-img-text p{
             font-size: 0.6rem;
          
         }
+}
+@media (min-width:1900px) {
+  
 }

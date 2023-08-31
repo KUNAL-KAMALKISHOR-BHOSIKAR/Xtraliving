@@ -11,24 +11,38 @@
     gap: 0.5rem;
 }
 
-.Register  .reg-area{
+.Register .reg-area{
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-end;
+    justify-content: center;
+ gap: 10%;
+ margin-top: 2rem;
+ 
 }
 .Register .coach-rishi{
-    
-}
-.reg-area .reg-text{
-    margin-right: 1rem;
-    width: 50%;
-}
-.reg-area .reg-text h3{
+    background-color: white;
+    height: 360px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    border-radius: 20px;
+   gap: 1rem;
+    border-bottom: 2px solid #ED5009;  
     text-align: justify;
-    font-size: 1rem;
+}
+
+.reg-area .coach-rishi h3{
+  
+    font-size: 1.3rem;
     font-weight: 600;
 }
+
+
+
 @media (max-width:1000px) {
     .Register .reg-img img{
         height: 300px;
@@ -39,14 +53,20 @@
     .Register .reg-area{
 
       flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content:center;
         gap: 1rem ;
-        margin-right: 1rem;
+        margin-right: 0.1rem;
     }
-     .reg-area .reg-text{
-    width: 100%;
-    padding-left: 45%;
-
-     }
+    .Register .coach-rishi{
+           height: auto;
+           width: 90%;
+    }
+    .reg-area .reg-text{
+        margin-right: 0rem;
+        width: 100%;
+      
+     
+    }
+  
 }

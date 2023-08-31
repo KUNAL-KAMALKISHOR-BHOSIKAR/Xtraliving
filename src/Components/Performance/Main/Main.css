@@ -9,7 +9,16 @@
 .temp-area{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+
+    width: 100%;
+}
+@media (max-width:1000px) {
+    .temp-area{
+    
+        justify-content: center;
+       
+    }
 }

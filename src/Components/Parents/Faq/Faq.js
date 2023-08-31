@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlinePlus } from 'react-icons/ai';
 import "./faq.css"
+import line from "./img/line.png"
 function Faq() {
   const [answer, setAnswer] = useState("")
   const Open=(data)=>{
@@ -8,7 +9,11 @@ function Faq() {
     console.log(answer)
   }
   return (
-    <div className='faq'>
+    <div className='faq'
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'top',
+    }}>
       <h2>FAQ's</h2>
       <div className="faq-area">
 
@@ -90,18 +95,9 @@ function Faq() {
       </p>
   </div>
       </div>
+
       <div className='faq-tamp'>
-     <span><strong>8.</strong>Is there a fee for the workshop?</span> 
-     <div className="svg" onClick={()=>Open("eight")}><AiOutlinePlus/></div> 
-    
-     <div className="answer"  style={{display: answer==="eight"? "block": "none"}}>
-      <p> [You can provide details here, whether it's free,
-         there's an early bird discount, or specify the price.]
-      </p>
-  </div> 
-      </div>
-      <div className='faq-tamp'>
-     <span><strong>9.</strong>I can't attend the workshop live. Will there be a recording?</span> 
+     <span><strong>8.</strong>I can't attend the workshop live. Will there be a recording?</span> 
      <div className="svg" onClick={()=>Open("ninth")}><AiOutlinePlus/></div> 
 
      <div className="answer"  style={{display: answer==="ninth"? "block": "none"}}>
@@ -111,7 +107,7 @@ function Faq() {
   </div>
       </div>
       <div className='faq-tamp'>
-     <span><strong>10.</strong>How has Coach Rishi's experience as a father influenced the workshop?</span> 
+     <span><strong>9.</strong>How has Coach Rishi's experience as a father influenced the workshop?</span> 
      <div className="svg" onClick={()=>Open("tenth")}><AiOutlinePlus/></div> 
  
      <div className="answer"  style={{display: answer==="tenth"? "block": "none"}}>
@@ -123,7 +119,7 @@ function Faq() {
   </div>
       </div>
       <div className='faq-tamp'>
-     <span><strong>11.</strong>I have more questions. How can I get in touch?</span> 
+     <span><strong>10.</strong>I have more questions. How can I get in touch?</span> 
      <div className="svg" onClick={()=>Open("eleventh")}><AiOutlinePlus/></div> 
   
      <div className="answer"  style={{display: answer==="eleventh"? "block": "none"}}>

@@ -1,16 +1,59 @@
 .JoinUs{
-    height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.blue-box-ath{
+  position: absolute;
+  height: 150px;
+  top: -4rem;
+  left: 0;
+}
+.peach-ath , .yellow-ath{
+  position: absolute;
+  height: 80px;
+}
+.peach-ath{
+  left: 0;
+  bottom: 8%;
+}
+.yellow-ath{
+  right: 30%;
+  bottom: 0;
+}
 
+
+.JoinUs .join-controler{
+  background-color: white;
+    height: 200px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-
+    gap: 2rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    border-bottom: 2px solid #ED5009;
+    border-left: 2px solid #ED5009;
+    position: relative;
 }
-.JoinUs h3{
-  font-weight: 600;
-   width: 600px; 
+
+.JoinUs button{
+  height: 50px;
+  width: 200px;
+  border: 1px solid #ED5009;
+  background-color: #4e62d6;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+
 }
 @media (max-width:1000px) {
   .JoinUs h3{

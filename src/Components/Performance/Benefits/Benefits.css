@@ -6,6 +6,8 @@
     background-color: white;
 
 }
+
+
 .executives{
     height: 200px;
     width: 70%;
@@ -14,17 +16,25 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
 }
 .executives span{
     font-size: 1.5rem;
+    font-weight:500;
+    text-align: center;
 }
 .empowering {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: space-between;
+
   flex-wrap: wrap;
   margin: 3rem 0;
+  width: 80%;
+}
+.empowering .emp-list span{
+    font-weight: bold;
+    text-align: center;
 }
 .empowering .emp-list{
     background-color: #FBF8F0;
@@ -47,3 +57,24 @@ align-items: center;
 justify-content: center;
 border-radius: 20px;
 }
+.empowering .emp-list .emp-img img{
+    height: 3rem;
+    }
+
+    @media (max-width:800px) {
+        .executives{
+    
+            width: 90%;
+   
+            gap: 0.5rem;
+    
+        }.executives span{
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .empowering {
+
+            justify-content: center;
+     
+        }
+    }

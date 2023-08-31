@@ -1,10 +1,16 @@
 import React from 'react'
-import "./Duration.css"
+
 import price from "./img/price.png"
+import line from "./img/line.png"
 function Duration() {
   return (
-    <div className='Duration'>
-      <h2>Features of the Program</h2> 
+    <div className='Duration'
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    }}>
+      <h2>Features of the <span style={{color:"#4E62D6"}}>Program</span></h2> 
+
       <div className="price-duration">
       <div className="price-area">
     <div className="price">

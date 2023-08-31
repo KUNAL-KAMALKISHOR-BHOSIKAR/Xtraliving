@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Banner.css"
+
 import banner from "./img/banner.png"
 import { BsArrowRight } from 'react-icons/bs';
 function Banner() {
@@ -11,10 +11,10 @@ function Banner() {
 <h1>Unleash Your Olympic Potential</h1>
 
 <p>Master Movement & Nutrition with <br/>Elite Training Regimens</p>
-<button>Enroll today <BsArrowRight/></button>
+<a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"><button>Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img">
-    <img src={banner} alt="" />
+    <img src={banner} alt="" style={{height:"24rem"  }} />
        </div>
      </div>
     

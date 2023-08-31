@@ -1,4 +1,5 @@
 import React from 'react'
+
 import guy from "./img/guy.png"
 
 function Coach() {
@@ -11,7 +12,7 @@ function Coach() {
         <div className="reg-img">
 <img src={guy} alt="" height={350} />
         </div>
-        <div className="reg-text coach-rishi">
+        <div className="coach-rishi">
 <h3>A unique blend of corporate acumen and elite
 fitness expertise, Rishi boasts a foundation
 in BE and MBA, paired with over a decade of business
@@ -20,7 +21,8 @@ leadership roles at powerhouses like Idea,
 Microsoft and Xseed</span>. His transformative journey 
 from the boardroom to founding 
 <span style={{color:"#4E62D6"}}> Xtraliving </span> 
-demonstrates his commitment to holistic excellence. 
+demonstrates his commitment to holistic excellence. </h3>
+<h3>  
 With top-tier<span style={{color:"#4E62D6"}}> certifications</span>, including Crossfit, 
 Precision Nutrition, and <span style={{color:"#4E62D6"}}> 
 Harvard's Culture of Health</span>, 

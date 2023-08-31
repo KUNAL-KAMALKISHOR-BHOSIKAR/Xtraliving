@@ -15,7 +15,7 @@ function Workshop() {
      <Introduction/>
      <Takeaways/>
      <Main/>
-     <Facility/>
+     {/* <Facility/> */}
      <Register/>
      <Coach/>
      <Worked/>

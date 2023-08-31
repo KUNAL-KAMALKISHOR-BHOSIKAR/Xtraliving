@@ -2,9 +2,14 @@ import React from 'react'
 import "./Takeaways.css"
 import way from "./img/way.png"
 import point from "./img/point.png"
+import background from "./img/background.png"
 function Takeaways() {
   return (
-    <div className='takeaways'> 
+    <div className='takeaways'
+    style={{backgroundImage: `url(${background})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition:"right center"
+   }}> 
      <h2>Program <span style={{color:"#4E62D6"}}>Introduction</span> </h2>
      <div className="way-points">
         <div className="way-img">

@@ -1,16 +1,69 @@
-.JoinUs{
-    height: 200px;
+.JoinUs-leader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
 
+}
+
+.blue-box{
+  position: absolute;
+  height: 150px;
+  bottom: 70%;
+  left: 0;
+}
+
+.peach-per , .yellow-per{
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+}
+.peach-per{
+  left: 0;
+
+}
+.yellow-per{
+  right: 20%;
+}
+
+.JoinUs-leader .join-control{
+    height: 200px;
+background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 0.5rem;
-
+    width: 60%;
+border-radius: 20px;
+border-bottom: 2px solid #ED5009;
+border-right:  2px solid #ED5009;
+position: relative;
 }
-.JoinUs h3{
+.JoinUs-leader h3{
   font-weight: 600;
-   width: 600px; 
+  font-size: 1.2rem;
+   width: 80%; 
+}
+
+.JoinUs-leader button{
+  height: 50px;
+  width: 200px;
+  border: 1px solid #ED5009;
+  background-color: #4E62D6;
+  color: white;
+  border-radius: 2px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.JoinUs-leader button svg{
+  color: #ED5009;
 }
 @media (max-width:1000px) {
   .JoinUs h3{
@@ -20,4 +73,27 @@
   .JoinUs {
     background-size: 600px 200px;
   }
+  svg{
+    display: none;
+  }
+  button svg{
+    display: flex;
+  }
+}
+@media (max-width:500px) {
+  .JoinUs h3{
+  font-size: 0.9rem;
+     width: 90%;
+  }
+  .JoinUs-leader .join-control{
+
+    width: 80%;
+
+}
+.JoinUs-leader button{
+  height: 40px;
+  width: 150px;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+}
+
 }

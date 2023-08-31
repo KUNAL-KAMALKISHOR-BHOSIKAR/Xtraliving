@@ -1,25 +1,42 @@
 .Movement{
     display: flex;
+    align-items: center;   
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.Movement .mov-controler{
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8%;
+    margin: 0 2rem ;
+
 }
 .Movement .m-text{
 
-    width: 50%;
+    width: 35%;
     text-align: justify;
+    margin-left: 8rem;
+
+
 }
 .Movement .m-text p{
     width: 80%;
 }
+.Movement .m-img img{
+    height: 18rem;
+    object-fit: contain;
+}
 @media (max-width:1000px) {
-    .Movement{
+    .Movement .mov-controler{
+        margin: 0rem 0rem ;
         flex-direction: column-reverse;
         align-items: flex-start;
         gap: 2rem;
+  
     }
     .Movement img{
-      height: 250px;  
-      padding-left: 50%;
+     margin-left: 20%;
     }
     .Movement .m-text{
         margin-left: 1rem;
@@ -31,8 +48,17 @@
     }
 }
 @media (max-width:550px) {
+
     .Movement img{
-        height: 200px;  
- 
-      }
+     margin-left: 0%;
+     height: 14rem;
+    }
+    .Movement .m-text{
+        margin-left: 1rem;
+        width: 90%;
+        text-align: start;
+    }
+    .Movement .m-text p{
+        width: 100%;
+    }
 }

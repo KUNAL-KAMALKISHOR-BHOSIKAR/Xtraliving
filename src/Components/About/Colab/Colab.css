@@ -21,14 +21,14 @@
 }
 .Colab .txt-1{
     position: absolute;
-    top: 150px;
-    left: 330px;
+    top: 35%;
+    left: 34%;
     text-align: start;
 }
 .Colab .txt-2{
     position: absolute;
-    bottom: 85px;
-    right: 290px;
+    bottom: 20%;
+    right: 32%;
     text-align: start;
     font-size: 14px;
 }
@@ -50,6 +50,20 @@
     height: 300px;
 }
 
+}
+@media (max-width:1600px) {
+    .Colab .txt-1{
+ 
+   
+        left: 31%;
+      
+    }
+    .Colab .txt-2{
+ 
+
+        right: 28%;
+       
+    }
 }
 @media (max-width:500px) {
 

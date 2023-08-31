@@ -1,25 +1,30 @@
 import React from 'react'
 import "./Register.css"
-import guy from "./img/guy.png"
+import guy from "../Coach/img/guy.png"
 import { BsArrowRight } from 'react-icons/bs';
+import line from "./img/line.png"
 function Register() {
   return (
-    <div className='Register'>
+    <div className='Register'
+    style={{backgroundImage: `url(${line})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'top',
+    }}>
         <div className="heading-btn">
       <h2>Step Up. Lead Stronger.</h2>   
       <span>Limited slots</span> 
-      <button>Register Today! <BsArrowRight/></button>
+      <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk">  <button>Register Today! <BsArrowRight/></button></a>
       </div>
       <div className="reg-area">
         <div className="reg-img">
-<img src={guy} alt="" height={350} />
+<img src={guy} alt=""  />
         </div>
         <div className="reg-text">
 <h3>Introducing the "<span style={{color:"#4E62D6"}}>Elevate Performance for
 Leaders</span>" — a 12-month program meticulously
 crafted for CXOs and senior leaders.
 We understand the intricacies of 
-your demanding roles and lifestyles.</h3>
+your demanding roles and lifestyles.</h3> <br />
 <h3>Our approach is simple but
 transformative: integrate minute,
 nearly effortless changes into your

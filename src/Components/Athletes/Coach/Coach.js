@@ -1,16 +1,16 @@
 import React from 'react'
-import "./Coach.css"
+import "./coach.css"
 import guy from "./img/guy.png"
 
 function Coach() {
   return (
-    <div className='Register'>
-      <div className="reg-area">
-        <div className="reg-img">
-<img src={guy} alt="" height={350} />
+    <div className='Register-nu'>
+      <div className="reg-area-nu">
+        <div className="reg-img-nu">
+<img src={guy} alt=""  />
         </div>
         
-        <div className="reg-text">
+        <div className="reg-text-ath-nu">
         <h2 style={{color:"#000"}}>The Power of <span style={{color:"#4E62D6"}}>Nutrition</span></h2>
     <p>Nutrition fuels the body's engine. Our
        customized plans ensure you're not just

@@ -5,8 +5,14 @@
     align-items: center;
     justify-content: center; 
     gap: 3rem;
+    position: relative;
 }
-
+.orange-arrow{
+position: absolute;
+right: 40%;
+top: 40%;
+height: 70px;
+}
 .hero-sec{
     display: flex;
     align-items: center;
@@ -51,4 +57,10 @@
     .hero-sec .hero-img img{
         height: 300px;
     }
+    .orange-arrow{
+    
+        right: 15%;
+       
+        height: 50px;
+        }
 }

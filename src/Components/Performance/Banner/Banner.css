@@ -1,22 +1,23 @@
-.banner{
-  
+.banner{  
    width: 100%;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+ height: 60vh;
+
 }
 
 .hero{
- 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8%;
+
+ height: 100%;
 }
 .hero-text {
     text-align: start;
     letter-spacing: 1px;
-
 }
 .hero-text h1{
     font-size: 3rem;
@@ -24,7 +25,8 @@
 }
 .hero-text p{
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 500;
+    color: #4D4D4D;
 }
 .hero-text button{
     height: 50px;
@@ -33,29 +35,50 @@
     background-color: #4E62D6;
     color: white;
     border-radius: 2px;
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     cursor: pointer;
-   margin-top: 5rem;
-   margin-left: 10rem;
+   margin-bottom:  10%;
+   margin-top:22%;
+   margin-left: 40%;
 }
 .hero-text button svg{
     color: #ED5009;
     font-size: 1.2rem;
 }
 .hero-img img{
-    height: 350px;
+    height: 500px;
+}
+@media (max-width:1300px) {
+    .hero{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 8%;
+    width: 72%;
+     height: 100%;
+    }
+    .hero-img img{
+        object-fit: contain;
+        height: 24rem;
+    }
 }
 @media (max-width:1000px) {
+    .banner{  
+      
+      height: 70vh;
+     }
+
     .hero-img img{
         height: 300px;
     }
     .hero{
         flex-direction: column-reverse;
         gap: 2rem;
+        align-items: center;
     }
     .hero-text {
         text-align: center;        
@@ -63,7 +86,7 @@
     .hero-text button{
     
        margin-top: 0rem;
-       margin-left: 6rem;
+       margin-left: 4.5rem;
     }
     .hero-text h1{
         font-size: 2.5rem;

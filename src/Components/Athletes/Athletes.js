@@ -15,7 +15,7 @@ function Athletes() {
     <Introduction/>
     <Movement/>
     <Coach/>
-    <Reviews/>
+    {/* <Reviews/> */}
     <Duration/>
     <JoinUs/>
     <Worked/>

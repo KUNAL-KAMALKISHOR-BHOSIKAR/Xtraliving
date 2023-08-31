@@ -1,53 +1,38 @@
-.Register{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.Register  .reg-area{
-
+.Register-nu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;   
 }
+.Register-nu .reg-area-nu {
+display: flex;
 
-.reg-area .reg-text{
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    width: 50%;
+align-items: center;
+justify-content: center;   
+}
+.reg-img-nu img{
+    height: 24rem;
+
+}
+.reg-text-ath-nu{
+
+    width: 30%;
     text-align: justify;
 }
-.reg-area .reg-text p{
-   width: 80%;
+.reg-text-ath-nu p,.reg-text-ath-nu h2{
+    margin-left: 10%;
 }
 @media (max-width:1000px) {
-    .Register .reg-img img{
-        height: 300px;
-    }
-    .Register{
-    gap: 1rem ;
-   }
-    .Register .reg-area{
+    .Register-nu .reg-area-nu {
+      
+        flex-direction: column;      
+        gap: 1rem;
+        }
+        .reg-text-ath-nu{
 
-      flex-direction: column;
-        align-items: flex-start;
-        justify-content:center;
-        gap: 1rem ;
-        margin-right: 1rem;
-    }
-     .reg-area .reg-text{
-    width: 100%;
-    padding-left: 45%;
-
-     }
-}
-@media (max-width:550px) {
-    .Register .reg-img img{
-        height: 250px;
-    }
-    .Register .reg-area h2{
-
-        text-align: start;
-      }
+            width: 95%;
+            text-align: justify;
+        }
+        .reg-text-ath-nu p,.reg-text-ath-nu h2{
+            margin-left: 0%;
+        }
 }

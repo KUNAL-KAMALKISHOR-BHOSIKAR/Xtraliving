@@ -16,9 +16,16 @@ align-items: center;
 }
 .customer-video{
 scroll-behavior: smooth;
-width: 500px;
+
 padding-left: 2rem;
 overflow-x: hidden;
+align-items: center;
+justify-content: center;
+}
+.customer-video img{
+    height: 30rem;
+    object-fit: cover;
+
 }
 /* .Reviews p{
     width: 400px;
