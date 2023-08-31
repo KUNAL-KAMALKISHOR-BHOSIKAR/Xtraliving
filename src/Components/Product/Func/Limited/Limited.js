@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Limited.css"
+
 function Limited() {
   return (
     <div className='Limited'>

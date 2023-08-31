@@ -4,10 +4,30 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+   
 
 }
 
+.Info .big-blue-box{
+    position: absolute;
+    height: 120px;
+    left: 0;
+    top: -40%;
+}
+.Info .yellow-ball {
+    position: absolute;
+    height: 60px;
+    right: 10%;
+    bottom: 0;
+}
+.Info .peach-box{
+    position: absolute; 
+    height: 80px;
+    bottom: 5%;
+    left: -7%;
+ }
 .Info .info-text{
+    position: relative;
     background-color: white;
     width: 50rem;
     height: 10rem;
