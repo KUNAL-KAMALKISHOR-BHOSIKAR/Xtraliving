@@ -1,5 +1,5 @@
 import React from 'react'
-import "./coach.css"
+import "./Coachath.css"
 import guy from "./img/guy.png"
 
 function Coach() {
