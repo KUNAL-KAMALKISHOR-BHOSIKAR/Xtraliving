@@ -53,13 +53,22 @@
         height: 300px;
         padding-left: 45%;
     }
-    .Duration .price-area{
+    /* .Duration .price-area{
        margin-left: 5%;
        gap: 1rem;
        width: 350px;
-    
-    }
+    } */
     .Duration .price-img img{
         height: 18rem;
     }
+}
+@media (max-width:500px) {
+    .Duration .price-img img{
+        height: 16rem;
+    }
+    .Duration .price-area{
+     
+        gap: 1rem;
+        width: 400px;
+     }
 }

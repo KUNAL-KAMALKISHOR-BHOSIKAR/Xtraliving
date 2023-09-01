@@ -70,3 +70,11 @@
     }
   
 }
+@media (max-width:500px) {
+    .reg-area .coach-rishi h3{
+  
+        font-size: 1.1rem;
+      
+    }
+
+}

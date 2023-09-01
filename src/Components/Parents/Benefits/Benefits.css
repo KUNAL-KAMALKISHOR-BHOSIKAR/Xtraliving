@@ -91,7 +91,7 @@ border-radius: 20px;
     .executives p{
   
         width: 100%;
-        font-size: 1.2rem;
+        font-size: 1rem;
    
     }
     .benefits{
@@ -108,7 +108,7 @@ border-radius: 20px;
     .peach{
         position: absolute;
         height: 50px;
-        left: 0;
+        left: -10%;
         top: 60%;
        
     }

@@ -14,7 +14,7 @@ function Banner() {
 <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"><button>Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img">
-    <img src={banner} alt="" style={{height:"24rem"  }} />
+    <img src={banner} alt=""  />
        </div>
      </div>
     

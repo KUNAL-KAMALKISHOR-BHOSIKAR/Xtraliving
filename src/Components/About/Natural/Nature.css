@@ -13,7 +13,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    text-align: start;
+    text-align: justify;
     margin-left: 3rem;
 }
 .Nature .natural-text h1{
@@ -24,7 +24,7 @@
     width: 600px;
     word-spacing: 1px;
     letter-spacing: 1px;
-    text-align: justify;
+  
     font-size: 15px;
     color: #525252;
 
