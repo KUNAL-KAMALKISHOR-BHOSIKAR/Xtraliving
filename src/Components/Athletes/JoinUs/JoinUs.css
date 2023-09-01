@@ -58,9 +58,23 @@
 @media (max-width:1000px) {
   .JoinUs h3{
   
-     width: 350px; 
+     width: 400px; 
   }
-  .JoinUs {
-    background-size: 600px 200px;
+
+}
+@media (max-width:500px) {
+   .JoinUs h3{
+  
+     width: 400px; 
+  }
+  .JoinUs .join-controler{
+    background-color: white;
+    height: 200px;
+    width: 80%;
+    
+  }
+
+  .peach-ath , .yellow-ath,.blue-box-ath{
+display: none;
   }
 }

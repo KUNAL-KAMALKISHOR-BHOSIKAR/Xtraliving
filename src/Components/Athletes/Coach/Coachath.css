@@ -10,7 +10,7 @@ align-items: center;
 justify-content: center;   
 }
 .reg-img-nu img{
-    height: 24rem;
+    height: 20rem;
 
 }
 .reg-text-ath-nu{
@@ -35,4 +35,10 @@ justify-content: center;
         .reg-text-ath-nu p,.reg-text-ath-nu h2{
             margin-left: 0%;
         }
+}
+@media (max-width:500px) {
+    .reg-img-nu img{
+        height: 16rem;
+    
+    }
 }
