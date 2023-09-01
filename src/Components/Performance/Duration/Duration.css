@@ -65,9 +65,10 @@
 @media (max-width:500px) {
     .Duration .price-img img{
         height: 16rem;
+        margin-right: 3%;
     }
     .Duration .price-area{
-     
+        margin-left: 3%;
         gap: 1rem;
         width: 400px;
      }

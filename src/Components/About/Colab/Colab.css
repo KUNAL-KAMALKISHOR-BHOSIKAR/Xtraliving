@@ -67,11 +67,11 @@
 }
 @media (max-width:500px) {
 
-    /* .Colab h1 {
-        width: 380px;
-        font-weight: 400;
-        font-size: 2rem;
-    } */
+    .Colab h1 {
+        /* width: 380px;
+        font-weight: 400; */
+        font-size: 1.3rem;
+    }
     .Colab img{
         height: 200px;
     }   
