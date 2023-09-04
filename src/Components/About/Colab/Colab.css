@@ -65,6 +65,20 @@
        
     }
 }
+@media (max-width:1400px) {
+    .Colab .txt-1{
+ 
+   
+        left: 25%;
+      
+    }
+    .Colab .txt-2{
+ 
+
+        right: 22%;
+       
+    }
+}
 @media (max-width:500px) {
 
     .Colab h1 {
@@ -73,6 +87,6 @@
         font-size: 1.3rem;
     }
     .Colab img{
-        height: 200px;
+        height: 230px;
     }   
 }
