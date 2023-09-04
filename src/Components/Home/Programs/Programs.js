@@ -44,7 +44,7 @@ backgroundPosition: 'center',
 <div className='program-item'>
 <img src={Adults} height={250} alt=""/>
 <div className='program-text'>
-    <p>COXs</p>
+    <p>CXOs</p>
   <Link to="/performance"><span>Know more <IoIosArrowForward/></span></Link> 
 </div>
 </div>
