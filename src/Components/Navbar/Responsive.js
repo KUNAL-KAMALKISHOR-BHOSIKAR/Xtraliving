@@ -13,7 +13,7 @@ function Responsive({close}) {
     <li onClick={Close}><Link to="/performance">Performance</Link></li>
     <li onClick={Close}><Link to="/parents">Parents</Link></li>
     <li onClick={Close}><Link to="/athletes">Athletes</Link></li>
-    <li onClick={Close}><Link to="/workshop">Workshop</Link></li>
+    <li onClick={Close}><Link to="/workshop">Workshop</Link></li>  
   
     </ul>
   </div>
