@@ -35,6 +35,13 @@ gap: 4rem;
         gap: 5rem;
         }
 }
+@media (max-width:1400px){
+    .point .way-img-text{
+        top: 1.5rem;
+        left: 6rem;
+        gap: 4.2rem;
+        }
+}
 @media (max-width:1200px) {
     .takeaways img{
         height: 300px;
@@ -45,9 +52,9 @@ gap: 4rem;
         gap: 3.1rem;
         }
         .point .way-img-text p{
-            font-size: 0.7rem;
-         
+            font-size: 0.7rem;        
         }
+        
 }
 @media (max-width:800px) {
     .way-points{
