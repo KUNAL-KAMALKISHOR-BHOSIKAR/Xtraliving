@@ -52,31 +52,19 @@
 
 }
 @media (max-width:1600px) {
-    .Colab .txt-1{
- 
-   
-        left: 31%;
-      
+    .Colab .txt-1{   
+        left: 31%;     
     }
     .Colab .txt-2{
- 
-
-        right: 28%;
-       
+        right: 28%;       
     }
 }
 @media (max-width:1400px) {
     .Colab .txt-1{
- 
-   
-        left: 25%;
-      
+        left: 27%;   
     }
     .Colab .txt-2{
- 
-
-        right: 22%;
-       
+        right: 23%;    
     }
 }
 @media (max-width:500px) {
