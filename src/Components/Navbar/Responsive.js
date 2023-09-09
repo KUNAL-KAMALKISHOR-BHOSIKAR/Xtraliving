@@ -15,22 +15,20 @@ function Responsive({close}) {
   return (
   <div className='responsive'>
     <ul >
-    <li onClick={Close}><Link to="/">Home</Link></li>
-    <li onClick={Close} ><Link to="/about">About</Link></li> 
-    <li onClick={OpenmyPro}>My Projects<span style={{ color:"#ED5009",display: project? "none": "flex"  }}>
+    <Link to="/"><li onClick={Close}>Home</li></Link>
+    <Link to="/about"><li onClick={Close} >About</li> </Link>
+    <li onClick={OpenmyPro}>Human Performance Projects<span style={{ color:"#ED5009",display: project? "none": "flex"  }}>
       <IoIosArrowDown/></span>  
       <span style={{display: project? "flex" : "none"}}><IoIosArrowUp/></span>
        </li>
        {project &&(
         <div className='projects' >
-         <li onClick={Close}><Link to="/performance">Performance</Link></li>
-    <li onClick={Close}><Link to="/parents">Parents</Link></li>
-    <li onClick={Close}><Link to="/athletes">Athletes</Link></li>
-    <li onClick={Close}><Link to="/workshop">Workshop</Link></li> 
+     <Link to="/performance"> <li onClick={Close}>Performance</li></Link>
+   <Link to="/parents"> <li onClick={Close}>Parents</li></Link>
+   <Link to="/athletes"> <li onClick={Close}>Athletes</li></Link>
+   <Link to="/workshop"> <li onClick={Close}>Workshop</li> </Link>
    </div>    )}
-    
-  
-    </ul>
+       </ul>
   </div>
   )
 }
