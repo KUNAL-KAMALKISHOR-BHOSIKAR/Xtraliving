@@ -6,7 +6,7 @@ import Takeaways from './Takeaways/Takeaways'
 import Main from "./Main/Main"
 import Facility from './Facility/Facility'
 import Register from "./Register/Register"
-import Coach from "./Coach/Coach"
+import Coach from "../Performance/Coach/Coach"
 import Worked from "./Worked/Worked"
 function Workshop() {
   return (

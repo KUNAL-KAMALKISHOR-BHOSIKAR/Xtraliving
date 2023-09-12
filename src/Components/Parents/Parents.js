@@ -4,7 +4,7 @@ import Banner from './Banner/Banner'
 import Benefits from './Benefits/Benefits'
 import Register from './Register/Register'
 import Main from './Main/Main'
-import Coach from './Coach/Coach'
+import Coach from '../Performance/Coach/Coach'
 import Worked from './Worked/Worked'
 import Faq from './Faq/Faq'
 function Parents() {

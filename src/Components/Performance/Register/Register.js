@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Register.css"
-import guy from "../Coach/img/guy.png"
+import girl from "./img/girl.png"
 import { BsArrowRight } from 'react-icons/bs';
 import line from "./img/line.png"
 function Register() {
@@ -17,7 +17,7 @@ function Register() {
       </div>
       <div className="reg-area">
         <div className="reg-img">
-<img src={guy} alt=""  />
+<img src={girl} alt=""  />
         </div>
         <div className="reg-text">
 <h3>Introducing the "<span style={{color:"#4E62D6"}}>Elevate Performance for
