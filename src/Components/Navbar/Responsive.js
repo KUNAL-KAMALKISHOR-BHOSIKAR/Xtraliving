@@ -16,10 +16,7 @@ function Responsive({close}) {
   <div className='responsive'>
     <ul >
     <Link to="/"><li onClick={Close}>Home</li></Link>
-    <Link to="/about"><li onClick={Close} >About</li> </Link>
-    <a href="https://www.rishi.fit/media"><li>Media</li></a>
-    <a href="https://www.rishi.fit/myBlogs"><li>Blogs</li></a>
-    <li onClick={OpenmyPro}>Human Performance Projects<span style={{ color:"#ED5009",display: project? "none": "flex"  }}>
+     <li onClick={OpenmyPro}>Human Performance Projects<span style={{ color:"#ED5009",display: project? "none": "flex"  }}>
       <IoIosArrowDown/></span>  
       <span style={{display: project? "flex" : "none"}}><IoIosArrowUp/></span>
        </li>
@@ -30,6 +27,10 @@ function Responsive({close}) {
    <Link to="/athletes"> <li onClick={Close}>Athletes</li></Link>
    <Link to="/workshop"> <li onClick={Close}>Workshop</li> </Link>
    </div>    )}
+    <Link to="/about"><li onClick={Close} >About</li> </Link>
+    <a href="https://www.rishi.fit/media"><li>Media</li></a>
+    <a href="https://www.rishi.fit/myBlogs"><li>Blogs</li></a>
+   
        </ul>
   </div>
   )
