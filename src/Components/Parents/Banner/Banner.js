@@ -13,8 +13,7 @@ function Banner() {
      <div className="hero">
        <div className="hero-text">
 <h1>Nurturing the Future</h1>
-
-<p>A Comprehensive Workshop on Child<br/> Health (0-10 Years)</p>
+<p>In-depth Workshop for Parents:<br/>Establishing a Solid Health Foundation for Your Child</p>
 <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"><button>Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img">
