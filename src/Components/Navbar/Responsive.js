@@ -22,10 +22,10 @@ function Responsive({close}) {
        </li>
        {project &&(
         <div className='projects' >
-     <Link to="/performance"> <li onClick={Close}>Performance</li></Link>
+     <Link to="/performance"> <li onClick={Close}>Leaders</li></Link>
    <Link to="/parents"> <li onClick={Close}>Parents</li></Link>
    <Link to="/athletes"> <li onClick={Close}>Athletes</li></Link>
-   <Link to="/workshop"> <li onClick={Close}>Workshop</li> </Link>
+   <Link to="/workshop"> <li onClick={Close}>Busy Professional</li> </Link>
    </div>    )}
     <Link to="/about"><li onClick={Close} >About</li> </Link>
     <a href="https://www.rishi.fit/media"><li>Media</li></a>
