@@ -1,5 +1,5 @@
 import "./Reviews.css"
-import customer from "./customer.png"
+import customer from "./customer.webp"
 import React, { useRef } from "react";
 import line from "./line.png"
 import left from "../News/left.png"
