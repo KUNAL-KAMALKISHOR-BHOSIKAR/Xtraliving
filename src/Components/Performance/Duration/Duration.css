@@ -66,8 +66,18 @@
         margin-right: 3%;
     }
     .Duration .price-area{
-        margin-left: 3%;
+        margin-left: 0%;
         gap: 1rem;
-        width: 400px;
+        width: 350px;
      }
+     .Duration .price-area h3{
+
+        font-size: 1.5rem;
+    }
+    .Duration .price-area span{
+        font-size: 1rem;
+   
+        
+    }
+  
 }

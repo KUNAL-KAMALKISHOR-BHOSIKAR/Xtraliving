@@ -35,7 +35,7 @@
         gap: 2rem;
   
     }
-    .Movement img{
+    .Movement .m-img img{
      margin-left: 20%;
     }
     .Movement .m-text{
@@ -49,9 +49,10 @@
 }
 @media (max-width:550px) {
 
-    .Movement img{
-     margin-left: 0%;
-     height: 14rem;
+    .Movement .m-img img{
+        height: 12rem;
+        margin-left: 38%;
+        object-fit: contain;
     }
     .Movement .m-text{
         margin-left: 1rem;
