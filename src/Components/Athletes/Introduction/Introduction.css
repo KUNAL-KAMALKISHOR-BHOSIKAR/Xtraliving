@@ -44,17 +44,28 @@
 }
 @media (max-width:550px) {
 
-    .Introduction .for-work img{
-        margin-right: 0rem;
+  
+  
+    .Introduction .img-text-area img{
+        margin-right: 5rem;
         height: 12rem;
     }
-
     .Introduction .img-text-area span{
+        bottom: -10%;
+        left: 45%;
+        width: 50%;
+    }
+    .Introduction .for-work span{
         position: absolute;
-        left: 46%;
-        bottom: 20%;
+        left: 50%;
+        bottom: 10%;
        text-align: justify;
         width: 40%;
         font-size: 0.7rem;
+    }
+    .Introduction .for-work img{
+        margin-right: 0rem;
+        height: 12rem;
+     
     }
 }
