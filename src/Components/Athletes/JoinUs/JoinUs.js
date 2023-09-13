@@ -10,7 +10,7 @@ function JoinUs() {
 <rect x="163.578" y="20.6484" width="100" height="210.566" rx="30" transform="rotate(34.2964 163.578 20.6484)" fill="#8591D7"/>
 </svg>
      <h3>Start Your Olympic Journey Today</h3>   
-     <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> 
+     <a href="https://forms.myfunc.in/myfunc/form/UnlockElitePerformanceforLeaders/formperma/4b4maZKQlhbNpgMtSqCH_nYsizcB0Ad5yxk4IXoMIhA"> 
      <button>Join</button>
      </a>
      <svg className='peach-ath'  width="206" height="207" viewBox="0 0 206 207" fill="none" xmlns="http://www.w3.org/2000/svg">

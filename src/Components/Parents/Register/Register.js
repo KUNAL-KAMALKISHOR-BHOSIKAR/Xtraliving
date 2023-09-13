@@ -7,7 +7,7 @@ function Register() {
         <div className="heading-btn">
       <h2><span style={{color:"#000"}}>Secure Your </span><span style={{color:"#4E62D6"}}>Spot!</span></h2>   
       <span className='mins'>Duration - 120 minutes</span> 
-      <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"><button>Enroll Today <BsArrowRight/></button></a>
+      <a href="https://forms.myfunc.in/myfunc/form/Parents/formperma/Hmookm3FCT-d6QYpuYhDqrDcbOauvtyrm_eiLVbnH8U"><button>Enroll Today <BsArrowRight/></button></a>
       </div>     
       </div>
   

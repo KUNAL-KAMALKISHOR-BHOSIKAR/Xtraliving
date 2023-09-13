@@ -17,7 +17,7 @@ function JoinUs() {
       and let Rishi guide you in unlocking unparalleled levels
        of success, both in the office and beyond.
      </h3>
-     <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> 
+     <a href="https://forms.myfunc.in/myfunc/form/PerformanceforLeaders/formperma/bPEs3RSxvGx-NqWai0HX2aTDf8XbB8MdtfO4BR67kxg"> 
      <button>Join<BsArrowRight/></button></a>
 
      <svg className='peach-per'  width="206" height="207" viewBox="0 0 206 207" fill="none" xmlns="http://www.w3.org/2000/svg">

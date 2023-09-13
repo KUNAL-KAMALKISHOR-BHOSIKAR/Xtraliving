@@ -11,7 +11,8 @@ function Banner() {
 <h1>Unleash Your Olympic Potential</h1>
 
 <p>Master Movement & Nutrition with <br/>Elite Training Regimens</p>
-<a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"><button>Enroll today <BsArrowRight/></button></a>
+<a href="https://forms.myfunc.in/myfunc/form/UnlockElitePerformanceforLeaders/formperma/4b4maZKQlhbNpgMtSqCH_nYsizcB0Ad5yxk4IXoMIhA">
+  <button>Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img">
     <img src={banner} alt=""  />

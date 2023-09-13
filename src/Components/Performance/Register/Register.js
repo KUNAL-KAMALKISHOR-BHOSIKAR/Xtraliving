@@ -13,7 +13,7 @@ function Register() {
         <div className="heading-btn">
       <h2>Step Up. Lead Stronger.</h2>   
       <span>Limited slots</span> 
-      <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk">  <button>Register Today! <BsArrowRight/></button></a>
+      <a href="https://forms.myfunc.in/myfunc/form/PerformanceforLeaders/formperma/bPEs3RSxvGx-NqWai0HX2aTDf8XbB8MdtfO4BR67kxg">  <button>Register Today! <BsArrowRight/></button></a>
       </div>
       <div className="reg-area">
         <div className="reg-img">

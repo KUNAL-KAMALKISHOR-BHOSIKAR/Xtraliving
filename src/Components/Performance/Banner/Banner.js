@@ -16,7 +16,7 @@ function Banner() {
        <div className="hero-text">
 <h1>Unlock Elite Performance</h1>
 <p>Tailored Excellence for CXOs and senior leaders.</p>
-<a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk">
+<a href="https://forms.myfunc.in/myfunc/form/PerformanceforLeaders/formperma/bPEs3RSxvGx-NqWai0HX2aTDf8XbB8MdtfO4BR67kxg">
   <button>  Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img">

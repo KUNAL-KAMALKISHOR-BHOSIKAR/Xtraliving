@@ -10,7 +10,8 @@ function Banner() {
        <div className="func-banner-text">
 <h1>Meet FUNc</h1>
 <p>Safe, Versatile & Game-Changing!</p>
-<button>Enroll today <BsArrowRight/></button>
+ <a href="https://forms.myfunc.in/myfunc/form/GetyouFUNckit/formperma/4uWTcZgwnwU1hDAQkrbT-MrNu8M85WB570xl6yBDRWM">
+  <button>Enroll today <BsArrowRight/></button></a> 
        </div>
        <div className="func-banner-img">
     <img src={func}  alt="" />

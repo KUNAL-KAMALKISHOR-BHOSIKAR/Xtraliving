@@ -14,7 +14,8 @@ function JoinUs() {
       and let Rishi guide you in unlocking unparalleled levels
        of success, both in the office and beyond.
      </h3>
-     <button>Join</button>
+  <a href="https://forms.myfunc.in/myfunc/form/Parents/formperma/Hmookm3FCT-d6QYpuYhDqrDcbOauvtyrm_eiLVbnH8U">
+       <button>Join</button></a>
     </div>
   )
 }
