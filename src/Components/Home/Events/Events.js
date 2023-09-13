@@ -1,5 +1,5 @@
 import "./Events.css"
-import  offers from  "./Offers.webp"
+import  offers from  "./Offers.png"
 import line from "./line.png"
 import { BsArrowRight } from 'react-icons/bs';
 const Events =()=>{
