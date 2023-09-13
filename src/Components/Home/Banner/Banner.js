@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Banner.css"
-import hero from "./img/hero.png"
+import hero from "./img/hero.webp"
 import Info from './Info/Info';
 import line from "./line.png"
 
