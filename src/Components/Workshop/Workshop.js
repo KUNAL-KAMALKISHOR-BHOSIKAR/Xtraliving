@@ -7,7 +7,7 @@ import Main from "./Main/Main"
 import Facility from './Facility/Facility'
 import Register from "./Register/Register"
 import Coach from "../Performance/Coach/Coach"
-import Worked from "./Worked/Worked"
+import Worked from "../Performance/Worked/Worked"
 function Workshop() {
   return (
     <div className='Workshop'>

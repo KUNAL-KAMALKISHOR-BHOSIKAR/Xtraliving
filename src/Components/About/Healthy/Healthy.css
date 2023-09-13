@@ -110,8 +110,14 @@ justify-content: center;
  
 }
 @media (max-width:420px) {
+    .know .forsmall{
+        height: 220px;
+    }
+    .second-div img{
+        height: 130px;
+       }
     .Healthy p{
     
-        width: 370px;
+        width: 90%;
     }
 }

@@ -7,7 +7,7 @@ import Coach from './Coach/Coach'
 import Duration from './Duration/Duration'
 import Reviews from "./Reviews/Reviews";
 import JoinUs from './JoinUs/JoinUs'
-import Worked from './Worked/Worked'
+import Worked from '../Performance/Worked/Worked'
 function Athletes() {
   return (
     <div className='Athletes'>

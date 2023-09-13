@@ -72,9 +72,10 @@
     .Colab h1 {
         /* width: 380px;
         font-weight: 400; */
-        font-size: 1.3rem;
+        width: 95%;
+        font-size: 1.5rem;
     }
     .Colab img{
-        height: 230px;
+        height: 180px;
     }   
 }

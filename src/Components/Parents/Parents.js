@@ -5,7 +5,7 @@ import Benefits from './Benefits/Benefits'
 import Register from './Register/Register'
 import Main from './Main/Main'
 import Coach from '../Performance/Coach/Coach'
-import Worked from './Worked/Worked'
+import Worked from '../Performance/Worked/Worked'
 import Faq from './Faq/Faq'
 function Parents() {
   return (

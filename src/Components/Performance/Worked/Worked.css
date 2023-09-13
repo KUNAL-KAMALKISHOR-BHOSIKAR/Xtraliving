@@ -16,6 +16,7 @@ margin-top: 2rem;
 }
 @media (max-width:550px) {
     .Worked img{
-        height: 40px;
+        height: 35px;
+        
     }
 }

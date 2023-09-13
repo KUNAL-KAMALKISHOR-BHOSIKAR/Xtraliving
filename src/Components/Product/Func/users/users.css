@@ -47,6 +47,17 @@
       margin-right: -3%;
     }
 }
+@media (max-width:1280px) {
+    .users{
+   
+    }
+    .txt-for-1st{
+        margin-left: -7.5%;
+    }
+    .txt-for-2nd  {
+      margin-right: -8%;
+    }
+}
 @media (max-width:1000px) {
     .user-img{
         display: none;
