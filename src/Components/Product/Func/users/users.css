@@ -15,7 +15,7 @@
     text-align: start;
     position: absolute;
     top: 5.5rem;
-    right: 20.5rem;
+    right: 34%;
 }
 .txt-for-2nd span {
     margin-left: 12rem;
@@ -25,13 +25,27 @@
     width: 240px;
     text-align: start;
     bottom: 3rem;
-    left: 20.5rem;
+    left: 33.5%;
+   
 }
 .txt-for-1st span{
     margin-left: 10rem;
 }
 .for-small{
     display: none;
+}
+@media (max-width:1700px) {
+    .users{
+   
+    }
+    .txt-for-1st{
+        margin-left: -2.5%;
+       
+    }
+    .txt-for-2nd  {
+     
+      margin-right: -3%;
+    }
 }
 @media (max-width:1000px) {
     .user-img{
