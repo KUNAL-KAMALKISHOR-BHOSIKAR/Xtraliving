@@ -12,7 +12,7 @@ function Faq() {
       <h2>FAQ's</h2>
       <div className="faq-area">
 
-<div className='faq-tamp'>
+      <div className='faq-tamp'>
      <span><strong>1.</strong>  What exactly is the "Elevate Performance for leaders" program?</span> 
      <div className="svg" onClick={()=>Open("first")}><AiOutlinePlus/></div> 
 
@@ -30,12 +30,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("second")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer" style={{display: answer==="second"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
-      </p>
+      <p>Apart from the weekly one-on-one coaching session, which lasts about 30 minutes, participants are encouraged to integrate small 5-15 minute daily changes into their routine. These are designed to be manageable, even on your busiest days.   </p>
   </div> )}
       </div>
       <div className='faq-tamp'>
@@ -43,12 +38,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("thirt")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer" style={{display: answer==="thirt"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
-      </p>
+      <p>The core philosophy of "Elevate Performance for leaders" is adaptability. Our practices, techniques, and coaching sessions are designed to blend into your existing routine effortlessly, turning pause moments into growth moments.     </p>
   </div> )}
       </div>
       <div className='faq-tamp'>
@@ -56,11 +46,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("fourth")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer"  style={{display: answer==="fourth"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
+      <p>Each week, you'll meet with a dedicated coach to discuss progress, challenges, and receive personalized guidance. Depending on your preference, these sessions are conducted over the phone or virtually.
       </p>
   </div> )}
       
@@ -70,11 +56,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("fifth")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer"  style={{display: answer==="fifth"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
+      <p>Absolutely. The program is about improving your performance without depending on complex technology.
       </p>
   </div> )}
       </div>
@@ -83,11 +65,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("sixth")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer"  style={{display: answer==="sixth"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
+      <p>Our USP is the emphasis on small, incremental changes for outsized impacts. Instead of overhauling your daily routine, we focus on infusing subtle, powerful shifts, making the program sustainable and efficient. The focus is to improve your physical and mental strength.
       </p>
   </div> )}
       </div>
@@ -96,25 +74,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("seventh")}><AiOutlinePlus/></div> 
      {answer &&(
      <div className="answer"  style={{display: answer==="seventh"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
-      </p>
-  </div> )}
-      </div>
-      <div className='faq-tamp'>
-     <span><strong>8.</strong>How do I sign up for the "Leadership Elevate Journey"?</span> 
-     <div className="svg" onClick={()=>Open("eight")}><AiOutlinePlus/></div> 
-     {answer &&(
-     <div className="answer"  style={{display: answer==="eight"? "block": "none"}}>
-      <p>It's a 12-month tailored program designed for CXOs and
-      senior leaders to enhance their leadership, physical,
-      and mental capabilities through small, daily changes.
-      The program emphasizes seamless integration into
-      daily life for sustainable and significant growth.
-      </p>
+      <p>While individual results may vary, participants can expect increased physical and mental stamina, better stress management, and improved leadership influence.   </p>
   </div> )}
       </div>
       </div>

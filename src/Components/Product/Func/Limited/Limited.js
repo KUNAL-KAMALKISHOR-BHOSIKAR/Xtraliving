@@ -11,7 +11,8 @@ function Limited() {
          access to our top-rated
          online training modules
          with every FUNc purchase.</p>
-    <button>SECURE YOUR KIT TODAY</button>
+  <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk">  
+  <button>SECURE YOUR KIT TODAY</button></a>
 </div>
     </div>
   )
