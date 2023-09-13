@@ -1,9 +1,9 @@
 import "./Believers.css"
-import pics1 from "./img/pic1.png"
+import pics1 from "./img/pic1.webp"
 import React, { useRef } from "react";
-import pics2 from "./img/pic2.png"
-import pics3 from "./img/pic3.png"
-import pics4 from "./img/pic4.png"
+import pics3 from "./img/pic3.webp"
+import pics4 from "./img/pic4.webp"
+import pics2 from "./img/pic2.webp"
 import line from "./line.png"
 import left from "../News/left.png"
 import right from "../News/right.png"
