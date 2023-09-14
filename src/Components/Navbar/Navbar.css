@@ -13,3 +13,9 @@
     font-size: 1.6rem;
     z-index: 2;
 }
+@media (max-width:600px) {
+    .Navbar{
+        margin-bottom: 0rem;
+    
+    }
+}
