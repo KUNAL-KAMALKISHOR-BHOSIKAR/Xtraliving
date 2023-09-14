@@ -14,7 +14,7 @@ function Banner() {
 <a href="https://forms.myfunc.in/myfunc/form/UnlockElitePerformanceforLeaders/formperma/4b4maZKQlhbNpgMtSqCH_nYsizcB0Ad5yxk4IXoMIhA">
   <button>Enroll today <BsArrowRight/></button></a>
        </div>
-       <div className="hero-img">
+       <div className="hero-img ath-banner">
     <img src={banner} alt=""  />
        </div>
      </div>
