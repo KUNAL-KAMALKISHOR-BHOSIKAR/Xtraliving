@@ -109,6 +109,11 @@
     }
 }
 @media (max-width:450px) {
+    .Info{
+
+       width: 93%;
+    
+    }
     .Info .info-text{
  
         width: 25rem;
