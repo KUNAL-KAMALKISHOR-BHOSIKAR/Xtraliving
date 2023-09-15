@@ -13,12 +13,13 @@ function Colab() {
     backgroundRepeat: 'no-repeat',
    
     }}>
+     
       <h1>National and International collaboration
          to improve human performance in India</h1>
          <div className="large">
        <div className="first-p">
-        <p> <img src={c1} alt="" />Partnered with Gopichand Academy
-          to improve performance of athletes</p>
+        <p> <img src={c1} alt="" /> Partnered with Govt Of Maharashtra and Gopichand Academy
+       to improve performance of athletes</p>
        </div>
        <img src={largecolab} alt="" />
        <div className="second-p">
