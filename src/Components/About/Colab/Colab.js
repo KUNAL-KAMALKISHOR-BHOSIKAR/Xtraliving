@@ -13,11 +13,15 @@ function Colab() {
       <h1>National and International collaboration
          to improve human performance in India</h1>
          <div className="large">
-         <img src={largecolab} alt="" className='forlarge' />
-         <p className='txt-1'>Partnered with Gopichand
-           Academy <br/>to improve performance of athletes</p>
-           <p className='txt-2'>Exclusive tie-up for India with global<br/> leaders 
-            Compex and Precision Nutrition</p> 
+       <div className="first-p">
+        <p>Partnered with Gopichand Academy
+          to improve performance of athletes</p>
+       </div>
+       <img src={largecolab} alt="" />
+       <div className="second-p">
+        <p>Exclusive tie-up for India with global
+leaders Compex and Precision Nutrition</p>
+       </div>
            </div>
          <img src={colab} alt="" className='forsmall' />
         

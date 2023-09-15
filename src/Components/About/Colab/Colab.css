@@ -9,7 +9,6 @@
 
 .Colab h1 {
     width: 800px;
-
     font-size: 2rem;
 }
 .Colab img{
@@ -19,21 +18,20 @@
 .Colab .forsmall{
     display: none;
 }
-.Colab .txt-1{
-    position: absolute;
-    top: 35%;
-    left: 34%;
-    text-align: start;
-}
-.Colab .txt-2{
-    position: absolute;
-    bottom: 20%;
-    right: 32%;
-    text-align: start;
-    font-size: 14px;
-}
 
-
+.large{
+    display: flex;
+   
+}
+.large  p{
+    background-color: white;
+    height: 3.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+   
+}
 
 @media (max-width:900px) {
     .Colab .forsmall{
