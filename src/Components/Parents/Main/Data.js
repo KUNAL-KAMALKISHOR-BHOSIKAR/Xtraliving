@@ -38,7 +38,7 @@ text1: "Tailored strategies and recommendations for parents, based on their chil
 {
     img: m6,
     heading:"Interactive Q&A Segments" ,
-    text1: "6. Opportunities for parents to clarify doubts, discuss challenges, and gain further insights from experts.",
+    text1: "Opportunities for parents to clarify doubts, discuss challenges, and gain further insights from experts.",
     
     },
 ]
