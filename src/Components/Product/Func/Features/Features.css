@@ -26,3 +26,21 @@
     padding: 1rem;
     border-radius: 50%;
 }
+/* @media (min-width:1700px) {
+    .feature-list{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    .feature-list h3{
+        font-size: 1.3rem;
+    }
+    .feature-list p{
+     
+        font-size: 0.9rem;
+        width: 90%;
+    }
+} */
