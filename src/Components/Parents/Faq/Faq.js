@@ -123,7 +123,7 @@ function Faq() {
      <div className="svg" onClick={()=>Open("eleventh")}><AiOutlinePlus/></div> 
   
      <div className="answer"  style={{display: answer==="eleventh"? "block": "none"}}>
-      <p>  Feel free to contact us at [admin@xtraliving.org/9963993266]. We're here to help!
+      <p>  Feel free to contact us at [ admin@xtraliving.org/9963993266 ]. We're here to help!
       </p>
   </div> 
       </div>

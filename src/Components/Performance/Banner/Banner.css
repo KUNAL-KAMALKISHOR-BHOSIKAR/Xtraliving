@@ -51,20 +51,13 @@
 .hero-img img{
     height: 500px;
 }
-.ath-banner .ath-img{
-    height: 270px;
- 
-}
+
 .ath-txt{
 
 }
-.ath-txt button{
 
-
-   margin-top:15%;
-   margin-left: 40%;
-}
 @media (max-width:1300px) {
+
     .hero{
         display: flex;
         align-items: flex-end;
@@ -77,6 +70,16 @@
         object-fit: contain;
         height: 24rem;
     }
+    .ath-banner .ath-img{
+        height: 270px;
+     
+    }
+    .ath-txt button{
+
+
+        margin-top:15%;
+        margin-left: 40%;
+     }
 }
 @media (max-width:1000px) {
     .banner{  
@@ -109,6 +112,7 @@
        
     }
 }
+
 @media (max-width:500px) {
     .banner{  
       
