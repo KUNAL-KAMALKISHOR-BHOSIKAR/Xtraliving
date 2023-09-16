@@ -80,12 +80,20 @@
 
    
      }
+     .func-banner-text{
+      
+        padding-left: 3rem;
+    }
 }
 @media (max-width:770px){
   
     .func-banner-img img{
         height: 30rem;
       
+    }
+    .func-banner-text{
+      
+        padding-left: 2rem;
     }
 }
 @media (max-width:550px){
@@ -119,8 +127,9 @@
     .func-banner-text{
        gap: 0.5rem;
        position: absolute;
-       top: -1.5rem;
+       top: -4rem;
        height: 100%;
-  
+   padding-left: 0rem;
     }
+  
 }
