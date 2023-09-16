@@ -44,11 +44,16 @@ return(
         <span>Terms</span>
     </div>
     <div className="socials">
-        <AiFillYoutube/>
-        <AiFillLinkedin/>
-        <AiFillInstagram/>
-        <AiFillTwitterSquare/>
-        <AiFillFacebook/>
+     <a href="https://www.youtube.com/@rishi9566">
+      <AiFillYoutube/>   </a>  
+       <a href="https://www.linkedin.com/in/xrishi/">
+        <AiFillLinkedin/> </a>
+      <a target="_blank" href="https://www.instagram.com/x.rishi/?igshid=YmMyMTA2M2Y%3D&fbclid=IwAR0hHCrnwgAgLkIWdZjD3cJdNhqG-GVWARl9zeLIhSzKnYL3hG6kPwePlBk">
+         <AiFillInstagram/> </a>
+      <a target="_blank" href="https://twitter.com/rishi_xpl">
+         <AiFillTwitterSquare/> </a>
+      <a target="_blank" href="https://www.facebook.com/rishikesh.kumar.75054">
+         <AiFillFacebook/> </a>
     </div>
    
 </div>
