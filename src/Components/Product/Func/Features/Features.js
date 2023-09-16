@@ -20,8 +20,8 @@ function Features() {
 <div className="fe-item">
 <img src={f2} alt="" />
 <h3>Innovative Metal Ball Technology</h3>
-<p>A design that seamlessly fits into
-     your daily life.</p>
+<p>Embrace the feel of weights minus the
+      danger and clutter.</p>
 </div>
 
 <div className="fe-item">
@@ -34,14 +34,13 @@ function Features() {
 <div className="fe-item">
 <img src={f4} alt="" />
 <h3>Eco-Conscious Build</h3>
-<p>A design that seamlessly
-     fits into your daily life.</p>
+<p>Sustainable and durable materials.</p>
 </div>
 <div className="fe-item">
 <img src={f5} alt="" />
 <h3>Exclusive Online Community</h3>
-<p>From rookies to seasoned fitness
-     aficionados.</p>
+<p> Engage with our vibrant community for
+      expert advice and unique workouts.</p>
 </div>
 </div>
 
