@@ -7,7 +7,7 @@ function Banner() {
     <div className='banner'>
   
      <div className="hero">
-       <div className="hero-text">
+       <div className="hero-text ath-txt">
 <h1>Unleash Your Olympic Potential</h1>
 
 <p>Master Movement & Nutrition with <br/>Elite Training Regimens</p>
@@ -15,7 +15,7 @@ function Banner() {
   <button>Enroll today <BsArrowRight/></button></a>
        </div>
        <div className="hero-img ath-banner">
-    <img src={banner} alt=""  />
+    <img src={banner} alt=""  className='ath-img'  />
        </div>
      </div>
     
