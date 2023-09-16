@@ -45,7 +45,7 @@ function Duration() {
             in the Olympic arena.</span>
     </div>
         </div>
-             <div className="price-img">
+             <div className="price-img ath-img">
     <img src={price} alt="" height={350} />
     </div>
     </div>

@@ -68,8 +68,9 @@
  
 }
 @media (max-width:500px) {
-    .for-small{
+    .users img{
      height: 250px;
+    
 
     }
 }

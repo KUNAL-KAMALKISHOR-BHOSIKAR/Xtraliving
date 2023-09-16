@@ -29,3 +29,9 @@
 .Limited p{
     padding: 0 1rem ;
 }
+@media (max-width:500px) {
+    .lin-area{
+        width: 90%;
+        
+    }
+}
