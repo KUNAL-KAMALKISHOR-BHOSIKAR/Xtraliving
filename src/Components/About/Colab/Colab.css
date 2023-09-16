@@ -21,20 +21,25 @@
 
 .large{
     display: flex;
-   
+  
 }
 .large  p{
     background-color: white;
+    width: 60%;
     height: 3.5rem;
     padding: 0 1rem;
     display: flex;
- 
     align-items: center;
     gap: 0.5rem;
     border-radius: 0.7rem;
     box-shadow: 0px 0px 15px #63636347; 
     text-align: start;
 }
+.first-p{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .large  p img{
     height: 40px;
 }
