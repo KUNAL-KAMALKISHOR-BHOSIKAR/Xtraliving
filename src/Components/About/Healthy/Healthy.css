@@ -65,9 +65,12 @@ position: relative;
 
 @media (max-width:1600px) {
     .know .txt p{
-        width: 80%;
-        
-    
+        width: 80%;    
+    }
+}
+@media (max-width:1300px) {
+    .know .txt p{
+        width: 100%;    
     }
 }
 
