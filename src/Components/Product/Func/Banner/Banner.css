@@ -60,37 +60,57 @@
         height: 35rem;
       
     }
+    .func-b{
+       height: 350px;
+     
+    }
+    .func-banner-text{
+     
+      
+
+   
+     }
 }
 @media (max-width:770px){
+  
     .func-banner-img img{
         height: 30rem;
       
     }
 }
 @media (max-width:550px){
+    .func-b{
+       
+        height:155px;
+    }
     .func-banner-img img{
-        height: 25rem;
+        height: 20rem;
       
     }
     .func-banner-text h1{
         font-size: 2rem;
         font-weight: 900;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     .func-banner-text p{
         font-size: 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
+        width: 10rem;
+        margin-bottom: 2rem;
     }
     .func-banner-text button{
-        height: 50px;
-        width: 200px;
+        height: 35px;
+        width: 120px;
        margin-top: 0rem;
        margin-left: 2rem;
+       font-size: 0.7rem;
+       box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
     }
     .func-banner-text{
        gap: 0.5rem;
        position: absolute;
-       top: 4rem;
-    
+       top: -1.5rem;
+       height: 100%;
+  
     }
 }

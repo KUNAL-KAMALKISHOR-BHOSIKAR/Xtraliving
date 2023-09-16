@@ -48,7 +48,11 @@
     display: flex;
     justify-content: space-between;
 }
-
+@media (max-width:1400px) {
+    .large  p{ 
+        width: 80%;       
+    }
+}
 @media (max-width:900px) {
     .Colab .forsmall{
         display:flex;
