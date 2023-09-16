@@ -22,6 +22,7 @@
 }
 .faq-tamp span{
     font-size: 1.3rem;
+    text-align: start;
     display: flex;
     align-items: center;
     justify-content: flex-start;

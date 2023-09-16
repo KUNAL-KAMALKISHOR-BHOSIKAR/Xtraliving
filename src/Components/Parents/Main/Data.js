@@ -8,7 +8,7 @@ export const Data=[
 {
 img: m1,
 heading:"Expert-led Sessions" ,
-text1: "1.Hands-on guidance from professionals specializing in children's movement and nutrition.",
+text1: "Hands-on guidance from professionals specializing in children's movement and nutrition.",
 
 },
 {
