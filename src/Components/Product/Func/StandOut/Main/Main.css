@@ -1,21 +1,24 @@
-.Main{
+.Main-func{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;  
+  
 }
-.temp-area{
+.temp-area-func{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap; 
+    gap: 3rem;
     width: 100%;
+
 }
-@media (max-width:1060px) {
+/* @media (max-width:1060px) {
     .temp-area{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap; 
     }
-}
+} */

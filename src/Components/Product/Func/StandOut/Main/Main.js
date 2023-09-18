@@ -4,10 +4,10 @@ import{ Data} from "./Data"
 import MainTamp from './mainTamp'
 function Main() {
   return (
-    <div className='Main'>
+    <div className='Main-func'>
        
       <h2>Why FUNc <span style={{color:"#4E62D6"}}>Stands Out</span></h2>
-      <div className="temp-area">
+      <div className="temp-area-func">
       {
         Data.map((data=>(
         <MainTamp img={data.img}

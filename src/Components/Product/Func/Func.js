@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Func.css"
 import Banner from "./Banner/Banner"
-import StandOut from './StandOut/StandOut'
+//import StandOut from './StandOut/StandOut'
 import Features from './Features/Features'
 import Users from './users/users'
 import Limited from './Limited/Limited'
