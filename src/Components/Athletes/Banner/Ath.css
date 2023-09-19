@@ -55,6 +55,18 @@
     color: #ED5009;
     font-size: 1.2rem;
 }
+
+@media (max-width:1300px) {
+    .ath-hero-img img{
+        height: 18rem;
+      
+    }
+    .ath-hero-text{
+     
+        margin-bottom: 1rem;
+
+    }
+}
 @media (max-width:900px) {
     .banner-ath .ath-hero{
         display: flex;
