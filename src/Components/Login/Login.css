@@ -1,0 +1,48 @@
+.Login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.Login .login-area{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.Login .login-area .heading-area{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.Login .login-area span{
+    cursor: pointer;
+    color: #ED5009 ;
+}
+.Login .login-area .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Login .login-area .inputs input{
+    height: 3rem;
+    width: 20rem;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    background-color: inherit;
+    padding-left: 2rem;
+    outline: none;
+}
+.Login .login-area .button-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.Login .login-area .button-area input{
+  height: 3rem;
+  width: 15rem;
+  border-radius: 0.7rem;
+  border: none;
+  background-color: #FD8C69;
+  cursor: pointer;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Navbar.css"
 import { BiMenuAltRight } from 'react-icons/bi';
+import { BiLogInCircle } from 'react-icons/bi';
+import { Link } from "react-router-dom";
 import Responsive from "./Responsive";
 const Navbar=()=>{
     const [open, setOpen] = useState(false)
@@ -9,7 +11,8 @@ const Navbar=()=>{
     }
     return(
     <div className="Navbar">
-        <BiMenuAltRight onClick={openNav} />
+       <Link to="login">  <BiLogInCircle className="login"/></Link>
+       <BiMenuAltRight onClick={openNav} />
     {
     open&&(
         <Responsive close={openNav} />

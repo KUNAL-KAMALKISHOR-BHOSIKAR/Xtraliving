@@ -12,6 +12,8 @@ import Athletes from './Components/Athletes/Athletes';
 import Workshop from './Components/Workshop/Workshop';
 import Func from './Components/Product/Func/Func';
 import Collabrate from "./Components/Collabrate/Collabrate"
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -27,6 +29,8 @@ function App() {
     <Route path='/workshop' element={<Workshop/>} />
     <Route path='/collaborate' element={<Collabrate/>} />
     <Route path='/func' element={<Func/>} />
+    <Route path='/login' element={<Login/>} />
+    <Route path='/register' element={<Register/>} />
   </Routes>
   <Footer/>
 </div>
