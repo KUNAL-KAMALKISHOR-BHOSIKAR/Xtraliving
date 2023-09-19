@@ -1,0 +1,8 @@
+.state{
+    margin-left: 5rem;
+}
+@media (max-width:1000px) {
+    .state{
+        margin-left: 0rem;
+    }  
+}

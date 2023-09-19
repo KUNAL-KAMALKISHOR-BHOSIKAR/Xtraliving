@@ -1,0 +1,30 @@
+.Hands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.Hands .items{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+@media (max-width:1000px) {
+    .Hands .items{
+        gap: 3rem;
+        margin: 0 2rem;
+    }
+}
+@media (max-width:500px) {
+    .Hands h2{
+        text-align: center;
+    }
+    .Hands .items{
+       
+        margin: 0 1rem;
+    }
+}

@@ -1,0 +1,92 @@
+.Empowering{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.girl-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: white;
+    padding: 1rem 0;
+}
+.girl-area img{
+    height: 20rem;
+}
+.girl-txt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+    width: 40%;
+}
+.girl-txt button{
+    height: 50px;
+    width: 200px;
+    border: 1px solid #ED5009;
+    background-color: #4E62D6;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    cursor: pointer;
+
+}
+.girl-txt button svg{
+    color: #ED5009;
+    font-size: 1.2rem;
+}
+.emp-txt{
+
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #ED5009;
+}
+.emp-txt span{
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (max-width:500px) {
+    .girl-area{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 0 1rem;
+    }
+    .girl-area img{
+        height: 18rem;
+    }
+    .girl-txt{    
+        align-items: center;
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 100%;      
+        padding-bottom: .5rem;
+    }
+    .girl-txt p{
+        text-align: center;
+        width: 90%;
+    }
+    .emp-txt{
+
+        height: 100px;
+     
+    }
+    .emp-txt span{
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+    }
+}

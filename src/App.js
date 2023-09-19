@@ -11,6 +11,7 @@ import Parents from './Components/Parents/Parents';
 import Athletes from './Components/Athletes/Athletes';
 import Workshop from './Components/Workshop/Workshop';
 import Func from './Components/Product/Func/Func';
+import Collabrate from "./Components/Collabrate/Collabrate"
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -24,6 +25,7 @@ function App() {
     <Route path='/parents' element={<Parents/>} />
     <Route path='/athletes' element={<Athletes/>}/>
     <Route path='/workshop' element={<Workshop/>} />
+    <Route path='/collaborate' element={<Collabrate/>} />
     <Route path='/func' element={<Func/>} />
   </Routes>
   <Footer/>

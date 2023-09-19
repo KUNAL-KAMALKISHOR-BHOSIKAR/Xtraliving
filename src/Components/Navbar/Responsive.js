@@ -26,6 +26,7 @@ function Responsive({close}) {
    <Link to="/parents"> <li onClick={Close}>Parents</li></Link>
    <Link to="/athletes"> <li onClick={Close}>Athletes</li></Link>
    <Link to="/workshop"> <li onClick={Close}>Busy Professional</li> </Link>
+   <Link to="/collaborate" ><li onClick={Close}>Collaborate</li> </Link>
    </div>    )}
     <Link to="/about"><li onClick={Close} >About</li> </Link>
     <a href="https://www.rishi.fit/media"><li>Media</li></a>
