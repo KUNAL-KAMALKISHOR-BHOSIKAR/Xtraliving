@@ -12,9 +12,9 @@ return(
     backgroundRepeat: 'no-repeat',  
     }}>
         <h1>Our Associations</h1>
-    <img className="ass1" src={ass1}  alt="" height={100} />
-    <img src={ass2} className="ass2" alt="" height={100} />
-     <img src={ass3} alt="" className="ass3" height={100} /> 
+    <img loading='lazy' className="ass1" src={ass1}  alt="" height={100} />
+    <img loading='lazy' src={ass2} className="ass2" alt="" height={100} />
+     <img loading='lazy' src={ass3} alt="" className="ass3" height={100} /> 
     <div >
 
    

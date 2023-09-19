@@ -28,7 +28,7 @@ const Reviews=()=>{
      
         <h1>What customer say about us ?</h1> 
         <div className="customer-video" ref={box}>
-        <img src={customer} height={450} alt="" /> 
+        <img loading='lazy' src={customer} height={450} alt="" /> 
         </div> 
         <div className="review-arrows">
         <img onClick={Left} src={left} alt="" height={40} />

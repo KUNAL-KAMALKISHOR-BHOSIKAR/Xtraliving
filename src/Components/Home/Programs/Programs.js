@@ -35,21 +35,21 @@ backgroundPosition: 'center',
 <div className='program-list'>
    
 <div className='program-item'>
-<img src={athletes} height={250} alt=""/>
+<img loading='lazy' src={athletes} height={250} alt=""/>
 <div className='program-text'>
     <p>ATHLETES</p>
  <Link to="/athletes" ><span>Know more <IoIosArrowForward/></span></Link>
 </div> 
 </div>
 <div className='program-item'>
-<img src={Adults} height={250} alt=""/>
+<img loading='lazy'  src={Adults} height={250} alt=""/>
 <div className='program-text'>
     <p>CXOs</p>
   <Link to="/performance"><span>Know more <IoIosArrowForward/></span></Link> 
 </div>
 </div>
 <div className='program-item'>
-<img src={customer} height={250} alt=""/>
+<img loading='lazy' src={customer} height={250} alt=""/>
 <div className='program-text'>
     <p>CUSTOM</p>
    <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> <span>  Know more <IoIosArrowForward/></span></a>
@@ -72,7 +72,7 @@ backgroundPosition: 'center',
 </div>
 <div className='program-list'>
     <div className='program-item'>
-<img src={parents} height={250} alt=""/>
+<img loading='lazy' src={parents} height={250} alt=""/>
 <div className='program-text'>
 
     <p>PARENTS</p>
@@ -80,14 +80,14 @@ backgroundPosition: 'center',
 </div>
 </div>
 <div className='program-item'>
-<img src={corpo} height={250} alt=""/>
+<img loading='lazy' src={corpo} height={250} alt=""/>
 <div className='program-text'>
   <p>CORPORATES</p>
  <Link to="/workshop" >   <span>Know more <IoIosArrowForward/></span></Link>
 </div>
 </div>
 <div className='program-item'>
-<img src={custom} height={250} alt=""/>
+<img loading='lazy' src={custom} height={250} alt=""/>
 <div className='program-text'>
 <p>CUSTOM</p>   
 <a href="https://forms.myfunc.in/myfunc/form/ConnectwithRishi/formperma/HkPge_e3v8bQoOpsQka6qPmQ5YBTC29DAGd2H5FJaHk"> <span>Know more <IoIosArrowForward/></span></a>

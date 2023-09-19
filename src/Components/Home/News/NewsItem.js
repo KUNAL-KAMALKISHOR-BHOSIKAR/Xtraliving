@@ -5,7 +5,7 @@ function NewsItem({img, text}) {
     <div>
     <div className="news-list">
 <div className="news-item">
-<img src={img} alt="" height={30} style={{padding:"2.5rem"}} />
+<img loading='lazy' src={img} alt="" height={30} style={{padding:"2.5rem"}} />
 <p>"{text}</p>
 </div>
 

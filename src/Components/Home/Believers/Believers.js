@@ -26,10 +26,10 @@ const Believers =()=>{
         }}>
         <h2>Early believers</h2>
         <div className="images" ref={box}>
-        <img src={pics1} alt="" height={230} />
-        <img src={pics2} alt="" height={230} />
-        <img src={pics3} alt="" height={230} />
-        <img src={pics4} alt="" height={230} />
+        <img loading='lazy' src={pics1} alt="" height={230} />
+        <img loading='lazy' src={pics2} alt="" height={230} />
+        <img loading='lazy' src={pics3} alt="" height={230} />
+        <img loading='lazy' src={pics4} alt="" height={230} />
         </div>
         <div className="arrows">
         <img onClick={Left} src={left} alt="" height={40} />
