@@ -1,0 +1,27 @@
+.Success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.Success .message-area{
+    z-index: 2;
+    height: 15rem;
+    width: 30rem;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-50%); 
+    left: 50%; 
+    border-radius: 0.7rem;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Success .overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.137);
+}

@@ -1,11 +1,13 @@
 import React, { useState} from 'react'
 import "./Login.css"
 import { Link, useNavigate } from 'react-router-dom'
+import { useStateValue } from '../../State/StateProvider';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 const navigate = useNavigate()  
   // const [_, setCookies] = useCookies(["access_token"])
+  const [,dispatch] = useStateValue()
   const sendDetail= async(e)=>{
     e.preventDefault()
     try { 
@@ -23,7 +25,10 @@ const navigate = useNavigate()
         const username = data.username
         localStorage.setItem("token", token);
         localStorage.setItem("username", username);
-       
+       dispatch({
+        type: "LOG_IN",
+        item: username
+       })
         navigate("/")
       } else {
         console.error("Login failed");

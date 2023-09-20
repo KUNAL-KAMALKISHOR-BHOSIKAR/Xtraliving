@@ -15,9 +15,11 @@
     z-index: 2;
 }
 .Navbar .login{
+    font-weight: bold;
     transition: 0.3s ease-in;
 }
 .Navbar .login:hover{
+
 color:#ED5009 ;
 }
 @media (max-width:600px) {

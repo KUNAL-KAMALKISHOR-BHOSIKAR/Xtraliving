@@ -17,12 +17,12 @@ app.post('/register', async(req,res)=>{
       
         const user = await UserModel.findOne({username});
         if(user){
-            return res.json({message:"Username already in use"})
+            return res.status(400).json({message:"Username already in use"})
         }
         const hashpassword = await bcrypt.hash(password, 10)
         const newUser = new UserModel({username, password:hashpassword})
         await newUser.save()
-        res.json({message:"user registered successfully"})
+        res.status(200).json({message:"user registered successfully"})
     } catch (error) {
         console.error(error.message);
     }
@@ -30,7 +30,7 @@ app.post('/register', async(req,res)=>{
 app.post("/login", async(req,res)=>{
     try {
         const {username, password} = req.body;
-        console.log({username, password})
+        // console.log({username, password})
         const user = await  UserModel.findOne({username})
         if(!user){
             return res.status(404).json({message:"user does not exist"})
