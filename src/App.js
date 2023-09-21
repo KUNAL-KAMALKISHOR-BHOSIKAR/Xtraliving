@@ -4,7 +4,6 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
-// import Media from './Components/Media/Media/Media';
 import Performance from './Components/Performance/Performance';
 import Products from './Components/Product/Products';
 import Parents from './Components/Parents/Parents';
@@ -15,6 +14,7 @@ import Collabrate from "./Components/Collabrate/Collabrate"
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Media from './Components/Media/Media';
+import One from './Components/Media/Pages/One';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -23,7 +23,6 @@ function App() {
     <Route path="/" element={<Home/>}/>
     <Route path='/about' element={<About/>}/>
     <Route path='/performance' element={<Performance/>}/>
-    {/* <Route path='/media' element={<Media/>} />  */}
     <Route path='/products' element={<Products/> } />
     <Route path='/parents' element={<Parents/>} />
     <Route path='/athletes' element={<Athletes/>}/>
@@ -33,6 +32,8 @@ function App() {
     <Route path='/login' element={<Login/>} />
     <Route path='/register' element={<Register/>} />
     <Route path='/media' element={<Media/>} />
+    {/* useless pages */}
+    <Route path='/media/raise' element={<One/>} />
   </Routes>
   <Footer/>
 </div>

@@ -1,0 +1,10 @@
+.page-body{
+    display: flex;
+    flex-direction: column;
+background-color: aquamarine;
+}
+.page-body img{
+    object-fit: cover;
+    height: 60vh;
+  
+}
