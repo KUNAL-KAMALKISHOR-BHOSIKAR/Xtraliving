@@ -23,14 +23,17 @@ function Previous() {
             <img loading="lazy" src={p2} alt="" />
             <h3>Go Girl Go campaign​</h3>
         </div></Link> 
-        <div className="event-item">
+      <Link to="/media/championship"> <div className="event-item">
             <img loading="lazy" src={p3} alt="" />
             <h3>eNERGIZE fitness championship</h3>
-        </div>
-        <div className="event-item">
+        </div>  
+         </Link>
+        <Link to="/media/bootcamp">
+              <div className="event-item">
             <img loading="lazy" src={p4} alt="" />
             <h3>eNERGIZE Bootcamp​</h3>
         </div>
+        </Link>
         <div className="event-item">
             <img loading="lazy" src={p5} alt="" />
             <h3>Eye health seminar​</h3>

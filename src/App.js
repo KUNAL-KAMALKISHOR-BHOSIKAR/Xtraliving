@@ -16,6 +16,9 @@ import Register from './Components/Register/Register';
 import Media from './Components/Media/Media';
 import One from './Components/Media/Pages/One';
 import Two from './Components/Media/Pages/Two';
+import Three from './Components/Media/Pages/Three';
+import Four from './Components/Media/Pages/Four';
+
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -36,6 +39,8 @@ function App() {
     {/* useless pages */}
     <Route path='/media/raise' element={<One/>} />
     <Route path='/media/gogirl' element={<Two/>} />
+    <Route path='/media/championship' element={<Three/>} />
+    <Route path='/media/bootcamp' element={<Four/>} />
   </Routes>
   <Footer/>
 </div>
