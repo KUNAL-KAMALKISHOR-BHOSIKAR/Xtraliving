@@ -29,7 +29,7 @@ function Responsive({close}) {
    <Link to="/collaborate" ><li onClick={Close}>Collaborate</li> </Link>
    </div>    )}
     <Link to="/about"><li onClick={Close} >About</li> </Link>
-    <a href="https://www.rishi.fit/media"><li>Media</li></a>
+  <Link to="/media"><li onClick={Close}>Media</li></Link>
     <a href="https://www.rishi.fit/myBlogs"><li>Blogs</li></a>
    
        </ul>
