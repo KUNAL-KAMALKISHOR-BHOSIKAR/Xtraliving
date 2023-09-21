@@ -9,15 +9,16 @@ import p7 from "./img/p7.png"
 import p8 from "./img/p8.jpg"
 import p9 from "./img/p9.png"
 import "./Previous.css"
+import { Link } from 'react-router-dom'
 function Previous() {
   return (
     <div className='Previous'>
       <h2>Previous events</h2>
       <div className="event-list">
-        <div className="event-item">
+      <Link to="/media/raise">  <div className="event-item">
             <img loading="lazy" src={p1} alt="" />
             <h3>Raise an Athlete​</h3>
-        </div>
+        </div></Link>
         <div className="event-item">
             <img loading="lazy" src={p2} alt="" />
             <h3>Go Girl Go campaign​</h3>
