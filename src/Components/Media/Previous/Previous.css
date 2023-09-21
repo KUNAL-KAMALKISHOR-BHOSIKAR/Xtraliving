@@ -1,0 +1,33 @@
+.Previous{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Previous .event-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    justify-content: center;
+
+}
+ .event-list .event-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: start;
+    
+}
+.event-list .event-item img{
+    height: 13rem;
+    width: 20rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    object-fit: cover;
+}
+.event-list .event-item img:hover{
+    transform: scale(1.1);
+}
+.event-list .event-item h3{
+    font-weight: 500;
+}

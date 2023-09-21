@@ -14,6 +14,7 @@ import Func from './Components/Product/Func/Func';
 import Collabrate from "./Components/Collabrate/Collabrate"
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
+import Media from './Components/Media/Media';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -31,6 +32,7 @@ function App() {
     <Route path='/func' element={<Func/>} />
     <Route path='/login' element={<Login/>} />
     <Route path='/register' element={<Register/>} />
+    <Route path='/media' element={<Media/>} />
   </Routes>
   <Footer/>
 </div>
