@@ -15,6 +15,7 @@ import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Media from './Components/Media/Media';
 import One from './Components/Media/Pages/One';
+import Two from './Components/Media/Pages/Two';
 function App() {
   return (
 <div className="App bg-red-500 ">
@@ -34,6 +35,7 @@ function App() {
     <Route path='/media' element={<Media/>} />
     {/* useless pages */}
     <Route path='/media/raise' element={<One/>} />
+    <Route path='/media/gogirl' element={<Two/>} />
   </Routes>
   <Footer/>
 </div>
