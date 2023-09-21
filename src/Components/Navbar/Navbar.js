@@ -3,6 +3,7 @@ import "./Navbar.css"
 import { BiMenuAltRight } from 'react-icons/bi';
 import { Link } from "react-router-dom";
 import Responsive from "./Responsive";
+import { BiSolidUser } from 'react-icons/bi';
 import { useStateValue } from "../../State/StateProvider";
 const Navbar=()=>{
     const [{user, isLoggedIn}, dispatch] = useStateValue();
@@ -13,8 +14,7 @@ const Navbar=()=>{
     return(
     <div className="Navbar">
       {isLoggedIn? 
-      <span className="login">Logout</span>:    <Link to="login"><span className="login">Login</span></Link>
-        
+  <Link to="profile"> <BiSolidUser className="login"/></Link>:    <Link to="login"><span className="login">Login</span></Link>       
         }
      <BiMenuAltRight onClick={openNav} /> 
     {

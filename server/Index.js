@@ -14,7 +14,12 @@ mongoose.connect("mongodb+srv://xtraliving2023:Xtradnan19@xtra.htbjg96.mongodb.n
 app.post('/register', async(req,res)=>{
     try {
         const {username, password} = req.body
-      
+      if(username.length < 6){
+        return res.status(400).json({message:"username must be atleast 6 characters long"})
+      }
+      if(password.length < 8){
+        return res.status(400).json({message:"password must be atleast 8 characters long"})
+      }
         const user = await UserModel.findOne({username});
         if(user){
             return res.status(400).json({message:"Username already in use"})

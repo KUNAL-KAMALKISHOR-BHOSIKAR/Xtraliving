@@ -18,6 +18,7 @@ import One from './Components/Media/Pages/One';
 import Two from './Components/Media/Pages/Two';
 import Three from './Components/Media/Pages/Three';
 import Four from './Components/Media/Pages/Four';
+import Profile from './Components/Profile/Profile';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
     <Route path='/login' element={<Login/>} />
     <Route path='/register' element={<Register/>} />
     <Route path='/media' element={<Media/>} />
+    <Route path='profile' element={<Profile/>}/>
     {/* useless pages */}
     <Route path='/media/raise' element={<One/>} />
     <Route path='/media/gogirl' element={<Two/>} />
