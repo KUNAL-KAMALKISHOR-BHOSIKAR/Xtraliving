@@ -19,6 +19,7 @@ import Two from './Components/Media/Pages/Two';
 import Three from './Components/Media/Pages/Three';
 import Four from './Components/Media/Pages/Four';
 import Profile from './Components/Profile/Profile';
+import Eight from './Components/Media/Pages/Eight';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
     <Route path='/media/gogirl' element={<Two/>} />
     <Route path='/media/championship' element={<Three/>} />
     <Route path='/media/bootcamp' element={<Four/>} />
+    <Route path='/media/quiz' element={<Eight/>}/>
   </Routes>
   <Footer/>
 </div>

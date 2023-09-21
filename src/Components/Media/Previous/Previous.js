@@ -46,10 +46,10 @@ function Previous() {
             <img loading="lazy" src={p7} alt="" />
             <h3>Gymnastics in India</h3>
         </div>
-        <div className="event-item">
+        <Link to="/media/quiz">  <div className="event-item">
             <img loading="lazy" src={p8} alt="" />
             <h3>eNERGIZE quiz competition​</h3>
-        </div>
+        </div></Link>
         <div className="event-item">
             <img loading="lazy" src={p9} alt="" />
             <h3>Myopia awareness talk​​</h3>
