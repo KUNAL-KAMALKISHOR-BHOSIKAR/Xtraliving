@@ -25,11 +25,12 @@ const navigate = useNavigate()
         const username = data.username
         localStorage.setItem("token", token);
         localStorage.setItem("username", username);
+   
        dispatch({
         type: "LOG_IN",
         item: username
        })
-        navigate("/")
+        navigate("/profile")
       } else {
         console.error("Login failed");
       }

@@ -1,6 +1,6 @@
 export const initialState={
     user: localStorage.getItem("username") || null,
-    isLoggedIn: false
+    isLoggedIn: !!localStorage.getItem("token")
 }
 
 function reducer(state, action){
