@@ -33,6 +33,27 @@ function Nine() {
         <h3>About Plano​</h3>     
         <p>Plano is a Singapore-based health technology company that specializes in the management of myopia (short-sightedness) and smart device use through education and awareness and science-based technological interventions. Plano’s main product, the planoApp, is the only science-based parental control application that helps monitor your child’s device use and eye health. Find out more at plano.co.</p>
      </div>
+     <h2>Speakers</h2>
+     <div className="speakers">
+    
+      <div className="individual-speaker">     
+        <img src="https://www.rishi.fit/static/media/myopia-speaker-1.f1de9be944689c2fa5af.png" alt="" />
+      <span>Mr. Kevin Tay</span>
+    <p>Kevin is Plano’s Chief Operating Officer who is passionate about the company’s vision: “Keeping all eyes healthy in a digitized world”. Kevin is an MBA graduate from the Nanyang Business School, with a Master’s in Strategy and International Management from the University of St. Gallen, Switzerland. He also has a Bachelor’s in Chemical Engineering from the National University of Singapore (NUS).</p>
+      </div>
+
+      <div className="individual-speaker">     
+        <img src="https://www.rishi.fit/static/media/myopia-speaker-2.594faa72c1bc65c8602d.png" alt="" />
+      <span>Mr. Arief Tjitra Salim</span>
+    <p>Arief is a Senior Research Scientist at Plano Pte Ltd. Arief graduated from Nanyang Technological University (NTU) was amongst the top 5% of his cohort. To date, he has conducted over 60 eye health talks, reaching out to more than 50,000 primary school children and teachers across Singapore and abroad. He has also authored three universal reports concerning parental awareness and knowledge about myopia, as well as digital eye strain in both adults and children.</p>
+      </div>
+
+      <div className="individual-speaker">     
+        <img src="https://www.rishi.fit/static/media/myopia-speaker-3.ca49c1d68a38e9f3e693.png" alt="" />
+      <span>Dr. Anitha D Praveen</span>
+    <p>Anitha is a Senior Research Scientist at Plano Pte Ltd. Having majored in Biomedical Engineering, she has more than 10 years of research expertise. Being a recipient of the Singapore University of Technology and Design (SUTD) scholarship, she successfully completed her PhD from SUTD with over 5 high-impact journal articles published as the first author. Prior to her doctorate studies, she also graduated with her Bachelors and Masters of Engineering from National University of Singapore (NUS).</p>
+      </div>
+     </div>
    </div>
     </div>
   )
