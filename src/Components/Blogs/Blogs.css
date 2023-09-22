@@ -1,0 +1,26 @@
+.Blogs .b-area{
+    
+}
+.Blogs img{ 
+    width: 100%;
+    height: 100%;
+  
+}
+.Blogs .what-does{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.Blogs .what-does  img{
+    height: 400px;
+    object-fit: contain;
+}
+.Blogs .what-does h4{
+
+}
+.Blogs .what-does .f-txt{
+    background-color: ;
+}

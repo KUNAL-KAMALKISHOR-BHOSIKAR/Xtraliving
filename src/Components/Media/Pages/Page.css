@@ -35,7 +35,8 @@
 }
 .page-text-area .agenda-area h3{
     font-size: 2rem;
-   
+   border-left: 8px solid #ed5009;
+   padding-left: 0.2rem;
 }
 .page-text-area .agenda-area strong{
     font-size: 1.2rem;

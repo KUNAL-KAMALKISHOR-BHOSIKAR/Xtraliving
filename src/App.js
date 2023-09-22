@@ -24,6 +24,7 @@ import Five from './Components/Media/Pages/Persons/Five';
 import Six from './Components/Media/Pages/Persons/Six';
 import Seven from './Components/Media/Pages/Persons/Seven';
 import Nine from './Components/Media/Pages/Nine';
+import Blogs from './Components/Blogs/Blogs';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
     <Route path='/login' element={<Login/>} />
     <Route path='/register' element={<Register/>} />
     <Route path='/media' element={<Media/>} />
+    <Route path='/blogs' element={<Blogs/>} />
     <Route path='profile' element={<Profile/>}/>
     {/* useless pages */}
     <Route path='/media/raise' element={<One/>} />
