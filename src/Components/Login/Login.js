@@ -5,6 +5,7 @@ import { useStateValue } from '../../State/StateProvider';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState("")
 const navigate = useNavigate()  
   // const [_, setCookies] = useCookies(["access_token"])
   const [,dispatch] = useStateValue()
@@ -19,6 +20,7 @@ const navigate = useNavigate()
         },
         body: JSON.stringify(body)
       })
+  
       if (response.status === 200) {
         const data = await response.json();
         const token = data.token;
@@ -30,9 +32,10 @@ const navigate = useNavigate()
         type: "LOG_IN",
         item: username
        })
-        navigate("/profile")
-      } else {
-        console.error("Login failed");
+        window.location.replace("/profile")
+      } else if (response.status === 404 || 401){
+        const data = await response.json();
+        setError(data.message)
       }
       // setCookies("access_token", response.formData.token)
     } catch (error) {
@@ -48,7 +51,10 @@ const navigate = useNavigate()
       <span>Don't Have an account? Register one!</span></Link>  
         </div>
         <div className="inputs">
+        <div className="input-error">
         <input type="text"  onChange={(e)=>setUsername(e.target.value)} placeholder='Enter Email / User Name' />
+        <span>{error}</span>
+         </div>
   <input type="text" onChange={(e)=>setPassword(e.target.value)} placeholder='Password' />        
         </div>
         <div className="button-area">
