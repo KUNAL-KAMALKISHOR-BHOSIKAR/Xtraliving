@@ -20,6 +20,9 @@ import Three from './Components/Media/Pages/Three';
 import Four from './Components/Media/Pages/Four';
 import Profile from './Components/Profile/Profile';
 import Eight from './Components/Media/Pages/Eight';
+import Five from './Components/Media/Pages/Persons/Five';
+import Six from './Components/Media/Pages/Persons/Six';
+import Seven from './Components/Media/Pages/Persons/Seven';
 
 function App() {
   return (
@@ -44,11 +47,15 @@ function App() {
     <Route path='/media/gogirl' element={<Two/>} />
     <Route path='/media/championship' element={<Three/>} />
     <Route path='/media/bootcamp' element={<Four/>} />
+    <Route path='/media/doctor' element={<Five/>}/>
+    <Route path='/media/romanov' element={<Six/>}/>
     <Route path='/media/quiz' element={<Eight/>}/>
+    <Route path='/media/sudhir' element={<Seven/>}/>
   </Routes>
   <Footer/>
 </div>
   );
 }
+
 
 export default App;

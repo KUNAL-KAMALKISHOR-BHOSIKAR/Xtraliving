@@ -34,18 +34,22 @@ function Previous() {
             <h3>eNERGIZE Bootcamp​</h3>
         </div>
         </Link>
-        <div className="event-item">
+        <Link to="/media/doctor">    <div className="event-item">
             <img loading="lazy" src={p5} alt="" />
             <h3>Eye health seminar​</h3>
-        </div>
-        <div className="event-item">
+        </div>  
+        </Link>
+        <Link to="/media/romanov"> 
+           <div className="event-item">
             <img loading="lazy" src={p6} alt="" />
             <h3>Reducing the risk of injury​</h3>
         </div>
+        </Link> 
+        <Link to="/media/sudhir">
         <div className="event-item">
             <img loading="lazy" src={p7} alt="" />
             <h3>Gymnastics in India</h3>
-        </div>
+        </div> </Link>
         <Link to="/media/quiz">  <div className="event-item">
             <img loading="lazy" src={p8} alt="" />
             <h3>eNERGIZE quiz competition​</h3>
