@@ -18,6 +18,9 @@
 }
 .arti-area .arti .arrow{
    font-size: 2rem;
+   margin-left: 93%;
+   margin-top: -9%;
+   cursor: pointer;
 }
 
 .arti-area .arti .arti-txt{

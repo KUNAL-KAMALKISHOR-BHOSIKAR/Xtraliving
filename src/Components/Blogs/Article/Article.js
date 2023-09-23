@@ -16,7 +16,7 @@ yet distinct. While innovation refers
 to creating new ideas, products, services,
 or processes, entrepreneurship refers to
     bringing those ideas to the market and
-    building a business around them.... <IoIosArrowDropright className='arrow' /></p>
+    building a business around them.... <br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 
 </div>
@@ -29,7 +29,7 @@ or processes, entrepreneurship refers to
      in respect, empathy, and understanding. It focuses on building
       a strong, loving relationship between parent and child and
        fostering an environment that supports a child's emotional,
-        physical, and intellectual growth.....</p>
+        physical, and intellectual growth.....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 
@@ -42,7 +42,7 @@ or processes, entrepreneurship refers to
       rather than simply treating symptoms or illnesses. This
        approach looks at the root causes of health problems and
         seeks to address them rather than just managing symptoms
-         with medication or surgery....</p>
+         with medication or surgery....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 
@@ -54,7 +54,7 @@ or processes, entrepreneurship refers to
      expertise through public speaking. He believes that public
       speaking is a powerful tool that can inspire and motivate
        individuals to take action towards improving their health and
-        well-being....</p>
+        well-being....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 
@@ -67,7 +67,7 @@ or processes, entrepreneurship refers to
       remains as a topic of discussion only among the relatively young
        population of our society. Rarely do we find the need to include
         and encourage the seniors of our population to be physically
-         fit....</p>
+         fit....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 
@@ -81,7 +81,7 @@ or processes, entrepreneurship refers to
        SUPERFOODS! These are foods that are extremely beneficial for
         human health due to their exceptionally high nutrient density.
          Eating superfoods enriches our bodies with all the much-needed
-          nutrients and makes density....</p>
+          nutrients and makes density....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 
@@ -94,7 +94,7 @@ or processes, entrepreneurship refers to
       broadly relying upon the nature and seriousness of the injury.
        Injures regularly bring about discontinuance, or possibly a
         decrease, in cooperation in sport and diminished physical
-         action....</p>
+         action. More extreme wounds may bring about the immobilization of a limb....<br/><IoIosArrowDropright className='arrow' /></p>
     </div>
 </div>
 </div>
