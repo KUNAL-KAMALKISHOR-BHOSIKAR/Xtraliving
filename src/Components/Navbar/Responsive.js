@@ -30,7 +30,7 @@ function Responsive({close}) {
    </div>    )}
     <Link to="/about"><li onClick={Close} >About</li> </Link>
   <Link to="/media"><li onClick={Close}>Media</li></Link>
-    <a href="https://www.rishi.fit/myBlogs"><li>Blogs</li></a>
+   <Link to="/blogs"> <li onClick={Close}>Blogs</li></Link>
    
        </ul>
   </div>
