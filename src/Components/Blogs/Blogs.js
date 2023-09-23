@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Blogs.css"
 import f from "./img/f.png"
+import arrow from "./img/arrow.png"
+import Article from './Article/Article'
+
 function Blogs() {
   return (
     <div className='Blogs'>
@@ -23,6 +26,7 @@ function Blogs() {
         <strong>Read More</strong>
 </div>
     </div>
+    <Article/>
     </div>
   )
 }

@@ -1,5 +1,7 @@
-.Blogs .b-area{
-    
+.Blogs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .Blogs img{ 
     width: 100%;
@@ -12,15 +14,58 @@
     align-items: center;
     justify-content: center;
     text-align: start;
+    gap: 3rem;
 }
 
 .Blogs .what-does  img{
-    height: 400px;
+    height: 500px;
     object-fit: contain;
 }
-.Blogs .what-does h4{
+.Blogs .what-does .f-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.Blogs .what-does .f-txt h2{
+font-size: 2.5rem
 
 }
-.Blogs .what-does .f-txt{
+.Blogs .what-does .f-txt p{
+    font-size: 20px;
+    width: 70%
+}
+.Blogs .what-does .f-txt strong{
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+.Blogs .what-does .f-txt strong img{
+    height: 30px;
+}
+/* .Blogs .what-does .f-txt{
     background-color: ;
+} */
+
+@media (max-width:1200px) {
+    .Blogs .what-does .f-txt p{      
+        width: 90%
+    } 
+}
+@media (max-width:800px) {
+    .Blogs .what-does{
+   flex-direction: column;
+   text-align: center;
+        gap: 1rem;
+    }
+    
+    .Blogs .what-does  img{
+        height: 300px;
+        object-fit: contain;
+    }
+    .Blogs .what-does .f-txt{
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
 }
