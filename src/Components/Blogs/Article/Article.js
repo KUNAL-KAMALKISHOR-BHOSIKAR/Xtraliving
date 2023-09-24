@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Article.css"
+import { Link } from 'react-router-dom';
 import { IoIosArrowDropright } from 'react-icons/io';
 function Article() {
   return (
@@ -8,7 +9,7 @@ function Article() {
 <div className="arti-area">
 <div className="arti">
     <img src="https://www.rishi.fit/static/media/blog-7.a0bb075e77b48c270377.png" alt="" />
-    <div className="arti-txt">
+   <div className="arti-txt">
  <span>Innovation and entrepreneurship</span>
 <p>Innovation and entrepreneurship are two
 concepts that are closely intertwined
@@ -16,7 +17,8 @@ yet distinct. While innovation refers
 to creating new ideas, products, services,
 or processes, entrepreneurship refers to
     bringing those ideas to the market and
-    building a business around them.... <br/><IoIosArrowDropright className='arrow' /></p>
+    building a business around them.... <br/>
+    <Link to='/blogs/entrepreneurship'><IoIosArrowDropright className='arrow' /></Link> </p>
     </div>
 
 </div>
@@ -29,7 +31,8 @@ or processes, entrepreneurship refers to
      in respect, empathy, and understanding. It focuses on building
       a strong, loving relationship between parent and child and
        fostering an environment that supports a child's emotional,
-        physical, and intellectual growth.....<br/><IoIosArrowDropright className='arrow' /></p>
+        physical, and intellectual growth.....<br/>
+        <Link to="/blogs/parenting"><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 
@@ -42,7 +45,8 @@ or processes, entrepreneurship refers to
       rather than simply treating symptoms or illnesses. This
        approach looks at the root causes of health problems and
         seeks to address them rather than just managing symptoms
-         with medication or surgery....<br/><IoIosArrowDropright className='arrow' /></p>
+         with medication or surgery....<br/>
+         <Link to="/blogs/Functional'"><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 
@@ -54,7 +58,8 @@ or processes, entrepreneurship refers to
      expertise through public speaking. He believes that public
       speaking is a powerful tool that can inspire and motivate
        individuals to take action towards improving their health and
-        well-being....<br/><IoIosArrowDropright className='arrow' /></p>
+        well-being....<br/>
+        <Link to="/blogs/Publicspeaking" ><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 
@@ -67,7 +72,8 @@ or processes, entrepreneurship refers to
       remains as a topic of discussion only among the relatively young
        population of our society. Rarely do we find the need to include
         and encourage the seniors of our population to be physically
-         fit....<br/><IoIosArrowDropright className='arrow' /></p>
+         fit....<br/>
+         <Link to="/blogs/seniorwomen"><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 
@@ -81,7 +87,8 @@ or processes, entrepreneurship refers to
        SUPERFOODS! These are foods that are extremely beneficial for
         human health due to their exceptionally high nutrient density.
          Eating superfoods enriches our bodies with all the much-needed
-          nutrients and makes density....<br/><IoIosArrowDropright className='arrow' /></p>
+          nutrients and makes density....<br/>
+          <Link to="/blogs/superfoods"><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 
@@ -94,7 +101,8 @@ or processes, entrepreneurship refers to
       broadly relying upon the nature and seriousness of the injury.
        Injures regularly bring about discontinuance, or possibly a
         decrease, in cooperation in sport and diminished physical
-         action. More extreme wounds may bring about the immobilization of a limb....<br/><IoIosArrowDropright className='arrow' /></p>
+         action. More extreme wounds may bring about the immobilization of a limb....<br/>
+         <Link to="/blogs/injuryrecovery" ><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 </div>
