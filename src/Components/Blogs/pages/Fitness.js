@@ -16,7 +16,7 @@ const [third, setThird] = useState(false)
   }
   return (
     <div className='page-body' style={{display:"flex", alignItems:"center"}}>
-    <img style={{width:"60%"}} src="https://www.rishi.fit/static/media/what-does-fitness.c3e9e34032c304fde77b.png" alt="" />
+    <img style={{width:"70%"}} src="https://www.rishi.fit/static/media/what-does-fitness.c3e9e34032c304fde77b.png" alt="" />
    <div className="page-text-area">
     
      <div className="agenda-area" >

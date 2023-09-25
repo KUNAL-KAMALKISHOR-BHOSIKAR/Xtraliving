@@ -4,7 +4,7 @@ import "../../Media/Pages/Page.css"
 function Bfive() {
   return (
     <div className='page-body' style={{display:"flex", alignItems:"center"}}>
-    <img style={{width:"80%"}} src="https://www.rishi.fit/static/media/Physical-fitness.2f549a047931d4d133ea.png" alt="" />
+    <img style={{width:"70%"}} src="https://www.rishi.fit/static/media/Physical-fitness.2f549a047931d4d133ea.png" alt="" />
    <div className="page-text-area">
     
      <div className="agenda-area">
