@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import p1 from "./img/p1.jpg"
 import p2 from "./img/p2.jpg"
 import p3 from "./img/p3.png"
@@ -11,6 +11,10 @@ import p9 from "./img/p9.png"
 import "./Previous.css"
 import { Link } from 'react-router-dom'
 function Previous() {
+  const [events, setEvents] =useState(false);
+  const showEvents=()=>{
+    setEvents(!events)
+  }
   return (
     <div className='Previous'>
       <h2>Previous events</h2>
@@ -23,11 +27,20 @@ function Previous() {
             <img loading="lazy" src={p2} alt="" />
             <h3>Go Girl Go campaign​</h3>
         </div></Link> 
-      <Link to="/media/championship"> <div className="event-item">
-            <img loading="lazy" src={p3} alt="" />
-            <h3>eNERGIZE fitness championship</h3>
+     <div className="event-item">
+           <Link to="/media/championship">   <img loading="lazy" src={p3} alt="" />
+            <h3>eNERGIZE fitness championship</h3> </Link>
+           
+            <svg style={{display: events? "none":"flex", marginLeft:"60%", cursor:"pointer"}} onClick={showEvents} width="128" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/>
+</svg>
         </div>  
-         </Link>
+       
+        
+         
+         <div className="hide" style={{display:events?"flex": "none", }}>
         <Link to="/media/bootcamp">
               <div className="event-item">
             <img loading="lazy" src={p4} alt="" />
@@ -61,6 +74,7 @@ function Previous() {
             <h3>Myopia awareness talk​​</h3>
         </div>
          </Link>
+         </div>
       </div>
     <div className="newspaper">
       <h2>Media</h2>

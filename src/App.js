@@ -60,7 +60,7 @@ function App() {
     <Route path='/media' element={<Media/>} />
     <Route path='/blogs' element={<Blogs/>} />
     <Route path='profile' element={<Profile/>}/>
-    {/* useless pages */}
+    {/* media pages */}
     <Route path='/media/raise' element={<One/>} />
     <Route path='/media/gogirl' element={<Two/>} />
     <Route path='/media/championship' element={<Three/>} />

@@ -46,7 +46,7 @@ or processes, entrepreneurship refers to
        approach looks at the root causes of health problems and
         seeks to address them rather than just managing symptoms
          with medication or surgery....<br/>
-         <Link to="/blogs/Functional'"><IoIosArrowDropright className='arrow' /></Link></p>
+         <Link to="/blogs/Functional"><IoIosArrowDropright className='arrow' /></Link></p>
     </div>
 </div>
 

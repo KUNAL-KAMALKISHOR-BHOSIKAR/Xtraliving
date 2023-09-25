@@ -4,7 +4,7 @@ import "../../Media/Pages/Page.css"
 function Bthree() {
   return (
     <div className='page-body'>
-    <img src="https://www.rishi.fit/static/media/Gentle%20parenting.5aa500ff1d3bcbe02aa1.png" alt="" />
+    <img src="https://www.rishi.fit/static/media/Functional%20health.0f1985daea0b8d35b0bd.png" alt="" />
    <div className="page-text-area">
     
      <div className="agenda-area">

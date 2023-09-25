@@ -4,7 +4,7 @@
     gap: 2rem;
 }
 
-.Previous .event-list{
+.Previous .event-list, .Previous .hide{
     display: flex;
     flex-wrap: wrap;
     gap: 6rem;
@@ -53,8 +53,24 @@
     width: 450px;
     margin-bottom: 2rem;
 }
-
+.artical-area .artical h3{
+    font-size: ;
+}
 .artical-area .artical img{
     object-fit: contain;
     height: 400px;
+}
+@media (max-width:1300px) {
+    .artical-area .artical{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+    
+    .artical-area .artical img{
+        object-fit: contain;
+        height: 250px;
+    }
 }
