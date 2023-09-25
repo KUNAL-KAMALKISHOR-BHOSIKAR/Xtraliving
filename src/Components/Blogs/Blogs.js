@@ -14,7 +14,7 @@ function Blogs() {
         <img src={f} alt="" />
 <div className="f-txt">
     <h2>
-    What does fitness mean ?
+    What does<br/> fitness mean ?
     </h2>
     <p>In present times, there has been an increase
             in the number of people who are becoming conscious

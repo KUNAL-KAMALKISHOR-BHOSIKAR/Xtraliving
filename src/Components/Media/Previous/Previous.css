@@ -49,10 +49,7 @@
     align-items: center;
     gap: 2rem;
 }
-.newspaper h2{
 
-    width: 100%;
-}
 .Previous .artical-area , .Previous .hideNews {
     display: flex;
     align-items: flex-start;
