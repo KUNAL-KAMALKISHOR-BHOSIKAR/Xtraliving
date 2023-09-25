@@ -1,6 +1,6 @@
 import times from "./times.png"
 import outlook from "./outlook.png"
-import money from "./money.webp"
+import money from "./money.png"
 import india from "./india.png"
 import the from "./the.png"
 import life from "./life.png"

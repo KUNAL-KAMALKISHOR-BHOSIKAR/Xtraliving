@@ -4,7 +4,7 @@ import "../../Media/Pages/Page.css"
 function Bsix() {
   return (
     <div className='page-body' style={{display:"flex", alignItems:"center"}}>
-    <img style={{width:"80%"}} src="https://www.rishi.fit/static/media/superFood.4f9b0cf2112f9a35b0c1.png" alt="" />
+    <img style={{width:"60%"}} src="https://www.rishi.fit/static/media/superFood.4f9b0cf2112f9a35b0c1.png" alt="" />
    <div className="page-text-area">
     
      <div className="agenda-area">

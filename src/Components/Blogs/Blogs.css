@@ -37,7 +37,9 @@ font-size: 2.5rem
 .Blogs .what-does .f-txt strong{
     font-size: 20px;
     cursor: pointer;
-
+display: flex;
+align-items: center;
+gap: 1rem;
 
 }
 .Blogs .what-does .f-txt strong img{

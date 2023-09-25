@@ -33,6 +33,7 @@ import Bfour from "./Components/Blogs/pages/Bfour"
 import Bfive from "./Components/Blogs/pages/Bfive"
 import Bsix from "./Components/Blogs/pages/Bsix"
 import Bseven from "./Components/Blogs/pages/Bseven"
+import Fitness from './Components/Blogs/pages/Fitness';
 
 
 
@@ -71,7 +72,10 @@ function App() {
     <Route path='/media/quiz' element={<Eight/>}/>
     <Route path='/media/awareness' element={<Nine/>}/>
    {/* blogs */}
+
+   <Route path='/blogs/fitness' element={<Fitness/>}/>
    <Route path='/blogs/entrepreneurship' element={<Bone/>}/>
+
    <Route path='/blogs/parenting' element={<Btwo/>}/>
    <Route path="/blogs/Functional" element={<Bthree/>}/>
    <Route path='/blogs/Publicspeaking' element={<Bfour/>}/>

@@ -18,7 +18,10 @@ to creating new ideas, products, services,
 or processes, entrepreneurship refers to
     bringing those ideas to the market and
     building a business around them.... <br/>
-    <Link to='/blogs/entrepreneurship'><IoIosArrowDropright className='arrow' /></Link> </p>
+    <Link to='/blogs/entrepreneurship'> <svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link> </p>
     </div>
 
 </div>
@@ -32,7 +35,10 @@ or processes, entrepreneurship refers to
       a strong, loving relationship between parent and child and
        fostering an environment that supports a child's emotional,
         physical, and intellectual growth.....<br/>
-        <Link to="/blogs/parenting"><IoIosArrowDropright className='arrow' /></Link></p>
+        <Link to="/blogs/parenting"><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 
@@ -46,7 +52,10 @@ or processes, entrepreneurship refers to
        approach looks at the root causes of health problems and
         seeks to address them rather than just managing symptoms
          with medication or surgery....<br/>
-         <Link to="/blogs/Functional"><IoIosArrowDropright className='arrow' /></Link></p>
+         <Link to="/blogs/Functional"><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 
@@ -59,7 +68,10 @@ or processes, entrepreneurship refers to
       speaking is a powerful tool that can inspire and motivate
        individuals to take action towards improving their health and
         well-being....<br/>
-        <Link to="/blogs/Publicspeaking" ><IoIosArrowDropright className='arrow' /></Link></p>
+        <Link to="/blogs/Publicspeaking" ><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 
@@ -73,7 +85,10 @@ or processes, entrepreneurship refers to
        population of our society. Rarely do we find the need to include
         and encourage the seniors of our population to be physically
          fit....<br/>
-         <Link to="/blogs/seniorwomen"><IoIosArrowDropright className='arrow' /></Link></p>
+         <Link to="/blogs/seniorwomen"><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 
@@ -88,7 +103,10 @@ or processes, entrepreneurship refers to
         human health due to their exceptionally high nutrient density.
          Eating superfoods enriches our bodies with all the much-needed
           nutrients and makes density....<br/>
-          <Link to="/blogs/superfoods"><IoIosArrowDropright className='arrow' /></Link></p>
+          <Link to="/blogs/superfoods"><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 
@@ -102,7 +120,10 @@ or processes, entrepreneurship refers to
        Injures regularly bring about discontinuance, or possibly a
         decrease, in cooperation in sport and diminished physical
          action. More extreme wounds may bring about the immobilization of a limb....<br/>
-         <Link to="/blogs/injuryrecovery" ><IoIosArrowDropright className='arrow' /></Link></p>
+         <Link to="/blogs/injuryrecovery" ><svg className='arrow' width="100" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/></svg></Link></p>
     </div>
 </div>
 </div>

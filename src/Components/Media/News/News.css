@@ -63,7 +63,7 @@
             height: 150px;
     }
 }
-@media (max-width:700px) {
+@media (max-width:710px) {
 .for-largest{
     display: none;
 }

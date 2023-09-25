@@ -23,18 +23,17 @@
     gap: 1rem;
 }
 .page-text-area .p-area p{
-   
+   color: black;
     text-align: justify;
 }
 .page-text-area .agenda-area{
-
     display: flex;
     flex-direction: column;
     width: 70%;
-    gap: 1rem;
+    gap: 2rem;
 }
 .page-text-area .agenda-area h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
    border-left: 8px solid #ed5009;
    padding-left: 0.3rem;
 }
@@ -54,6 +53,7 @@
 .page-text-area .agenda-area p{
     font-size: 15px;
     text-align: justify;
+    color: black;
 }
 /* table */
 
@@ -83,7 +83,7 @@ font-size: 1.5rem;
 
 }
 .page-body .trouble-area .trouble-txt h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .page-body .trouble-area .trouble-txt p{
     font-size: 15px;
