@@ -12,6 +12,10 @@ import "./Previous.css"
 import { Link } from 'react-router-dom'
 function Previous() {
   const [events, setEvents] =useState(false);
+  const [news, setNews] = useState(false);
+  const showNews=()=>{
+    setNews(!news)
+  }
   const showEvents=()=>{
     setEvents(!events)
   }
@@ -95,14 +99,20 @@ function Previous() {
       <img src="https://www.rishi.fit/static/media/media-3.1.7bfd3e18d3898c9c2732.jpg" alt="" />
       <h3>The New Indian Express</h3>
       <p>Work-out from home is the new normal</p>
+
     </div>
 
     <div className="artical">
       <img src="https://www.rishi.fit/static/media/media-4.1.447dfd9ffd80dae2375f.png" alt="" />
       <h3>Money Control</h3>
       <p>Technology provoking Indians to stay fit amid Covid-19 lockdown</p>
+      <svg style={{display: news? "none":"flex", marginLeft:"60%", cursor:"pointer"}} onClick={showNews} width="128" height="39" viewBox="0 0 128 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.5 19.5C127.5 29.9384 117.933 38.5 106 38.5C94.0675 38.5 84.5 29.9384 84.5 19.5C84.5 9.06158 94.0675 0.5 106 0.5C117.933 0.5 127.5 9.06158 127.5 19.5Z" stroke="black"/>
+<path d="M102 12L109 19L102 26" stroke="#ED5009" stroke-width="2"/>
+<line y1="18.5" x2="71" y2="18.5" stroke="black"/>
+</svg>
     </div>
-
+    <div className="hideNews" style={{display: news? "flex":"none"}} >
     <div className="artical">
       <img src="https://www.rishi.fit/static/media/media-5.1.ddd45ea0a430c1d808a0.png" alt="" />
       <h3>ET Healthworld</h3>
@@ -149,6 +159,7 @@ function Previous() {
       <h3>News Karnataka</h3>
       <p>Hunt for 'fastest girl in Maharashtra' begins</p>
     </div>
+      </div>
       </div>
     </div>
   </div>

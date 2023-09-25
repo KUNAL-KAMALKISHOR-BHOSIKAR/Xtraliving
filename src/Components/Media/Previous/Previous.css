@@ -1,7 +1,15 @@
 .Previous{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+}
+.Previous h2, .newspaper h2{
+    font-size: 2rem;
+    border-left: 8px solid #ed5009;
+    padding-left: 0.3rem;
+    width: 92%;
+    display: flex;
 }
 
 .Previous .event-list, .Previous .hide{
@@ -18,6 +26,11 @@
     text-align: start;
     
 }
+.event-list .event-item h3{
+    font-size: 1.15rem ;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
 .event-list .event-item img{
     height: 13rem;
     width: 20rem;
@@ -29,15 +42,14 @@
 .event-list .event-item img:hover{
     transform: scale(1.1);
 }
-.event-list .event-item h3{
-    font-weight: 500;
-}
+
 .Previous .newspaper{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
-.Previous .artical-area {
+.Previous .artical-area , .Previous .hideNews {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +66,9 @@
     margin-bottom: 2rem;
 }
 .artical-area .artical h3{
-    font-size: ;
+    font-size: 1.15rem ;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 .artical-area .artical img{
     object-fit: contain;
@@ -72,5 +86,12 @@
     .artical-area .artical img{
         object-fit: contain;
         height: 250px;
+    }
+}
+@media (max-width:740px) {
+    .Previous h2, .newspaper h2{
+     
+        border-left: none;
+        justify-content: center;
     }
 }
