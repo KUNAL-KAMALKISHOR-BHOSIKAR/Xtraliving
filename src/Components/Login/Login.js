@@ -64,7 +64,7 @@ function Login() {
        </div> </div>
         <div className="button-area">
         <span>Having Trouble in sign in ?</span>
-        <input onClick={sendDetail} type="submit" placeholder='log in' />
+        <button onClick={sendDetail} >Login</button>
         </div>
         </div>  
     </div>
