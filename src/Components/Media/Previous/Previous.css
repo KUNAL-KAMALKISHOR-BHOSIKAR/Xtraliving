@@ -101,13 +101,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 300px;
+        width: 250px;
         margin-bottom: 2rem;
+        
     }
     
     .artical-area .artical img{
         object-fit: contain;
-        height: 250px;
+        height: 200px;
     }
 }
 @media (max-width:740px) {

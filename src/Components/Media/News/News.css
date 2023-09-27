@@ -47,6 +47,11 @@
     .news-list-two{
         width: 1000px;        
     }
+    .News-two{
+      
+        height: 70vh;
+     }
+    
 }
 
 @media (max-width:1050px) {

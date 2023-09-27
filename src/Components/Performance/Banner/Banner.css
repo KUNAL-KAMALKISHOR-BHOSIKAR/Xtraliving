@@ -57,7 +57,9 @@
 }
 
 @media (max-width:1300px) {
-
+    .banner{
+        margin-top: 3rem;
+    }
     .hero{
         display: flex;
         align-items: flex-end;

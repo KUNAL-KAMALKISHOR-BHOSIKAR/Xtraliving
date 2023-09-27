@@ -19,9 +19,9 @@
     transition: 0.3s ease-in;
 }
 .Navbar .login:hover{
-
-color:#ED5009 ;
+    color:#ED5009 ;
 }
+
 @media (max-width:600px) {
     .Navbar{
         margin-bottom: 0rem;
