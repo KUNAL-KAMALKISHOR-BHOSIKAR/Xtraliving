@@ -1,12 +1,12 @@
 import React, { useState} from 'react'
 import "./Login.css"
-import { Link, useNavigate } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import { useStateValue } from '../../State/StateProvider';
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState("")
-const navigate = useNavigate()  
+  const [secondError, setSecondError] = useState("")
   // const [_, setCookies] = useCookies(["access_token"])
   const [,dispatch] = useStateValue()
   const sendDetail= async(e)=>{
@@ -33,9 +33,12 @@ const navigate = useNavigate()
         item: username
        })
         window.location.replace("/profile")
-      } else if (response.status === 404 || 401){
+      } else if (response.status === 404){
         const data = await response.json();
         setError(data.message)
+      }else if (response.status === 401){
+        const data = await response.json();
+        setSecondError(data.message)
       }
       // setCookies("access_token", response.formData.token)
     } catch (error) {
@@ -55,8 +58,10 @@ const navigate = useNavigate()
         <input type="text"  onChange={(e)=>setUsername(e.target.value)} placeholder='Enter Email / User Name' />
         <span>{error}</span>
          </div>
-  <input type="text" onChange={(e)=>setPassword(e.target.value)} placeholder='Password' />        
-        </div>
+         <div className="input-error">
+  <input type="text" onChange={(e)=>setPassword(e.target.value)} placeholder='Password' />   
+  <span>{secondError}</span>     
+       </div> </div>
         <div className="button-area">
         <span>Having Trouble in sign in ?</span>
         <input onClick={sendDetail} type="submit" placeholder='log in' />
