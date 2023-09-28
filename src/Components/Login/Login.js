@@ -51,7 +51,7 @@ function Login() {
         <div className="heading-area">
         <h2>WELCOME</h2>
     <Link to="/register">
-      <span>Don't Have an account? Register one!</span></Link>  
+      <span>Don't have an account? Register one!</span></Link>  
         </div>
         <div className="inputs">
         <div className="input-error">
@@ -63,7 +63,8 @@ function Login() {
   <span>{secondError}</span>     
        </div> </div>
         <div className="button-area">
-        <span>Having Trouble in sign in ?</span>
+        <span>Having trouble in sign in ?</span>
+      <Link to="/mobile"><span>Login with mobile</span></Link>
         <button onClick={sendDetail} >Login</button>
         </div>
         </div>  
@@ -72,3 +73,4 @@ function Login() {
 }
 
 export default Login
+

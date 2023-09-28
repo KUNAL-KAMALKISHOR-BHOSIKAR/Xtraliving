@@ -11,7 +11,7 @@ p{
   font-family: 'Lora', serif;
   font-family: 'Urbanist', sans-serif;
 }
-button{
+/* button{
   height: 50px;
   width: 200px;
   border: 1px solid #ED5009;
@@ -26,7 +26,7 @@ button{
   cursor: pointer;
  margin-top: 5rem;
  margin-left: 10rem;
-}
+} */
 button svg{
   color: #ED5009;
   font-size: 1.2rem;

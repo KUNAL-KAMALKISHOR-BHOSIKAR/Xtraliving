@@ -34,6 +34,7 @@ import Bfive from "./Components/Blogs/pages/Bfive"
 import Bsix from "./Components/Blogs/pages/Bsix"
 import Bseven from "./Components/Blogs/pages/Bseven"
 import Fitness from './Components/Blogs/pages/Fitness';
+import Otp from './Components/Login/Otp';
 
 
 
@@ -57,6 +58,7 @@ function App() {
     <Route path='/collaborate' element={<Collabrate/>} />
     <Route path='/func' element={<Func/>} />
     <Route path='/login' element={<Login/>} />
+    <Route path='/mobile' element={<Otp/>}/>
     <Route path='/register' element={<Register/>} />
     <Route path='/media' element={<Media/>} />
     <Route path='/blogs' element={<Blogs/>} />
