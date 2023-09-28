@@ -21,7 +21,11 @@
 .Navbar .login:hover{
     color:#ED5009 ;
 }
-
+.Navbar .user-profile{
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+}
 @media (max-width:600px) {
     .Navbar{
         margin-bottom: 0rem;
