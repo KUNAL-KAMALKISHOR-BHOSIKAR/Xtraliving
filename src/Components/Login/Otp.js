@@ -1,12 +1,26 @@
 import React, { useState } from 'react'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import { Link } from 'react-router-dom'
 import "./Otp.css"
+import { useUserAuth } from '../../State/UserAuthContext'
 function Otp() {
     const [number, setNumber]= useState("");
     const [error, setError] = useState("")
-const sendOtp=()=>{
-
+    const {setupRecaptcha} = useUserAuth()
+const getOtp=async (e)=>{
+  e.preventDefault()
+  setError("")
+console.log(number)
+if(number === "" || number === undefined){
+  return setError("please enter a valid phone number")
+}
+try {
+  const response = await  setupRecaptcha(number);
+  console.log(response)
+} catch (error) {
+  setError(error.message)
+}
 }
   return (
     <div className='Login'>
@@ -26,9 +40,10 @@ const sendOtp=()=>{
         
       </div>
       <div className="button-area">
-      <span>Having trouble in sign in ?</span>
-      <button onClick={sendOtp}>send OTP</button>
+     <Link to="/login"><span>Login using password ?</span></Link> 
+      <button onClick={getOtp}>send OTP</button>
       </div>
+      <div className="div" id='recaptcha-container  '/>
       </div>  
     </div>
   )

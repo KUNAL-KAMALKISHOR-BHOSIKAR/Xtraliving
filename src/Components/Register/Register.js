@@ -1,39 +1,29 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { MdClose } from 'react-icons/md';
+import { useUserAuth } from '../../State/UserAuthContext';
 function Register() {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState("");
   const [success, setSuccess]= useState('')
   const [openModel, setOpenModel]= useState(false)
-
   const navigate = useNavigate();
-  const sendUser= async()=>{
-   
-    try {
-      const body = {username, password}
-      const response =  await fetch("http://localhost:5000/register",{
-      method:"POST",
-      headers:{
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(body)     
-    });
-    if(response.status === 200){
-      const jsonData = await response.json()
-      console.log(jsonData.message)
-      setSuccess(jsonData.message)
-      setOpenModel(!openModel)
-    }else if(response.status === 400) {
-      const jsonData = await response.json()
-      setError(jsonData.message)
-      console.log(jsonData.message)
-    } 
-    } catch (error) {
-      console.error(error.message);
-    }
-}
+ const {signUp} = useUserAuth();
+
+const handleSubmit= async(e)=>{
+  e.preventDefault()
+  setError("");
+  try { 
+  await signUp(email, password)
+  setSuccess("egistration successful. Confirmation email will be sent.")
+  setOpenModel(!openModel)
+ 
+     
+  } catch (error) {
+    setError(error.message);
+  }
+  }
 const closeButton=()=>{
   setOpenModel(!openModel)
   navigate("/login")
@@ -54,14 +44,14 @@ return (
 </div>
 <div className="inputs">
   <div className="input-error">
-  <input type="text"  onChange={(e)=>setUsername(e.target.value)} placeholder='Enter Email / User Name' />
+  <input type="text"  onChange={(e)=>setEmail(e.target.value)} placeholder='Enter Email / User Name' />
   <span>{error}</span> 
   </div>
   <input type="text" onChange={(e)=>setPassword(e.target.value)} placeholder='Password' />        
 </div>
 <div className="button-area">
 <span>Registration confirmation will be emailed to you.</span>
-  <input onClick={sendUser} type="submit" placeholder='log in' />
+  <input onClick={handleSubmit} type="submit" placeholder='log in' />
 </div>
 </div>  
 

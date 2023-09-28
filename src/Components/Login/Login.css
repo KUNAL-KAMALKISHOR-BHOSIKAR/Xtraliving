@@ -1,14 +1,19 @@
 .Login{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 3rem;
-    height: 55vh;
+    height: 80vh;
+  
 }
 .Login .login-area{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
+    width: 100%;
+ 
 }
 .Login .login-area .success{
     display: flex;
@@ -19,8 +24,10 @@
     transform: translateX(-50%); 
     left: 50%; 
     top: 10%;
-    width: 20rem;
+    width: 25rem;
     height: 3rem;
+    text-align: start;
+    border-bottom: 3px solid rgb(5, 192, 5);
 }
 
 .Login .login-area .success svg{
@@ -39,17 +46,27 @@
 .Login .login-area .inputs{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+
+    width: 100%;
+ 
+    width: 
 }
 .Login .login-area .inputs .input-error{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.3rem;
+   
 }
 .Login .login-area .inputs .input-error span{
     text-align: start;
     color: red;
     margin-left: 0.5rem;
+    width: 50%;
+
+   
 }
 .Login .login-area .inputs input{
     height: 3rem;
@@ -73,4 +90,40 @@
   border: none;
   background-color: #FD8C69;
   cursor: pointer;
+}
+.button-area button{
+    background-color: #FD8C69;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    border: none;
+}
+.Login .main-area{
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+.main-area .or-area{
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.main-area .or-area span{
+    color: black;
+}
+.main-area .or-area .icons-area{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.main-area .or-area .icons-area img{
+    cursor: pointer;
+}
+.main-area .or-area .sign-mob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    font-weight: 600;
 }
