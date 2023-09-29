@@ -23,14 +23,14 @@ function googleSignIn(){
     return signInWithPopup(auth, googleAuthProvider)
 }
 
-function setupRecaptcha (number,auth){
+function setupRecaptcha (number){
     const recaptchaVerifier = new RecaptchaVerifier(
         "recaptcha-container",
         {},
         auth
     );
     recaptchaVerifier.render();
-    return signInWithPhoneNumber( number, recaptchaVerifier)
+    return signInWithPhoneNumber( auth, number, recaptchaVerifier)
 }
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
