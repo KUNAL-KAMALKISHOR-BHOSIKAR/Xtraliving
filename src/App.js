@@ -35,6 +35,7 @@ import Bsix from "./Components/Blogs/pages/Bsix"
 import Bseven from "./Components/Blogs/pages/Bseven"
 import Fitness from './Components/Blogs/pages/Fitness';
 import Otp from './Components/Login/Otp';
+import Camera from './Components/Exercise/Camera/Camera';
 
 
 
@@ -73,6 +74,7 @@ function App() {
     <Route path='/media/sudhir' element={<Seven/>}/>
     <Route path='/media/quiz' element={<Eight/>}/>
     <Route path='/media/awareness' element={<Nine/>}/>
+    <Route path='/camera' element={<Camera/>}/>
    {/* blogs */}
 
    <Route path='/blogs/fitness' element={<Fitness/>}/>
