@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import "./Profile.css"
 import { useUserAuth } from '../../State/UserAuthContext';
+import Legs from '../Exercise/Legs/Legs';
 
 
 function Profile() {
@@ -25,8 +26,14 @@ const logout= async()=>{
 }
   return (
     <div className='Profile'>
-      <h2>welcome {user.displayName? user.displayName: user.email}</h2>
+      <header>
+        <h2>Workouts </h2>
+        {/* {user.displayName? user.displayName: user.email} */}
       <button onClick={logout}>Logout</button>
+      </header>
+ <div className="exercise-area">
+  <Legs/>
+ </div>
     </div>
   )
 }

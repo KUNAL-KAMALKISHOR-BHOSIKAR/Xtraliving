@@ -1,3 +1,28 @@
 .Profile{
-    height: 70vh;
+    height: auto;
+}
+.Profile header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Profile header button{
+    position: absolute;
+    right: 2rem;
+    height: 40px;
+    width: 120px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #FD8C69;
+}
+@media (max-width:600px) {
+    .Profile header{
+        margin-left: 1rem;
+        justify-content: space-between;
+    }
+    .Profile header button{     
+        height: 35px;
+        width: 100px;      
+    }
 }
