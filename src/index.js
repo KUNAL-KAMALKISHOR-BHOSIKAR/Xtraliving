@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import { UserAuthContextProvider } from './State/UserAuthContext';
-import reducer, { initialState } from './State/Reducer';
+//import reducer, { initialState } from './State/Reducer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
