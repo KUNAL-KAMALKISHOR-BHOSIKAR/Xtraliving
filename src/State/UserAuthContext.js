@@ -7,6 +7,10 @@ const UserAuthContext = createContext();
 export function UserAuthContextProvider({ children }) {
     const [user, setUser] = useState({});
 
+    const updateUser=(newUser)=>{
+        setUser(newUser)
+    }
+
     function signUp(email, password) {
         return createUserWithEmailAndPassword(auth, email, password)
     }
@@ -43,7 +47,7 @@ function setupRecaptcha (number){
     }, [])
 
     return (
-        <UserAuthContext.Provider value={{ user,setupRecaptcha,googleSignIn, signUp, logIn, logOut }}>
+        <UserAuthContext.Provider value={{ user,updateUser,setupRecaptcha,googleSignIn, signUp, logIn, logOut }}>
             {children}
         </UserAuthContext.Provider>
     )

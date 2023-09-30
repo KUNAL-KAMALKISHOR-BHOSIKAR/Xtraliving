@@ -1,18 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import { Link } from 'react-router-dom'
 import "./Otp.css"
 import { auth } from '../../firebase'
-import OtpInput from 'react18-input-otp';
 import { RecaptchaVerifier, signInWithPhoneNumber } from '@firebase/auth'
-//import { useUserAuth } from '../../State/UserAuthContext'
+import { useUserAuth } from '../../State/UserAuthContext'
 function Otp() {
     const [number, setNumber]= useState("");
     const [error, setError] = useState("");
     const [otp, setOtp] = useState("");
     const [expandForm, setExpandForm] = useState(false)
-    //const {setupRecaptcha} = useUserAuth()
+    const {updateUser } = useUserAuth()
+    const {user } = useUserAuth()
+useEffect(()=>{
+  console.log(user)
+},[])
     const generateRecaptcha = () => {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {});
     }
@@ -36,16 +39,29 @@ function Otp() {
   }
 
 }
+const verifyOtp=(e)=>{
+  if (otp.length === 6) {
+    let confirmationResult = window.confirmationResult;
+    confirmationResult.confirm(otp).then((result)=>{
+      const user = result.user;
+      console.log(user)
+      updateUser(user)
+      window.location.replace("/")
+    }).catch((error)=>{
+console.log(error)
+    })
+  }
+}
   return (
     <div className='Login'>
     <div className="login-area">
       <div className="heading-area">
-      <h2>WELCOME</h2>
+      <h2>{expandForm? "Enter your otp": "WELCOME"}</h2>
       </div>
       <div className="inputs">
       <div className="input-error">{
 expandForm? (
-  <input type="text" placeholder='Enter your otp' />
+  <input type="text" onChange={(e)=>setOtp(e.target.value)} placeholder='Enter your otp' />
 ):(
   <PhoneInput
   defaultCountry='IN'
@@ -62,7 +78,7 @@ expandForm? (
       <div className="button-area">
      <Link to="/login"><span>Login using password ?</span></Link> 
      {expandForm?(
-       <button>Submit OTP</button>
+       <button onClick={verifyOtp}>Submit OTP</button>
      ):( <button onClick={getOtp}>Send OTP</button>)}
      
       </div>
