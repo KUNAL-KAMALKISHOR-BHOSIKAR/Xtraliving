@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
 import "./Our.css"
 import squat from "./squat.png"
-
 function Squat() {
   return (
     <div className='our'>

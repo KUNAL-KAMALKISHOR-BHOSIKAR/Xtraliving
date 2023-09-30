@@ -3,6 +3,7 @@ import "./Legs.css"
 import Squat from './Our/Squat'
 import Lunge from "./Our/Lunge"
 import line from "../../Home/img/line.png"
+import Camera from '../Camera/Camera'
 function Legs() {
   return (
     <div className='Squats'>
@@ -12,6 +13,7 @@ function Legs() {
     }}>
       <Squat/>
       <Lunge/>
+      <Camera/>
       </div>
     </div>
   )

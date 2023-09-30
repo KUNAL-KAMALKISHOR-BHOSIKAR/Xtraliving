@@ -33,6 +33,7 @@ const logout= async()=>{
       </header>
  <div className="exercise-area">
   <Legs/>
+ 
  </div>
     </div>
   )
