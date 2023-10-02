@@ -56,8 +56,8 @@ function Camera() {
       // console.log(`Left Arm Angle (degrees): ${leftArmAngle}`);
       // console.log(`Right Arm Angle (degrees): ${rightArmAngle}`);
       
-      setLeftArm(`Left Arm Angle (degrees): ${leftArmAngle}`);
-      setRightArm(`Right Arm Angle (degrees): ${rightArmAngle}`);
+      setLeftArm(`LeftArm : ${leftArmAngle}`);
+      setRightArm(`RightArm : ${rightArmAngle}`);
       
       drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);
     }

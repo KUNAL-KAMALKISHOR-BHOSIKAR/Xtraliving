@@ -7,9 +7,23 @@
     top: 8rem;
     left: 20%;
     position: absolute;
-    color: white;
+    color: #4E62D6;
     text-align: start;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+@media (max-width:600px) {
+    .info-area{
+
+        left: 5%;
+        color: #4E62D6;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    } 
+    .info-area h3{
+        font-size: 0.9rem;
+    }
 }
