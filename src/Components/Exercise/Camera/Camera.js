@@ -3,7 +3,7 @@ import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
 import { drawKeypoints, drawSkeleton } from "./utilities";
-
+import "./Camera.css"
 function Camera() {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
@@ -16,7 +16,7 @@ function Camera() {
       inputResolution: { width:  640, height: 480  },
       scale: 0.8,
     });
-    //
+   
     setInterval(() => {
       detect(net);
     }, 100);
@@ -45,7 +45,7 @@ function Camera() {
       const rightElbow = pose.keypoints.find((keypoint) => keypoint.part === "rightElbow").position;
       const rightWrist = pose.keypoints.find((keypoint) => keypoint.part === "rightWrist").position;
   
-      // Add the following lines to extract positions for the left arm keypoints
+      //  positions for the left arm keypoints
       const leftShoulder = pose.keypoints.find((keypoint) => keypoint.part === "leftShoulder").position;
       const leftElbow = pose.keypoints.find((keypoint) => keypoint.part === "leftElbow").position;
       const leftWrist = pose.keypoints.find((keypoint) => keypoint.part === "leftWrist").position;
@@ -64,7 +64,7 @@ function Camera() {
   };
   
   const calculateAngle = (pointA, pointB, pointC) => {
-    // Calculate the angle between three points (pointA, pointB, pointC) using trigonometry.
+    // Calculate the angle between three points (pointA, pointB, pointC).
     const radians = Math.atan2(pointC.y - pointB.y, pointC.x - pointB.x) -
                     Math.atan2(pointA.y - pointB.y, pointA.x - pointB.x);
   
@@ -116,8 +116,13 @@ function Camera() {
     }}
   />
 </header>
-{rightArm}<br/>
-{leftArm}
+<div className="info-area">
+ <h3>{rightArm}</h3> <br/>
+ <h3>{leftArm}</h3> 
+ <h3>Left Knee</h3>
+ <h3>Right Knee</h3>
+</div>
+
     </div>
   )
 }
