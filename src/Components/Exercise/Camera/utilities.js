@@ -220,6 +220,62 @@ function drawPoints(ctx, points, radius, color) {
   }
 }
 
+/** 
+ * Calculate line between two points in 3D space.
+ */
+function lineEquation3D(point1, point2) {
+  const [x1, y1, z1] = point1;
+  const [x2, y2, z2] = point2;
+
+  // Calculate direction vector of the line
+  const directionVector = [x2 - x1, y2 - y1, z2 - z1];
+
+  // Calculate the coefficients a, b, c of the line equation ax + by + cz = d
+  const [a, b, c] = directionVector;
+  const d = a * x1 + b * y1 + c * z1;
+
+  return [a, b, c, d];
+}
+
+/** 
+ * Calculate angle between two lines in 3D space.
+ */
+function angleBetweenLines(line1, line2) {
+  const [a1, b1, c1, d1] = line1;
+  const [a2, b2, c2, d2] = line2;
+
+  // Calculate the direction vectors of the lines
+  const directionVector1 = [a1, b1, c1];
+  const directionVector2 = [a2, b2, c2];
+
+  // Calculate the dot product of the direction vectors
+  const dotProduct = directionVector1.reduce((acc, val, index) => acc + val * directionVector2[index], 0);
+
+  // Calculate the magnitudes of the direction vectors
+  const magnitude1 = Math.sqrt(directionVector1.reduce((acc, val) => acc + val * val, 0));
+  const magnitude2 = Math.sqrt(directionVector2.reduce((acc, val) => acc + val * val, 0));
+
+  // Calculate the angle in radians using the dot product formula
+  const angleRad = Math.acos(dotProduct / (magnitude1 * magnitude2));
+
+  // Convert the angle from radians to degrees
+  const angleDeg = 180 - (angleRad * 180) / Math.PI;
+
+  return Math.round(angleDeg);
+}
+
+/** 
+ * Calculate angle between three joints in 3D space.
+ */
+function getJointAngle(joint1, joint2, joint3) {
+  const line1 = lineEquation3D(joint1, joint2);
+  const line2 = lineEquation3D(joint2, joint3);
+
+  const angle = angleBetweenLines(line1, line2);
+
+  return Math.round(angle);
+}
+
 /**
  * Draw offset vector values, one of the model outputs, on to the canvas
  * Read our blog post for a description of PoseNet's offset vector outputs
