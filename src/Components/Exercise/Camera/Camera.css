@@ -1,7 +1,15 @@
-.info-area{
-  
-    position: absolute;
-}
+
 .App-header{
     position: relative;
+  
+}
+.info-area{
+    top: 8rem;
+    left: 20%;
+    position: absolute;
+    color: white;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }

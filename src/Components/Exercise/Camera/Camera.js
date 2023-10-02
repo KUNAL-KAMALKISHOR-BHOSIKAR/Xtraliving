@@ -117,10 +117,14 @@ function Camera() {
   />
 </header>
 <div className="info-area">
- <h3>{rightArm}</h3> <br/>
+ <h3>{rightArm}</h3>
  <h3>{leftArm}</h3> 
- <h3>Left Knee</h3>
- <h3>Right Knee</h3>
+ <h3>rightShoulder:</h3>
+<h3>LeftShoulder:</h3>
+ <h3>Right Knee:</h3>
+ <h3>Left Knee:</h3>
+
+
 </div>
 
     </div>
