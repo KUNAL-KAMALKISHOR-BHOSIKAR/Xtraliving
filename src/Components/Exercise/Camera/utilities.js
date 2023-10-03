@@ -267,7 +267,7 @@ function angleBetweenLines(line1, line2) {
 /** 
  * Calculate angle between three joints in 3D space.
  */
-function getJointAngle(joint1, joint2, joint3) {
+export function getJointAngle(joint1, joint2, joint3) {
   const line1 = lineEquation3D(joint1, joint2);
   const line2 = lineEquation3D(joint2, joint3);
 

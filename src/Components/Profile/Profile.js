@@ -10,7 +10,7 @@ const {user, logOut} = useUserAuth();
 const navigate = useNavigate()
 const check=()=>{
   if(!user){
-    window.location.replace("/")
+    navigate("/")
   }}
   useEffect(()=>{
     console.log(user)

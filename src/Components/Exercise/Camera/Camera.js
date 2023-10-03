@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
@@ -9,7 +9,12 @@ function Camera() {
   const canvasRef = useRef(null)
   const [leftArm, setLeftArm] = useState("")
   const [rightArm, setRightArm] = useState("")
+  const [leftArmAt90, setLeftArmAt180] = useState(false);
+  const [rightArmAt90, setRightArmAt180] = useState(false);
 
+  // useEffect(()=>{
+  //   console.log(getJointAngle)
+  // })
 
   const runPosenet = async () => {
     const net = await posenet.load({
@@ -19,7 +24,7 @@ function Camera() {
    
     setInterval(() => {
       detect(net);
-    }, 100);
+    }, 500);
   };
 
   const detect = async (net) => {
@@ -56,11 +61,25 @@ function Camera() {
       // console.log(`Left Arm Angle (degrees): ${leftArmAngle}`);
       // console.log(`Right Arm Angle (degrees): ${rightArmAngle}`);
       
-      setLeftArm(`LeftArm : ${leftArmAngle}`);
-      setRightArm(`RightArm : ${rightArmAngle}`);
       
-      drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);
+      
+      if (Math.abs(180 - leftArmAngle) < 10) {
+        setLeftArmAt180(true);
+      } else {
+        setLeftArmAt180(false);
+      }
+      if (Math.abs(180 - rightArmAngle) < 10) {
+        setRightArmAt180(true);
+      } else {
+        setRightArmAt180(false);
+      }
+      setLeftArm(`LeftArm : ${Math.round(leftArmAngle)}`);
+      setRightArm(`RightArm : ${Math.round(rightArmAngle)}`);
+
+      drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);  
+      tf.disposeVariables();    
     }
+  
   };
   
   const calculateAngle = (pointA, pointB, pointC) => {
@@ -83,6 +102,7 @@ function Camera() {
     drawSkeleton(pose["keypoints"], 0.7, ctx);
   };
   runPosenet();
+
      return (
     <div>
   <header className="App-header">
@@ -123,8 +143,12 @@ function Camera() {
 <h3>LeftShoulder:</h3>
  <h3>Right Knee:</h3>
  <h3>Left Knee:</h3>
-
-
+   <h3>
+      Right Arm at 180 degrees: {rightArmAt90 ? "Yes" : "No"}
+    </h3>
+    <h3>
+      Left Arm at 180 degrees: {leftArmAt90 ? "Yes" : "No"}
+    </h3>
 </div>
 
     </div>
