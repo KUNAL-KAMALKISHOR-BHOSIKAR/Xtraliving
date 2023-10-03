@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
-import { drawKeypoints, drawSkeleton } from "./utilities";
+import { drawKeypoints, drawSkeleton, getJointAngle } from "./utilities";
 import "./Camera.css"
 function Camera() {
   const webcamRef = useRef(null)
