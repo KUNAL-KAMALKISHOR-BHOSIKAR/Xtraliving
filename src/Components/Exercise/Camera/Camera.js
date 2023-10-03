@@ -18,7 +18,7 @@ function Camera() {
 
   const runPosenet = async () => {
     const net = await posenet.load({
-      inputResolution: { width:  640, height: 480  },
+      inputResolution: { width: 320, height: 240  },
       scale: 0.8,
     });
    
@@ -136,19 +136,22 @@ function Camera() {
     }}
   />
 </header>
+
 <div className="info-area">
  <h3>{rightArm}</h3>
  <h3>{leftArm}</h3> 
- <h3>rightShoulder:</h3>
-<h3>LeftShoulder:</h3>
- <h3>Right Knee:</h3>
- <h3>Left Knee:</h3>
    <h3>
       Right Arm at 180 degrees: {rightArmAt90 ? "Yes" : "No"}
     </h3>
     <h3>
       Left Arm at 180 degrees: {leftArmAt90 ? "Yes" : "No"}
     </h3>
+    {rightArmAt90&&(
+      <h2 style={{color:"green"}}>Your Arms are parallel</h2>
+    )
+      
+    }
+    
 </div>
 
     </div>
