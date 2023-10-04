@@ -11,7 +11,7 @@ function Camera() {
   const [rightArm, setRightArm] = useState("")
   const [leftArmAt90, setLeftArmAt180] = useState(false);
   const [rightArmAt90, setRightArmAt180] = useState(false);
-
+const [hip, setHip] = useState(false);
   // useEffect(()=>{
   //   console.log(getJointAngle)
   // })
@@ -19,7 +19,7 @@ function Camera() {
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 320, height: 240  },
-      scale: 0.8,
+      scale: 0.5,
     });
    
     setInterval(() => {
@@ -61,7 +61,23 @@ function Camera() {
       // console.log(`Left Arm Angle (degrees): ${leftArmAngle}`);
       // console.log(`Right Arm Angle (degrees): ${rightArmAngle}`);
       
-      
+
+      const leftHip = pose.keypoints.find((keypoint) => keypoint.part === "leftHip").position;
+  const rightHip = pose.keypoints.find((keypoint) => keypoint.part === "rightHip").position;
+
+  const referencePoint = {
+    x: (leftHip.x + rightHip.x) / 2,
+    y: (leftHip.y + rightHip.y) / 2,
+  };
+
+  const hipAngle = calculateAngle(leftHip, referencePoint, rightHip);
+
+  const hipAngleThreshold = 90
+  if (hipAngle <= hipAngleThreshold) {
+   setHip(true)
+  } else {
+    setHip(false)
+  }
       
       if (Math.abs(180 - leftArmAngle) < 10) {
         setLeftArmAt180(true);
@@ -148,8 +164,10 @@ function Camera() {
     </h3>
     {rightArmAt90&&(
       <h2 style={{color:"green"}}>Your Arms are parallel</h2>
-    )
-      
+    )     
+    }
+    {
+      hip? <h2>Your Hip position is correct</h2>: <h2>position should be parallel go lower</h2>
     }
     
 </div>
