@@ -21,27 +21,25 @@ const [kneeAngles, setKneeAngles] = useState([]);
 
   const countSquats = () => {
     let count = 0;
-    let flag = 0;
-    const arr = [];
-    const countArr = [];
-
-    for (let knee = 0; knee < kneeAngles.length; knee++) {
-      if (kneeAngles[knee] < 150 && flag === 0) {
-        flag = 1;
-      }
-      if (flag === 1) {
-        arr.push([kneeAngles[knee], knee]);
-      }
-      if (kneeAngles[knee] > 150 && flag === 1) {
-        flag = 0;
+    let isInSquat = false;
+  
+    for (let i = 0; i < kneeAngles.length; i++) {
+      const angle = kneeAngles[i];
+  
+      // Check if the angle is below 150 degrees (start of a squat)
+      if (angle < 150 && !isInSquat) {
+        isInSquat = true;
         count++;
-        countArr.push(count);
         console.log("Squat No.", count);
-        arr.length = 0; 
+      }
+  
+      // Check if the angle is above 150 degrees (end of a squat)
+      if (angle > 150 && isInSquat) {
+        isInSquat = false;
       }
     }
-
-    // console.log(countArr);
+  
+   // console.log("Total Squats:", count);
   };
 
   const runPosenet = async () => {
