@@ -12,9 +12,37 @@ function Camera() {
   const [leftArmAt90, setLeftArmAt180] = useState(false);
   const [rightArmAt90, setRightArmAt180] = useState(false);
 const [hip, setHip] = useState(false);
+const [kneeAngles, setKneeAngles] = useState([]);
+
+
   // useEffect(()=>{
   //   console.log(getJointAngle)
   // })
+
+  const countSquats = () => {
+    let count = 0;
+    let flag = 0;
+    const arr = [];
+    const countArr = [];
+
+    for (let knee = 0; knee < kneeAngles.length; knee++) {
+      if (kneeAngles[knee] < 150 && flag === 0) {
+        flag = 1;
+      }
+      if (flag === 1) {
+        arr.push([kneeAngles[knee], knee]);
+      }
+      if (kneeAngles[knee] > 150 && flag === 1) {
+        flag = 0;
+        count++;
+        countArr.push(count);
+        console.log("Squat No.", count);
+        arr.length = 0; 
+      }
+    }
+
+    // console.log(countArr);
+  };
 
   const runPosenet = async () => {
     const net = await posenet.load({
@@ -26,6 +54,9 @@ const [hip, setHip] = useState(false);
       detect(net);
     }, 500);
   };
+
+
+
 
   const detect = async (net) => {
     if (
@@ -57,10 +88,7 @@ const [hip, setHip] = useState(false);
   
       const leftArmAngle = calculateAngle(leftShoulder, leftElbow, leftWrist);
       const rightArmAngle = calculateAngle(rightShoulder, rightElbow, rightWrist);
-  
-      // console.log(`Left Arm Angle (degrees): ${leftArmAngle}`);
-      // console.log(`Right Arm Angle (degrees): ${rightArmAngle}`);
-      
+
 
       const leftHip = pose.keypoints.find((keypoint) => keypoint.part === "leftHip").position;
   const rightHip = pose.keypoints.find((keypoint) => keypoint.part === "rightHip").position;
@@ -91,6 +119,18 @@ const [hip, setHip] = useState(false);
       }
       setLeftArm(`LeftArm : ${Math.round(leftArmAngle)}`);
       setRightArm(`RightArm : ${Math.round(rightArmAngle)}`);
+
+      const leftKnee = pose.keypoints.find((keypoint) => keypoint.part === "leftKnee").position;
+    const leftAnkle = pose.keypoints.find((keypoint) => keypoint.part === "leftAnkle").position;
+
+    const leftKneeAngle = calculateAngle(leftShoulder, leftElbow, leftWrist);
+
+    setKneeAngles((prevAngles) => [...prevAngles, leftKneeAngle]);
+
+      // Calling the squat counting function
+      countSquats();
+
+
 
       drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);  
       tf.disposeVariables();    
@@ -169,7 +209,9 @@ const [hip, setHip] = useState(false);
     {
       hip? <h2>Your Hip position is correct</h2>: <h2>position should be parallel go lower</h2>
     }
-    
+    {
+       console.log(kneeAngles)
+    }
 </div>
 
     </div>
