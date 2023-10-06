@@ -4,6 +4,7 @@ import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
 import { drawKeypoints, drawSkeleton, getJointAngle } from "./utilities";
 import "./Camera.css"
+import debounce from "lodash/debounce";
 function Camera() {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
@@ -11,37 +12,33 @@ function Camera() {
   const [rightArm, setRightArm] = useState("")
   const [leftArmAt90, setLeftArmAt180] = useState(false);
   const [rightArmAt90, setRightArmAt180] = useState(false);
-const [hip, setHip] = useState(false);
-const [kneeAngles, setKneeAngles] = useState([]);
-
+  const [hip, setHip] = useState(false);
+  const [kneeAngles, setKneeAngles] = useState([]);
+  const [count, setCount] = useState(0); 
 
   // useEffect(()=>{
   //   console.log(getJointAngle)
   // })
 
-  const countSquats = () => {
-    let count = 0;
+  const detectSquats = () => {
+    const thresholdAngle = 90; // Adjust as needed
     let isInSquat = false;
   
     for (let i = 0; i < kneeAngles.length; i++) {
       const angle = kneeAngles[i];
   
-      // Check if the angle is below 150 degrees (start of a squat)
-      if (angle < 150 && !isInSquat) {
+      if (angle < thresholdAngle && !isInSquat) {
         isInSquat = true;
-        count++;
+        setCount((prevCount) => prevCount + 1);
         console.log("Squat No.", count);
       }
   
-      // Check if the angle is above 150 degrees (end of a squat)
-      if (angle > 150 && isInSquat) {
+      if (angle >= thresholdAngle && isInSquat) {
         isInSquat = false;
       }
     }
-  
-   // console.log("Total Squats:", count);
   };
-
+  const debouncedDetectSquats = debounce(detectSquats, 1000);
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 320, height: 240  },
@@ -119,14 +116,15 @@ const [kneeAngles, setKneeAngles] = useState([]);
       setRightArm(`RightArm : ${Math.round(rightArmAngle)}`);
 
       const leftKnee = pose.keypoints.find((keypoint) => keypoint.part === "leftKnee").position;
-    const leftAnkle = pose.keypoints.find((keypoint) => keypoint.part === "leftAnkle").position;
-
-    const leftKneeAngle = calculateAngle(leftShoulder, leftElbow, leftWrist);
+      const leftAnkle = pose.keypoints.find((keypoint) => keypoint.part === "leftAnkle").position;
+      
+      const leftKneeAngle = calculateAngle(leftHip, leftKnee, leftAnkle);
+      
 
     setKneeAngles((prevAngles) => [...prevAngles, leftKneeAngle]);
 
       // Calling the squat counting function
-      countSquats();
+      detectSquats();
 
 
 
@@ -137,7 +135,7 @@ const [kneeAngles, setKneeAngles] = useState([]);
   };
   
   const calculateAngle = (pointA, pointB, pointC) => {
-    // Calculate the angle between three points (pointA, pointB, pointC).
+    //  between three points (pointA, pointB, pointC).
     const radians = Math.atan2(pointC.y - pointB.y, pointC.x - pointB.x) -
                     Math.atan2(pointA.y - pointB.y, pointA.x - pointB.x);
   
@@ -194,7 +192,7 @@ const [kneeAngles, setKneeAngles] = useState([]);
 <div className="info-area">
  <h3>{rightArm}</h3>
  <h3>{leftArm}</h3> 
-   <h3>
+   {/* <h3>
       Right Arm at 180 degrees: {rightArmAt90 ? "Yes" : "No"}
     </h3>
     <h3>
@@ -206,10 +204,10 @@ const [kneeAngles, setKneeAngles] = useState([]);
     }
     {
       hip? <h2>Your Hip position is correct</h2>: <h2>position should be parallel go lower</h2>
-    }
-    {
-       console.log(kneeAngles)
-    }
+    } */}
+   
+      <h3> {`squat count is${count}`}</h3> 
+    
 </div>
 
     </div>
