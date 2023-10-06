@@ -1,24 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import * as tf from "@tensorflow/tfjs";
 import * as posenet from "@tensorflow-models/posenet";
 import Webcam from "react-webcam";
-import { drawKeypoints, drawSkeleton, getJointAngle } from "./utilities";
+import { drawKeypoints, drawSkeleton } from "./utilities";
 import "./Camera.css"
 import debounce from "lodash/debounce";
 function Camera() {
   const webcamRef = useRef(null)
   const canvasRef = useRef(null)
-  const [leftArm, setLeftArm] = useState("")
-  const [rightArm, setRightArm] = useState("")
-  const [leftArmAt90, setLeftArmAt180] = useState(false);
-  const [rightArmAt90, setRightArmAt180] = useState(false);
+
   const [hip, setHip] = useState(false);
   const [kneeAngles, setKneeAngles] = useState([]);
   const [count, setCount] = useState(0); 
+  const [squatQuality, setSquatQuality] = useState("");
 
-  // useEffect(()=>{
-  //   console.log(getJointAngle)
-  // })
 
   const detectSquats = () => {
     const thresholdAngle = 90; // Adjust as needed
@@ -38,7 +33,9 @@ function Camera() {
       }
     }
   };
+
   const debouncedDetectSquats = debounce(detectSquats, 1000);
+
   const runPosenet = async () => {
     const net = await posenet.load({
       inputResolution: { width: 320, height: 240  },
@@ -47,10 +44,9 @@ function Camera() {
    
     setInterval(() => {
       detect(net);
+      debouncedDetectSquats(net);
     }, 500);
   };
-
-
 
 
   const detect = async (net) => {
@@ -70,63 +66,49 @@ function Camera() {
   
       // Make Detections
       const pose = await net.estimateSinglePose(video);
-     // console.log(pose);
+      //console.log(pose);
   
-      const rightShoulder = pose.keypoints.find((keypoint) => keypoint.part === "rightShoulder").position;
-      const rightElbow = pose.keypoints.find((keypoint) => keypoint.part === "rightElbow").position;
-      const rightWrist = pose.keypoints.find((keypoint) => keypoint.part === "rightWrist").position;
-  
-      //  positions for the left arm keypoints
-      const leftShoulder = pose.keypoints.find((keypoint) => keypoint.part === "leftShoulder").position;
-      const leftElbow = pose.keypoints.find((keypoint) => keypoint.part === "leftElbow").position;
-      const leftWrist = pose.keypoints.find((keypoint) => keypoint.part === "leftWrist").position;
-  
-      const leftArmAngle = calculateAngle(leftShoulder, leftElbow, leftWrist);
-      const rightArmAngle = calculateAngle(rightShoulder, rightElbow, rightWrist);
 
 
-      const leftHip = pose.keypoints.find((keypoint) => keypoint.part === "leftHip").position;
-  const rightHip = pose.keypoints.find((keypoint) => keypoint.part === "rightHip").position;
+    const leftHip = pose.keypoints.find((keypoint) => keypoint.part === "leftHip").position;
+    const rightHip = pose.keypoints.find((keypoint) => keypoint.part === "rightHip").position;
 
-  const referencePoint = {
-    x: (leftHip.x + rightHip.x) / 2,
-    y: (leftHip.y + rightHip.y) / 2,
+    const referencePoint = {
+      x: (leftHip.x + rightHip.x) / 2,
+      y: (leftHip.y + rightHip.y) / 2,
+    };
+
+    const hipAngle = calculateAngle(leftHip, referencePoint, rightHip);
+
+    const hipAngleThreshold = 90
+    if (hipAngle <= hipAngleThreshold) {
+    setHip(true)
+    } else {
+      setHip(false)
+    }
+  
+
+  const leftKnee = pose.keypoints.find((keypoint) => keypoint.part === "leftKnee").position;
+  const leftAnkle = pose.keypoints.find((keypoint) => keypoint.part === "leftAnkle").position;
+  const leftKneeAngle = calculateAngle(leftHip, leftKnee, leftAnkle);  
+  setKneeAngles((prevAngles) => [...prevAngles, leftKneeAngle]);
+  
+  const evaluateSquat = (hipAngle, kneeAngle) => {
+    const hipAngleThreshold = 90; // Adjust as needed
+    const kneeAngleThreshold = 120; // Adjust as needed
+  
+    if (hipAngle <= hipAngleThreshold && kneeAngle >= kneeAngleThreshold) {
+      return "Perfect Squat";
+    } else {
+      return "Not Perfect";
+    }
   };
+  
+  const squatQuality = evaluateSquat(hipAngle, leftKneeAngle);
+  setSquatQuality(squatQuality);
 
-  const hipAngle = calculateAngle(leftHip, referencePoint, rightHip);
-
-  const hipAngleThreshold = 90
-  if (hipAngle <= hipAngleThreshold) {
-   setHip(true)
-  } else {
-    setHip(false)
-  }
-      
-      if (Math.abs(180 - leftArmAngle) < 10) {
-        setLeftArmAt180(true);
-      } else {
-        setLeftArmAt180(false);
-      }
-      if (Math.abs(180 - rightArmAngle) < 10) {
-        setRightArmAt180(true);
-      } else {
-        setRightArmAt180(false);
-      }
-      setLeftArm(`LeftArm : ${Math.round(leftArmAngle)}`);
-      setRightArm(`RightArm : ${Math.round(rightArmAngle)}`);
-
-      const leftKnee = pose.keypoints.find((keypoint) => keypoint.part === "leftKnee").position;
-      const leftAnkle = pose.keypoints.find((keypoint) => keypoint.part === "leftAnkle").position;
-      
-      const leftKneeAngle = calculateAngle(leftHip, leftKnee, leftAnkle);
-      
-
-    setKneeAngles((prevAngles) => [...prevAngles, leftKneeAngle]);
-
-      // Calling the squat counting function
+  // Calling the squat counting function
       detectSquats();
-
-
 
       drawCanvas(pose, video, videoWidth, videoHeight, canvasRef);  
       tf.disposeVariables();    
@@ -153,7 +135,9 @@ function Camera() {
     drawKeypoints(pose["keypoints"], 0.6, ctx);
     drawSkeleton(pose["keypoints"], 0.7, ctx);
   };
-  runPosenet();
+  useEffect(() => {
+    runPosenet();
+  }, []);
 
      return (
     <div>
@@ -189,25 +173,9 @@ function Camera() {
   />
 </header>
 
-<div className="info-area">
- <h3>{rightArm}</h3>
- <h3>{leftArm}</h3> 
-   {/* <h3>
-      Right Arm at 180 degrees: {rightArmAt90 ? "Yes" : "No"}
-    </h3>
-    <h3>
-      Left Arm at 180 degrees: {leftArmAt90 ? "Yes" : "No"}
-    </h3>
-    {rightArmAt90&&(
-      <h2 style={{color:"green"}}>Your Arms are parallel</h2>
-    )     
-    }
-    {
-      hip? <h2>Your Hip position is correct</h2>: <h2>position should be parallel go lower</h2>
-    } */}
-   
-      <h3> {`squat count is${count}`}</h3> 
-    
+<div className="info-area">  
+      <h3> {`squat count is${count}`}</h3>  
+      <h3>{`Squat Quality: ${squatQuality}`}</h3>   
 </div>
 
     </div>
@@ -215,54 +183,3 @@ function Camera() {
 }
 
 export default Camera
-// {score: 0.31534247883759875, keypoints: Array(17)}
-// keypoints
-// : 
-// Array(17)
-// 0
-// : 
-// part
-// : 
-// "nose"
-// position
-// : 
-// {x: 386.991730450468, y: 295.1570621101871}
-// score
-// : 
-// 0.9629470109939575
-// [[Prototype]]
-// : 
-// Object
-// 1
-// : 
-// {score: 0.9907873272895813, part: 'leftEye', position: {…}}
-// 2
-// : 
-// {score: 0.9951254725456238, part: 'rightEye', position: {…}}
-// 3
-// : 
-// {score: 0.21000520884990692, part: 'leftEar', position: {…}}
-// 4
-// : 
-// {score: 0.9742039442062378, part: 'rightEar', position: {…}}
-// 5
-// : 
-// {score: 0.09970144927501678, part: 'leftShoulder', position: {…}}
-// 6
-// : 
-// {score: 0.465686172246933, part: 'rightShoulder', position: {…}}
-// 7
-// : 
-// {score: 0.0074429986998438835, part: 'leftElbow', position: {…}}
-// 8
-// : 
-// {score: 0.01254657655954361, part: 'rightElbow', position: {…}}
-// 9
-// : 
-// {score: 0.3241625130176544, part: 'leftWrist', position: {…}}
-// 10
-// : 
-// {score: 0.2491542249917984, part: 'rightWrist', position: {…}}
-// 11
-// : 
-// {score: 0.012237735
